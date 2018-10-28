@@ -1,19 +1,16 @@
 # Site settings
-title:       "Jekyll Bootstrap 4 with Docker"
+title:       "7nolikov profile"
 header_title: "Jekyll Bootstrap 4 with Docker"
-email:       your@ema.il
-author:      Your Name
-description: "Jekyll static blog boilerplate with Bootstrap 4 and Docker"
-baseurl:     "/jekyll-bootstrap4-docker"
-url:         "https://hexlet-boilerplates.github.io"
+email:       7nolikov@gmail.com
+author:      Dmitriy Novikov
+description: "Information about projects and experience"
+baseurl:     ""
+url:         "https://7nolikov.github.io"
 date_format: "%-d.%m.%Y"
 
 # Google services
 google_analytics: "UA-1360700-62"
 google_verification: ""
-
-# Facebook
-facebook_app_id: "1414002802233483"
 
 # Optional features
 animated:             false
@@ -27,13 +24,13 @@ ajaxify_contact_form: true
 disqus_shortname: "disqus_xxx"
 
 # Social icons
-github_username: hexlet
-bitbucket_username:
+github_username: 7nolikov
+bitbucket_username: 7nolikov
 stackoverflow_id:
-twitter_username: hexlet
+twitter_username:
 google_plus_id:
 linkedin_username:
-facebook_username: hexlet
+facebook_username:
 angellist_username:
 medium_id:
 bitcoin_url:
