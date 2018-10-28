@@ -1,6 +1,6 @@
 # Site settings
-title:       "7nolikov profile"
-header_title: "Jekyll Bootstrap 4 with Docker"
+title:       "echo 7nolikov"
+header_title: "echo 7nolikov"
 email:       7nolikov@gmail.com
 author:      Dmitriy Novikov
 description: "Information about projects and experience"
@@ -9,7 +9,7 @@ url:         "https://7nolikov.github.io"
 date_format: "%-d.%m.%Y"
 
 # Google services
-google_analytics: "UA-1360700-62"
+google_analytics: ""
 google_verification: ""
 
 # Optional features
@@ -25,8 +25,8 @@ disqus_shortname: "disqus_xxx"
 
 # Social icons
 github_username: 7nolikov
-bitbucket_username: 7nolikov
-stackoverflow_id:
+bitbucket_username:
+stackoverflow_id: 8926052
 twitter_username:
 google_plus_id:
 linkedin_username:
@@ -36,7 +36,7 @@ medium_id:
 bitcoin_url:
 paypal_url:
 flattr_button:
-instagram_username:
+instagram_username: 7nolikov
 
 # Post sharing icons
 show_sharing_icons: true
