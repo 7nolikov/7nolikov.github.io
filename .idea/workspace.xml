@@ -10,60 +10,6 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-787949820">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="Gemfile" value="3" />
-          <entry key="Makefile" value="2" />
-          <entry key="css" value="2" />
-          <entry key="gitignore" value="2" />
-          <entry key="html" value="13" />
-          <entry key="ico" value="3" />
-          <entry key="iml" value="1" />
-          <entry key="jpg" value="4" />
-          <entry key="js" value="1" />
-          <entry key="lock" value="1" />
-          <entry key="md" value="3" />
-          <entry key="png" value="18" />
-          <entry key="txt" value="2" />
-          <entry key="xml" value="9" />
-          <entry key="yml" value="5" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="CSS" value="2" />
-          <entry key="HTML" value="13" />
-          <entry key="IDEA_MODULE" value="1" />
-          <entry key="Image" value="25" />
-          <entry key="JavaScript" value="1" />
-          <entry key="Markdown" value="3" />
-          <entry key="PLAIN_TEXT" value="10" />
-          <entry key="XML" value="9" />
-          <entry key="YAML" value="5" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="lock" value="4" />
-          <entry key="yml" value="159" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="PLAIN_TEXT" value="4" />
-          <entry key="YAML" value="159" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
@@ -88,11 +34,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="y" value="23" />
-    <option name="width" value="1280" />
-    <option name="height" value="709" />
-  </component>
+  <component name="ProjectId" id="1VIMP1VmTPdLQYZgILimanRwxbB" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
