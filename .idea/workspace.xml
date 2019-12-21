@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf3ad0e2-a7b4-4714-a5fc-8ca63405c08a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +26,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Dmitrii_Novikov1\IdeaProjects\7nolikov.github.io" />
+    </key>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -67,7 +73,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576937042877</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Changed favicon">
+      <created>1576937137522</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1576937137522</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -77,10 +90,14 @@
     <option name="LAST_COMMIT_MESSAGE" value="Changed favicon" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="234" y="0" key="CommitChangelistDialog2" timestamp="1576937041459">
+    <state x="234" y="0" key="CommitChangelistDialog2" timestamp="1576937136090">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="234" y="0" key="CommitChangelistDialog2/0.0.1280.689@0.0.1280.689" timestamp="1576937041459" />
+    <state x="234" y="0" key="CommitChangelistDialog2/0.0.1280.689@0.0.1280.689" timestamp="1576937136090" />
+    <state x="233" y="79" key="Vcs.Push.Dialog.v2" timestamp="1576937183596">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="233" y="79" key="Vcs.Push.Dialog.v2/0.0.1280.689@0.0.1280.689" timestamp="1576937183596" />
   </component>
   <component name="masterDetails">
     <states>
