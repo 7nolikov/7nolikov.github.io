@@ -1,9 +1,10 @@
 ---
 layout: post
 title: Dagger 2 понятно и кратко.
+cover_url: "/images/dagger2s.jpg"
 ---
 
-![](https://i1.wp.com/www.uwanttolearn.com/wp-content/uploads/2017/07/Dagger2-1.png)
+![](/images/dagger2s.jpg)
 
 _Эта статья - краткое описание возможностей Dagger2, основанная на официальной документации._
 
