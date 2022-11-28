@@ -11,20 +11,38 @@
   <link rel="stylesheet" href="reveal.js/dist/reveal.css">
   <link rel="stylesheet" href="reveal.js/dist/theme/black.css">
   <link rel="stylesheet" href="reveal.js/plugin/highlight/monokai.css">
+
+  <style>
+    .container {
+      display: flex;
+      align-items: center;
+    }
+
+    .col {
+      flex: 1;
+    }
+  </style>
 </head>
 
 <body>
   <div class="reveal">
     <div class="slides">
       <section>
-        <h1>Заголовок</h1>
-        <h2>Под-заголовок</h2>
-        <h3>Под-под-заголовок</h3>
-        <h4>Под-под-под-заголовок</h4>
-        <p>Тело слайда</p>
+        <div class="container">
+
+          <div class="col">
+            <img width="450" src="img/photo.jpg" alt="photo">
+          </div>
+
+          <div class="col">
+            <h3>Dmitrii Novikov</h3>
+            <h6>Senior Java Software Developer</h6>
+            <div><a href="mailto: 7nolikov@gmail.com">7nolikov@gmail.com</a></div>
+            <div><a href="https://t.me/D7nolikov">Telegram</a></div>
+          </div>
+
+        </div>
       </section>
-      <section>Slide 1</section>
-      <section>Slide 2</section>
     </div>
   </div>
 
