@@ -27,25 +27,55 @@
 <body>
   <div class="reveal">
     <div class="slides">
+      <!-- Introduction -->
       <section>
+        <style>
+          .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 20px; /* Added padding around the container for overall spacing */
+          }
+          .col {
+            flex: 1 1 200px; /* grow, shrink, basis */
+            margin: 10px;
+            text-align: center;
+          }
+          .col + .col { /* Increases space between the columns */
+            margin-left: 50px; /* Adjust this value as needed to increase spacing */
+          }
+          img {
+            max-width: 100%;
+            height: auto;
+          }
+          #socials a img {
+            margin: 0 5px;
+          }
+        </style>
         <div class="container">
 
           <div class="col">
-            <img width="450" src="img/photo.jpg" alt="photo">
+            <img src="img/photo.jpg" alt="photo" style="max-width: 450px; width: 100%;">
           </div>
 
           <div class="col">
-            <h2>Hello, I'm Dmitrii Novikov</h2>
-            <p>Senior Java Software Developer with 5 years of experience</p>
-            <p>3 years of QA Engineer background</p>
-            <div>
-              <a href="mailto: 7nolikov@gmail.com">
-                <img src="https://img.shields.io/badge/Gmail-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Email">
-              </a>
-            </div>
-            <div>
+            <h3>Hello, I'm Dmitrii Novikov</h3>
+            <ul>
+              <li>Senior Java Software Developer with 5 years of experience</li>
+              <li>3 years of QA Engineer background</li>
+            </ul>
+            <div id="socials" align="center">
               <a href="https://www.linkedin.com/in/7nolikov/">
-                <img src="https://img.shields.io/badge/LinkedIn-blue?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn">
+                <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+              </a>
+              &nbsp;
+              <a href="https://7nolikov.github.io/cv/Dmitrii-Novikov-CV.pdf">
+                <img src="https://img.shields.io/badge/Resume-yellow?style=for-the-badge" alt="CV">
+              </a>
+              &nbsp;
+              <a href="mailto:7nolikov@gmail.com">
+                <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
               </a>
             </div>
           </div>
@@ -53,6 +83,7 @@
         </div>
       </section>
 
+      <!-- Expertise and Experience -->
       <section>
         <h2>Expertise in Java Technologies</h2>
         <ul>
@@ -60,6 +91,35 @@
           <li>Experienced with cloud technologies</li>
           <li>Worked in retail, telecommunications, and e-commerce sectors</li>
         </ul>
+      </section>
+
+      <!-- Significant Projects at EPAM Systems -->
+      <section>
+        <h2>Key Projects at EPAM Systems</h2>
+        <ul>
+          <li>Developed a cloud-native data platform for the oil and gas industry</li>
+          <li>Built scalable, fault-tolerant systems</li>
+          <li>Utilized Google Cloud, Kubernetes, PostgreSQL, Minio, and Rabbitmq</li>
+        </ul>
+      </section>
+      
+      <!-- Conclusion -->
+      <section>
+        <h2>Thank you</h2>
+        <p>I look forward to discussing how I can contribute to your team.</p>
+        <div id="socials" align="center">
+          <a href="https://www.linkedin.com/in/7nolikov/">
+            <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+          </a>
+          &nbsp;
+          <a href="https://7nolikov.github.io/cv/Dmitrii-Novikov-CV.pdf">
+            <img src="https://img.shields.io/badge/Resume-yellow?style=for-the-badge" alt="CV">
+          </a>
+          &nbsp;
+          <a href="mailto:7nolikov@gmail.com">
+            <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
+          </a>
+        </div>
       </section>
     </div>
   </div>
