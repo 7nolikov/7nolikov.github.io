@@ -45,12 +45,6 @@ jobs:
         with:
           submodules: recursive
           fetch-depth: 0
-      - name: Change directory
-        run: cd ./7nolikov
-      - name: pwd
-        run: pwd
-      - name: ls
-        run: ls
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
@@ -62,6 +56,7 @@ jobs:
           HUGO_ENVIRONMENT: production
           TZ: America/Los_Angeles
         run: |
+          cd ./7nolikov
           hugo \
             --gc \
             --minify \
