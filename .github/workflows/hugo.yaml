@@ -61,11 +61,11 @@ jobs:
           hugo \
             --gc \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/7nolikov"          
+            --baseURL "${{ steps.pages.outputs.base_url }}"          
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./7nolikov/public
+          path: ./public
 
   # Deployment job
   deploy:
