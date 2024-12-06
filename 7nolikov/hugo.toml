@@ -1,6 +1,6 @@
 baseURL = 'https://7nolikov.github.io/'
 languageCode = 'en-us'
-title = '7nolikov Dev Site'
+title = '7nolikov | Dmitrii Novikov'
 copyright = 'Dmitrii Novikov'
 enableRobotsTXT = true
 
@@ -15,9 +15,16 @@ enableRobotsTXT = true
 
 [menus]
   [[menus.main]]
+    identifier = "about"
+    name = "About"
+    pageRef = "/about"
+    weight = 10
+
+  [[menus.main]]
     name = 'Posts'
     pageRef = '/posts'
     weight = 20
+
   [[menus.main]]
     name = 'Notes'
     pageRef = '/notes'
@@ -39,6 +46,7 @@ enableRobotsTXT = true
         block = true
 
 [params]
+  description = "Trustworthy posts from a software engineer on tech, side projects, life, and invest topics."
 
   # Author details for the JSON-LD structured data.
   [params.author]

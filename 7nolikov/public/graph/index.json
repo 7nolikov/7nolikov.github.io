@@ -1,4 +1,24 @@
 {
-  "graph": {},
-  "pages": {}
+  "graph": {
+    "/posts/intro/": {
+      "in": [],
+      "out": []
+    },
+    "/posts/what-is-rest/": {
+      "in": [],
+      "out": []
+    }
+  },
+  "pages": {
+    "/posts/intro/": {
+      "permalink": "/posts/intro/",
+      "section": "posts",
+      "title": "Intro"
+    },
+    "/posts/what-is-rest/": {
+      "permalink": "/posts/what-is-rest/",
+      "section": "posts",
+      "title": "What Is Rest?"
+    }
+  }
 }
