@@ -1,7 +1,7 @@
 ---
 title: Git Conventional Commits
 date: 2024-12-01
-categories: [Git]
+categories: [Awesome, Git]
 ---
 
 A specification for adding human and machine readable meaning to commit messages:
