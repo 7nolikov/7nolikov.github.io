@@ -8,31 +8,43 @@
 <meta name="language" content="en" />
 <meta name="viewport" content="width=device-width" />
 <title>
-    What is REST? | 7nolikov | Dmitrii Novikov
+    Git Conventional Commits | 7nolikov | Dmitrii Novikov
 </title>
-  <meta name="description" content=" Baby don’t hurt me REST stands for Representational State Transfer. It is a software architectural style that defines a set of constraints to be used for creating web services. Web services that conform to the REST architectural style are called RESTful web services." />
+  <meta name="description" content="A specification for adding human and machine readable meaning to commit messages:
+conventionalcommits.org
+Also, tooling available for enforcing this specification:
+Tooling" />
 <link rel="icon" type="image/png" href="/images/favicon.png" />
-<meta property="og:url" content="https://7nolikov.github.io/posts/what-is-rest/">
+<meta property="og:url" content="https://7nolikov.github.io/notes/conventional-commits/">
   <meta property="og:site_name" content="7nolikov | Dmitrii Novikov">
-  <meta property="og:title" content="What is REST?">
-  <meta property="og:description" content="Baby don’t hurt me REST stands for Representational State Transfer. It is a software architectural style that defines a set of constraints to be used for creating web services. Web services that conform to the REST architectural style are called RESTful web services.">
+  <meta property="og:title" content="Git Conventional Commits">
+  <meta property="og:description" content="A specification for adding human and machine readable meaning to commit messages:
+conventionalcommits.org
+Also, tooling available for enforcing this specification:
+Tooling">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
+    <meta property="article:section" content="notes">
     <meta property="article:published_time" content="2024-12-01T00:00:00+00:00">
 
 
-  <meta itemprop="name" content="What is REST?">
-  <meta itemprop="description" content="Baby don’t hurt me REST stands for Representational State Transfer. It is a software architectural style that defines a set of constraints to be used for creating web services. Web services that conform to the REST architectural style are called RESTful web services.">
+  <meta itemprop="name" content="Git Conventional Commits">
+  <meta itemprop="description" content="A specification for adding human and machine readable meaning to commit messages:
+conventionalcommits.org
+Also, tooling available for enforcing this specification:
+Tooling">
   <meta itemprop="datePublished" content="2024-12-01T00:00:00+00:00">
-  <meta itemprop="wordCount" content="43">
-  <meta itemprop="keywords" content="Web">
+  <meta itemprop="wordCount" content="21">
+  <meta itemprop="keywords" content="Git">
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="What is REST?">
-  <meta name="twitter:description" content="Baby don’t hurt me REST stands for Representational State Transfer. It is a software architectural style that defines a set of constraints to be used for creating web services. Web services that conform to the REST architectural style are called RESTful web services.">
+  <meta name="twitter:title" content="Git Conventional Commits">
+  <meta name="twitter:description" content="A specification for adding human and machine readable meaning to commit messages:
+conventionalcommits.org
+Also, tooling available for enforcing this specification:
+Tooling">
 
-<link rel="canonical" href="https://7nolikov.github.io/posts/what-is-rest/" />
+<link rel="canonical" href="https://7nolikov.github.io/notes/conventional-commits/" />
 
       <link
         rel="stylesheet"
@@ -53,10 +65,10 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
-  "@id": "https://7nolikov.github.io/posts/what-is-rest/",
+  "@id": "https://7nolikov.github.io/notes/conventional-commits/",
   "@type": "BlogPosting",
   "articleSection": [
-    "Web"
+    "Git"
   ],
   "author": {
     "@type": "Person",
@@ -66,18 +78,18 @@
   },
   "copyrightNotice": "Dmitrii Novikov",
   "datePublished": "2024-12-01",
-  "description": " Baby don’t hurt me REST stands for Representational State Transfer. It is a software architectural style that defines a set of constraints to be used for creating web services. Web services that conform to the REST architectural style are called RESTful web services.",
-  "headline": "What is REST?",
+  "description": "A specification for adding human and machine readable meaning to commit messages:\nconventionalcommits.org\nAlso, tooling available for enforcing this specification:\nTooling",
+  "headline": "Git Conventional Commits",
   "isPartOf": {
-    "@id": "https://7nolikov.github.io/posts/",
+    "@id": "https://7nolikov.github.io/notes/",
     "@type": "Blog",
-    "name": "Posts"
+    "name": "Notes"
   },
-  "mainEntityOfPage": "https://7nolikov.github.io/posts/what-is-rest/",
-  "name": "What is REST?",
+  "mainEntityOfPage": "https://7nolikov.github.io/notes/conventional-commits/",
+  "name": "Git Conventional Commits",
   "timeRequired": "PT1M",
-  "url": "https://7nolikov.github.io/posts/what-is-rest/",
-  "wordCount": 43
+  "url": "https://7nolikov.github.io/notes/conventional-commits/",
+  "wordCount": 21
 }
 </script>
 
@@ -98,11 +110,11 @@
       >
     </li>
     <li>
-      <a aria-current="true" class="ancestor" href="/posts/">Posts</a
+      <a href="/posts/">Posts</a
       >
     </li>
     <li>
-      <a href="/notes/">Notes</a
+      <a aria-current="true" class="ancestor" href="/notes/">Notes</a
       >
     </li>
     <li>
@@ -117,39 +129,17 @@
       <main class="prose prose-slate relative md:prose-lg prose-h1:text-[2em]" id="maincontent">
         <article class="main">
     <header>
-      <h1 class="!mb-1">What is REST?</h1><div class="flex flex-row items-center space-x-4">
+      <h1 class="!mb-1">Git Conventional Commits</h1><div class="flex flex-row items-center space-x-4">
           <time class="text-sm italic opacity-80" datetime="2024-12-01T00:00:00&#43;00:00"
             >December 1, 2024</time
           >
         </div>
     </header>
 
-    <h3 id="baby-dont-hurt-me" class="scroll-mt-8 group">
-  Baby don&rsquo;t hurt me
-  
-    <a href="#baby-dont-hurt-me"
-        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
-        aria-hidden="true" title="Link to this heading" tabindex="-1">
-        <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="16"
-  height="16"
-  fill="none"
-  stroke="currentColor"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  class="lucide lucide-link w-4 h-4 block"
-  viewBox="0 0 24 24"
->
-  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-</svg>
-
-    </a>
-  
-</h3>
-<p>REST stands for Representational State Transfer. It is a software architectural style that defines a set of constraints to be used for creating web services. Web services that conform to the REST architectural style are called RESTful web services.</p>
+    <p>A specification for adding human and machine readable meaning to commit messages:</p>
+<p><a href="https://www.conventionalcommits.org">conventionalcommits.org</a></p>
+<p>Also, tooling available for enforcing this specification:</p>
+<p><a href="https://www.conventionalcommits.org/en/about/#tooling-for-conventional-commits">Tooling</a></p>
 
   </article>
     <aside class="not-prose flex flex-col space-y-8 border-t pt-6">
@@ -178,7 +168,7 @@
 
       <ul class="ml-6 flex flex-row flex-wrap items-center space-x-2">
           <li>
-            <a href="/categories/web/" class="taxonomy category">Web</a>
+            <a href="/categories/git/" class="taxonomy category">Git</a>
           </li>
       </ul>
     </section>
@@ -209,7 +199,7 @@
       <content-network-graph
   class="h-64 ml-6"
   data-endpoint="/graph/index.json"
-  page="/posts/what-is-rest/"
+  page="/notes/conventional-commits/"
 ></content-network-graph>
 
     </section>

@@ -1,15 +1,24 @@
 {
   "graph": {
+    "/notes/conventional-commits/": {
+      "in": [],
+      "out": []
+    },
     "/posts/what-is-rest/": {
       "in": [],
       "out": []
     }
   },
   "pages": {
+    "/notes/conventional-commits/": {
+      "permalink": "/notes/conventional-commits/",
+      "section": "notes",
+      "title": "Git Conventional Commits"
+    },
     "/posts/what-is-rest/": {
       "permalink": "/posts/what-is-rest/",
       "section": "posts",
-      "title": "What Is Rest?"
+      "title": "What is REST?"
     }
   }
 }
