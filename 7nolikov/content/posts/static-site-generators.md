@@ -1,14 +1,14 @@
 ---
-title: Static stite generators
+title: Static site generators
 date: 2024-12-08
 categories: [Awesome, Websites]
 ---
 
-## Overview of the Top 6 Static Site Generators
+## Overview of the top 6 static site generators
 
-Static site generators are tools that create websites by converting templates and content into static HTML files. 
-This approach makes websites faster, more secure, and easier to host. 
-Let’s take a closer look at six popular static site generators: 
+Static site generators are tools that create websites by converting templates and content into static HTML files.
+This approach makes websites faster, more secure, and easier to host.
+Let’s take a closer look at six popular static site generators:
 
 - Jekyll
 - 11ty (Eleventy)
