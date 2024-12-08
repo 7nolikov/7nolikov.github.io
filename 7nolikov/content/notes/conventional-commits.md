@@ -13,4 +13,4 @@ A specification for adding human and machine readable meaning to commit messages
 
 Also, tooling available for enforcing this specification:
 
-[Tooling](https://www.conventionalcommits.org/en/about/#tooling-for-conventional-commits)
+[conventionalcommits.org/en/about/#tooling-for-conventional-commits](https://www.conventionalcommits.org/en/about/#tooling-for-conventional-commits)
