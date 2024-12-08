@@ -4,9 +4,6 @@ date: 2024-12-01
 categories: [Awesome, Git]
 ---
 
-Thousands of times in my professional career I have figured out the reason for changes in the history of the Git. 
-And here is the solution to the problem!
-
 ## Reasoning
 
 Thousands of times in my professional career I have figured out the reason for changes in the history of the Git. 
@@ -27,12 +24,12 @@ Conventional Commits have the following format:
 [optional <footer(s)>]
 ```
 
-Type: fix, feat or BREAKING CHANGE, etc.
+**Type**: fix, feat or BREAKING CHANGE, etc.
 
 Here you can find more information about Conventional Commits:
 
 [conventionalcommits.org](https://www.conventionalcommits.org)
 
-Also, tooling available for enforcing this specification:
+Also, tooling available for enforcing this specification, like vscode extensions:
 
 [conventionalcommits.org/en/about/#tooling-for-conventional-commits](https://www.conventionalcommits.org/en/about/#tooling-for-conventional-commits)
