@@ -1,7 +1,7 @@
 ---
 title: Standalone Spring tests
 date: 2024-12-04
-categories: [Spring, Testing]
+categories: [spring, testing]
 ---
 
 I was surprized that Spring Test library doesn't support standalone acceptance tests format out of the box.
@@ -15,13 +15,63 @@ Previous tests used plain Java. I wanted to use Spring features like dependency 
 
 ## How to implement
 
-Use `@SpringBootTest(webEnvironment = WebEnvironment.NONE)` with a lightweight configuration. Import only the necessary beans, such as `TestRestTemplate` and test-specific properties.
+Use `@SpringBootTest(webEnvironment = WebEnvironment.NONE)` with a lightweight configuration.
 
-## Example
+Import only the necessary beans, such as `TestRestTemplate` and test-specific properties.
 
-Use `@Import(IntegrationTestConfig.class)` and `@TestPropertySource(locations = "classpath:test-application.properties")`. Inject beans like `TokenProvider` or `TestFixtures` for test-specific needs.
+```java
+@SpringBootTest(webEnvironment = WebEnvironment.NONE)
+@Import(IntegrationTestConfig.class)
+@TestPropertySource(locations = "classpath:test-application.properties")
+public abstract class BaseIntegrationTest {
 
-Configure test context with `@SpringBootConfiguration`. Use `@ComponentScan` to load only core beans. Add `@EnableConfigurationProperties` for test settings. Include useful beans like `TestRestTemplate` and `ObjectMapper`.
+  @Autowired
+  protected TestRestTemplate restTemplate;
+  @Autowired
+  protected TestProperties properties;
+  @Autowired
+  protected TestFixtures testFixtures;
+
+  /**
+   * This method is used to set up the test environment, access tokens and environment-specific properties.
+   */
+  public void setup() {}
+
+  /** This optional method is used to clean up test data. */
+  public void tearDown() {}
+}
+
+```
+
+Configure test context with `@SpringBootConfiguration`. Use `@ComponentScan` to load only core beans.
+
+Add `@EnableConfigurationProperties` for test settings. Include useful beans like `TestRestTemplate` and `ObjectMapper`.
+
+```java
+@SpringBootConfiguration
+@ComponentScan({"org.application"})
+@EnableConfigurationProperties(TestProperties.class)
+public class IntegrationTestConfig {
+
+  @Bean
+  public TestRestTemplate testRestTemplate(TestProperties properties) {
+    return new TestRestTemplate(new RestTemplateBuilder().rootUri(properties.getBaseUrl()));
+  }
+
+  @Bean
+  public static ObjectMapper initMapper() {
+    // custom ObjectMapper configuration
+    ObjectMapper objectMapper = new ObjectMapper();
+    objectMapper.registerModule(new JavaTimeModule());
+    objectMapper.setSerializationInclusion(Include.NON_NULL);
+    objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+    objectMapper.configure(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS, false);
+    objectMapper.setTimeZone(TimeZone.getDefault());
+    return objectMapper;
+  }
+}
+
+```
 
 ## Integration
 

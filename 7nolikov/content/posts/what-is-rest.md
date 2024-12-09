@@ -1,7 +1,7 @@
 ---
 title: What is REST?
 date: 2024-12-09
-categories: [Web]
+categories: [web]
 draft: true
 ---
 

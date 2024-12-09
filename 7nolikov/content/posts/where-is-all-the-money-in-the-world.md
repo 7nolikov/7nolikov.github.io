@@ -1,7 +1,7 @@
 ---
 title: Where is all the money in the world?
 date: 2024-12-02
-categories: [Money]
+categories: [money]
 ---
 
 ## Overview of the global money supply

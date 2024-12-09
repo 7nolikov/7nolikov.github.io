@@ -1,7 +1,7 @@
 ---
 title: Static site generators
 date: 2024-12-01
-categories: [Awesome, Websites]
+categories: [websites]
 ---
 
 ## Overview of the top 6 static site generators
