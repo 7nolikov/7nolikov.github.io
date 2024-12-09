@@ -1,5 +1,5 @@
 ---
-title: PostgreSQL Exercises
+title: RevealJS - HTML Presentation Framework
 date: 2024-12-05
 categories: [Awesome, Presentations, RevealJS]
 ---
