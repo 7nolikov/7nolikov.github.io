@@ -1,6 +1,6 @@
 ---
 title: Static site generators
-date: 2024-12-08
+date: 2024-12-01
 categories: [Awesome, Websites]
 ---
 
