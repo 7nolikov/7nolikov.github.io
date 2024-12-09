@@ -1,6 +1,6 @@
 ---
 title: Standalone Spring tests
-date: 2024-12-03
+date: 2024-12-04
 categories: [Spring, Testing]
 ---
 
