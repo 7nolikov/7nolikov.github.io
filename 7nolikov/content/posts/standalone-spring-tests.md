@@ -1,10 +1,8 @@
 ---
-title: Static site generators
+title: Standalone Spring tests
 date: 2024-12-03
 categories: [Spring, Testing]
 ---
-
-## Standalone Spring tests
 
 I was surprized that Spring Test library doesn't support standalone acceptance tests format out of the box.
 Here's how I tackled this issue and why standalone tests are useful for modular Spring applications.
