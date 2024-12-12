@@ -6,7 +6,7 @@ categories: [git]
 
 ## Reasoning
 
-Thousands of times in my professional career I have figured out the reason for changes in the history of the Git. 
+Thousands of times in my professional career I have figured out the reason for changes in the history of the Git.
 And here is the solution to the problem!
 
 ## Standardizing Commit Messages

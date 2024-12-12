@@ -24,7 +24,6 @@ Demo, try it using the smartphone too:
 
 [https://revealjs.com/demo/?view=scroll](https://revealjs.com/demo/?view=scroll)
 
-
 Official website:
 
 [https://revealjs.com/](https://revealjs.com/)
