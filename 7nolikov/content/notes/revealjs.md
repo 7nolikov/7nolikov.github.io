@@ -22,7 +22,8 @@ Reveal.js is a framework for easily creating beautiful adaptive presentations us
 
 Demo, try it using the smartphone too:
 
-[https://revealjs.com/?demo](https://revealjs.com/?demo)
+[https://revealjs.com/demo/?view=scroll](https://revealjs.com/demo/?view=scroll)
+
 
 Official website:
 
