@@ -25,7 +25,9 @@ Jekyll uses Markdown and Liquid templates, offering a straightforward way to wri
 However, Jekyll can be slow when generating large sites, and its reliance on Ruby might not appeal to everyone, especially if you’re not familiar with the language.
 
 **Best for**: Blogs, personal sites, and projects hosted on GitHub Pages.
+
 **Strengths**: Easy integration with GitHub, rich plugin ecosystem.
+
 **Weaknesses**: Slower build times and dependency on Ruby.
 
 [More about Jekyll](https://jekyllrb.com/)
@@ -38,7 +40,9 @@ Unlike Jekyll, it does not have strict dependencies, making it highly flexible.
 Its simplicity and speed make it a great choice for projects of any size, especially for developers already working in a Node.js environment.
 
 **Best for**: Custom projects and sites that need flexibility.
+
 **Strengths**: Fast, flexible, and beginner-friendly.
+
 **Weaknesses**: Growing but less extensive plugin ecosystem.
 
 [More about 11ty](https://www.11ty.dev/)
@@ -51,7 +55,9 @@ Gatsby is great for integrating data from multiple sources, like CMSs, APIs, or 
 While Gatsby creates visually impressive websites, it can be slow to build large projects due to its reliance on GraphQL.
 
 **Best for**: Dynamic websites, portfolios, and apps.
+
 **Strengths**: React ecosystem, powerful data handling.
+
 **Weaknesses**: Steeper learning curve and slower build times.
 
 [More about Gatsby](https://www.gatsbyjs.com/)
@@ -64,7 +70,9 @@ Hugo uses simple configuration and supports many content formats, making it an e
 Although Hugo’s plugin system is more limited compared to Gatsby or Jekyll, its performance and simplicity make it a favorite for many.
 
 **Best for**: Large static sites and sites with a lot of content.
+
 **Strengths**: Lightning-fast builds, simplicity.
+
 **Weaknesses**: Limited plugin ecosystem.
 
 [More about Hugo](https://gohugo.io/)
@@ -76,7 +84,9 @@ Next.js is not a traditional SSG but a hybrid framework that supports both serve
 Next.js is perfect for projects that need a mix of static and dynamic content, but its flexibility can lead to slightly more complex workflows.
 
 **Best for**: Hybrid sites with dynamic content.
+
 **Strengths**: Flexibility, React ecosystem.
+
 **Weaknesses**: Not purely static; may feel overkill for simple projects.
 
 [More about Next.js](https://nextjs.org/)
@@ -88,7 +98,9 @@ Nuxt.js is the Vue.js counterpart to Next.js. It provides a similarly flexible s
 Nuxt.js also includes features like automatic routing and optimized builds, making it an efficient tool for dynamic and content-driven sites.
 
 **Best for**: Vue.js developers who need hybrid or static sites.
+
 **Strengths**: Vue ecosystem, ease of use.
+
 **Weaknesses**: Like Next.js, not purely static.
 
 [More about Nuxt.js](https://nuxtjs.org/)
