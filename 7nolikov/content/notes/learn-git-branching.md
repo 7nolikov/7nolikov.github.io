@@ -1,6 +1,6 @@
 ---
 title: Learn git branching
-date: 2024-12-12
+date: 2024-12-11
 categories: [git]
 ---
 
@@ -12,7 +12,7 @@ During my career, understanding Git branching and commands has been very importa
 
 Learn Git Branching is an online tool that helps people learn Git through **interactive exercises** and diagrams. It’s a fun and practical way to get better at using Git.
 
-### Main features include
+## Main features include
 
 **Visual Diagrams**: You can see branches, commits, and merges in a clear picture as you work.
 
