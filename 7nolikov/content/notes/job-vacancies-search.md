@@ -1,5 +1,5 @@
 ---
-title: Searching LinkedIn Job Vacancies Using Google
+title: Searching LinkedIn vacancies using Google
 date: 2024-12-13
 categories: [search]
 ---
@@ -41,7 +41,7 @@ site:linkedin.com/jobs/view/ ("Java Developer" OR "Java Engineer" OR "Software E
 
 ## How to Use These Queries
 
-- Open the provided links in a browser.
+- Put the provided queries in a browser search bar.
 - Browse the results to find job listings that meet your criteria.
 - Use filters or keywords in the LinkedIn search bar for more tailored results if needed.
 - Consider modifying the query to add additional role names or location-specific details (e.g., "in Germany" or "remote").
