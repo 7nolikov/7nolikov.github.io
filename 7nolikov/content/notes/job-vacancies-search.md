@@ -28,7 +28,18 @@ while also including keywords such as
 This query is not limited to LinkedIn but will include relevant results from across the web.
 
 ```plaintext
-("Java Developer" OR "Java Engineer" OR "Software Engineer" OR "Backend Developer" OR "Software Developer") AND ("Visa Sponsorship" OR "Visa Support" OR "Work Visa" OR "Work Permit" OR "Sponsorship" OR "Relocation")
+("Java Developer" 
+OR "Java Engineer" 
+OR "Software Engineer" 
+OR "Backend Developer" 
+OR "Software Developer") 
+
+AND ("Visa Sponsorship" 
+OR "Visa Support" 
+OR "Work Visa" 
+OR "Work Permit" 
+OR "Sponsorship" 
+OR "Relocation")
 ```
 
 ## 2. LinkedIn-Specific Search Query
@@ -36,7 +47,19 @@ This query is not limited to LinkedIn but will include relevant results from acr
 The second link refines the search to only show results from LinkedIn job pages. It specifically targets job listings on LinkedIn that match the same roles and visa-related keywords. This is done using the **site:linkedin.com/jobs/view/** filter, which limits results to LinkedIn’s job pages.
 
 ```plaintext
-site:linkedin.com/jobs/view/ ("Java Developer" OR "Java Engineer" OR "Software Engineer" OR "Backend Developer" OR "Software Developer") AND ("Visa Sponsorship" OR "Visa Support" OR "Work Visa" OR "Work Permit" OR "Sponsorship" OR "Relocation")
+site:linkedin.com/jobs/view/ 
+("Java Developer" 
+OR "Java Engineer" 
+OR "Software Engineer" 
+OR "Backend Developer" 
+OR "Software Developer") 
+
+AND ("Visa Sponsorship" 
+OR "Visa Support" 
+OR "Work Visa" 
+OR "Work Permit" 
+OR "Sponsorship" 
+OR "Relocation")
 ```
 
 ## How to Use These Queries
