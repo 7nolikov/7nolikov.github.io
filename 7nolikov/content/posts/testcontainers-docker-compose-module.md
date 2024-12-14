@@ -4,7 +4,7 @@ date: 2024-12-14
 categories: [testing]
 ---
 
-Using **Docker Compose module** with Testcontainers you can simplify testing for applications that rely on multiple services like
+Using **Docker Compose module** with Testcontainers you can simplify testing for applications that rely on multiple services like:
 
 - Databases
 - APIs
@@ -21,7 +21,8 @@ This approach ensures that all dependencies start and work together as expected 
 
 ## How to use the Docker Compose module
 
-- Add Testcontainers Dependency
+### Add Testcontainers Dependency
+
 Include the Testcontainers library in your pom.xml (for Maven) or build.gradle (for Gradle):
 
 ```xml
@@ -33,9 +34,9 @@ Include the Testcontainers library in your pom.xml (for Maven) or build.gradle (
 </dependency>
 ```
 
-- Create a Docker Compose File
+### Create a Docker Compose File
   
-  Define the services your application needs in a docker-compose.yml file:
+Define the services your application needs in a docker-compose.yml file:
 
 ```yaml
 version: '3.8'
@@ -55,9 +56,9 @@ services:
       - "6379:6379"
 ```
 
-- Write the Test Class
+### Write the Test Class
   
-  Use the DockerComposeContainer class in your test to manage services:
+Use the DockerComposeContainer class in your test to manage services:
 
 ```java
 import org.junit.jupiter.api.Test;
@@ -93,10 +94,10 @@ public class MyAppIntegrationTest {
 }
 ```
 
-- Run the Test
+### Run the Test
 
-  The test automatically starts the services defined in docker-compose.yml before execution.
-  Testcontainers ensures that the services shut down after the tests complete.
+The test automatically starts the services defined in docker-compose.yml before execution.
+Testcontainers ensures that the services shut down after the tests complete.
 
 ## Example Application for Testing
 
@@ -109,6 +110,8 @@ With the Docker Compose module, you can:
 
 - Simulate the interaction between these services.
 - Write tests to validate database connectivity, query correctness, and cache behavior under test scenarios.
+
+## Conclusion
 
 This approach simplifies the setup for complex applications by managing dependencies, eliminating manual configuration, and ensuring consistency across test runs.
 
