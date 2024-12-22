@@ -4,7 +4,7 @@ date: 2024-12-04
 categories: [spring, testing]
 ---
 
-I was surprized that Spring Test library doesn't support standalone acceptance tests format out of the box.
+I was surprised that Spring Test library doesn't support standalone acceptance tests format out of the box.
 Here's how I tackled this issue and why standalone tests are useful for modular Spring applications.
 
 ## Motivation
