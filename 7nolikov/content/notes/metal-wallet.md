@@ -11,4 +11,4 @@ Alternatives include Ridge Wallet, Ekster, Secrid, and Vaultskin wallets, which 
 
 You definitely need to try one of these wallets:
 
-![metal-wallet](../../static/images/metal-wallet.jpg)
+{{< figure src="images/metal-wallet.jpg" alt="Metal wallet image" >}}

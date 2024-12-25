@@ -1,0 +1,273 @@
+<!doctype html>
+<html
+  lang="en-us"
+  dir="ltr"
+>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8" />
+<meta name="language" content="en" />
+<meta name="viewport" content="width=device-width" />
+<title>
+    Testing | 7nolikov | Dmitrii Novikov
+</title>
+  <meta name="description" content="Trustworthy posts from a software engineer on tech, side projects, life, and invest topics." />
+<link rel="icon" type="image/png" href="/images/favicon.png" />
+<meta property="og:url" content="http://localhost:1313/categories/testing/">
+  <meta property="og:site_name" content="7nolikov | Dmitrii Novikov">
+  <meta property="og:title" content="Testing">
+  <meta property="og:description" content="Trustworthy posts from a software engineer on tech, side projects, life, and invest topics.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="website">
+
+
+  <meta itemprop="name" content="Testing">
+  <meta itemprop="description" content="Trustworthy posts from a software engineer on tech, side projects, life, and invest topics.">
+  <meta itemprop="datePublished" content="2024-12-15T00:00:00+00:00">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Testing">
+  <meta name="twitter:description" content="Trustworthy posts from a software engineer on tech, side projects, life, and invest topics.">
+
+<link rel="canonical" href="http://localhost:1313/categories/testing/" /><link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/categories/testing/index.xml" />
+
+    <link rel="stylesheet" href="/css/index.css" />
+
+
+      <script src="/js/main.js" defer></script>
+  
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "author": {
+    "@type": "Person",
+    "email": "7nolikov@gmail.com",
+    "name": "Dmitrii Novikov",
+    "url": "http://localhost:1313/about/"
+  },
+  "copyrightNotice": "Dmitrii Novikov",
+  "description": "Trustworthy posts from a software engineer on tech, side projects, life, and invest topics.",
+  "headline": "Testing"
+}
+</script>
+
+
+  </head>
+  <body>
+    <div class="container mx-auto flex max-w-prose flex-col space-y-10 p-4 md:p-6">
+      <header class="flex flex-row items-center justify-between">
+        <div>
+  <a id="skip-nav" class="sr-only" href="#maincontent">Skip to main content</a>
+  <a class="font-semibold" href="/">7nolikov | Dmitrii Novikov</a>
+</div>
+
+  <nav>
+    <ul class="flex flex-row items-center justify-end space-x-4">
+    <li>
+      <a href="/about/">About</a
+      >
+    </li>
+    <li>
+      <a href="/posts/">Posts</a
+      >
+    </li>
+    <li>
+      <a href="/notes/">Notes</a
+      >
+    </li>
+    <li>
+      <a href="/graph/">Graph</a
+      >
+    </li>
+    </ul>
+  </nav>
+
+
+      </header>
+      <main class="prose prose-slate relative md:prose-lg prose-h1:text-[2em]" id="maincontent">
+        
+  <div class="flex flex-col space-y-6">
+      <section>
+        <h2>Posts on Testing</h2>
+
+        <div class="not-prose">
+  <ol>
+      <li class="mb-6">
+        <article class="flex flex-col space-y-1">
+          <header>
+            <h3 class="text-lg font-semibold leading-none">
+              <a
+                href="/posts/testcontainers-docker-compose-module/"
+                class="underline decoration-slate-300 decoration-2 underline-offset-4 hover:decoration-inherit"
+                >Testcontainers Docker Compose module</a
+              >
+            </h3><time class="text-sm italic leading-5 opacity-80" datetime="2024-12-15T00:00:00&#43;00:00"
+              >December 15, 2024</time
+            >
+          </header>
+
+          <div class="text-sm"><p>Using <strong>Docker Compose module</strong> with Testcontainers you can simplify testing for applications that rely on multiple services like:</p>
+<ul>
+<li>Databases</li>
+<li>APIs</li>
+<li>Message queues</li>
+</ul>
+<p>This approach ensures that all dependencies start and work together as expected in a controlled, reproducible environment during your Java tests.</p>
+<h3 id="key-features-of-the-docker-compose-module" class="scroll-mt-8 group">
+  Key features of the Docker Compose module
+  
+    <a href="#key-features-of-the-docker-compose-module"
+        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+        aria-hidden="true" title="Link to this heading" tabindex="-1">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
+
+    </a>
+  
+</h3>
+<ul>
+<li>It allows you to define complex service dependencies in a single docker-compose.yml file.</li>
+<li>During tests, Testcontainers can automatically start all services defined in the Compose file.</li>
+<li>It ensures your test environment is isolated and reproducible.</li>
+<li>The module also provides Java APIs to control the containers and check their status during tests.</li>
+</ul>
+<h3 id="how-to-use-the-docker-compose-module" class="scroll-mt-8 group">
+  How to use the Docker Compose module
+  
+    <a href="#how-to-use-the-docker-compose-module"
+        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+        aria-hidden="true" title="Link to this heading" tabindex="-1">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
+
+    </a>
+  
+</h3>
+<h4 id="add-testcontainers-dependency" class="scroll-mt-8 group">
+  Add Testcontainers Dependency
+  
+    <a href="#add-testcontainers-dependency"
+        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+        aria-hidden="true" title="Link to this heading" tabindex="-1">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
+
+    </a>
+  
+</h4>
+<p>Include the Testcontainers library in your pom.xml (for Maven) or build.gradle (for Gradle):</p></div>
+        </article>
+      </li>
+      <li class="mb-6">
+        <article class="flex flex-col space-y-1">
+          <header>
+            <h3 class="text-lg font-semibold leading-none">
+              <a
+                href="/posts/standalone-spring-tests/"
+                class="underline decoration-slate-300 decoration-2 underline-offset-4 hover:decoration-inherit"
+                >Standalone Spring tests</a
+              >
+            </h3><time class="text-sm italic leading-5 opacity-80" datetime="2024-12-04T00:00:00&#43;00:00"
+              >December 4, 2024</time
+            >
+          </header>
+
+          <div class="text-sm"><p>I was surprised that Spring Test library doesn&rsquo;t support standalone acceptance tests format out of the box.
+Here&rsquo;s how I tackled this issue and why standalone tests are useful for modular Spring applications.</p>
+<h3 id="motivation" class="scroll-mt-8 group">
+  Motivation
+  
+    <a href="#motivation"
+        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+        aria-hidden="true" title="Link to this heading" tabindex="-1">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
+
+    </a>
+  
+</h3>
+<p>My project separates core logic from cloud-specific modules. Usual Spring Test doesn&rsquo;t work for this. I needed standalone tests to validate HTTP status codes and response content as black-box tests.</p></div>
+        </article>
+      </li>
+  </ol>
+</div>
+
+      </section>
+    
+  </div>
+
+      </main>
+      <footer class="mt-20 border-t border-neutral-100 pt-2 text-xs">
+        <section class="items-top flex flex-row justify-between opacity-70">
+  <div class="flex flex-col space-y-2">
+      <p>Copyright &copy; 2024, Dmitrii Novikov.</p>
+
+  </div>
+    <div>
+      <a
+        href="https://github.com/michenriksen/hugo-theme-til"
+        title="Today I Learned &#8212; A Hugo theme by Michael Henriksen"
+        data-theme-version="0.6.0"
+        >theme: til</a
+      >
+    </div>
+</section>
+
+      </footer>
+    </div>
+    
+  </body>
+</html>

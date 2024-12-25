@@ -1,24 +1,186 @@
 {
   "graph": {
+    "/notes/b-trees-and-database-indexes/": {
+      "in": [],
+      "out": []
+    },
     "/notes/conventional-commits/": {
       "in": [],
       "out": []
     },
-    "/posts/what-is-rest/": {
+    "/notes/delta-lake-vs-apache-iceberg/": {
+      "in": [],
+      "out": []
+    },
+    "/notes/doc-markdown-converter/": {
+      "in": [],
+      "out": []
+    },
+    "/notes/edge-db/": {
+      "in": [],
+      "out": []
+    },
+    "/notes/learn-git-branching/": {
+      "in": [],
+      "out": []
+    },
+    "/notes/metal-wallet/": {
+      "in": [],
+      "out": []
+    },
+    "/notes/modern-make/": {
+      "in": [],
+      "out": []
+    },
+    "/notes/password-game/": {
+      "in": [],
+      "out": []
+    },
+    "/notes/postgresql-exercises/": {
+      "in": [],
+      "out": []
+    },
+    "/notes/rest-api-tutorial/": {
+      "in": [],
+      "out": []
+    },
+    "/notes/revealjs/": {
+      "in": [],
+      "out": []
+    },
+    "/notes/spring-modulith/": {
+      "in": [],
+      "out": []
+    },
+    "/posts/job-vacancies-search/": {
+      "in": [],
+      "out": []
+    },
+    "/posts/maven-achetypes/": {
+      "in": [],
+      "out": []
+    },
+    "/posts/standalone-spring-tests/": {
+      "in": [],
+      "out": []
+    },
+    "/posts/static-site-generators/": {
+      "in": [],
+      "out": []
+    },
+    "/posts/testcontainers-docker-compose-module/": {
+      "in": [],
+      "out": []
+    },
+    "/posts/what-is-api/": {
+      "in": [],
+      "out": []
+    },
+    "/posts/where-is-all-the-money-in-the-world/": {
       "in": [],
       "out": []
     }
   },
   "pages": {
+    "/notes/b-trees-and-database-indexes/": {
+      "permalink": "/notes/b-trees-and-database-indexes/",
+      "section": "notes",
+      "title": "B-Trees and database indexes"
+    },
     "/notes/conventional-commits/": {
       "permalink": "/notes/conventional-commits/",
       "section": "notes",
-      "title": "Git Conventional Commits"
+      "title": "Conventional commits"
     },
-    "/posts/what-is-rest/": {
-      "permalink": "/posts/what-is-rest/",
+    "/notes/delta-lake-vs-apache-iceberg/": {
+      "permalink": "/notes/delta-lake-vs-apache-iceberg/",
+      "section": "notes",
+      "title": "Delta Lake vs Apache Iceberg"
+    },
+    "/notes/doc-markdown-converter/": {
+      "permalink": "/notes/doc-markdown-converter/",
+      "section": "notes",
+      "title": "New MS Office to .MD converter"
+    },
+    "/notes/edge-db/": {
+      "permalink": "/notes/edge-db/",
+      "section": "notes",
+      "title": "EdgeDB - Turbocharged Postgres"
+    },
+    "/notes/learn-git-branching/": {
+      "permalink": "/notes/learn-git-branching/",
+      "section": "notes",
+      "title": "Learn git branching"
+    },
+    "/notes/metal-wallet/": {
+      "permalink": "/notes/metal-wallet/",
+      "section": "notes",
+      "title": "Compact metal wallet with keyholder"
+    },
+    "/notes/modern-make/": {
+      "permalink": "/notes/modern-make/",
+      "section": "notes",
+      "title": "Modern Make"
+    },
+    "/notes/password-game/": {
+      "permalink": "/notes/password-game/",
+      "section": "notes",
+      "title": "The Password Game"
+    },
+    "/notes/postgresql-exercises/": {
+      "permalink": "/notes/postgresql-exercises/",
+      "section": "notes",
+      "title": "PostgreSQL Exercises"
+    },
+    "/notes/rest-api-tutorial/": {
+      "permalink": "/notes/rest-api-tutorial/",
+      "section": "notes",
+      "title": "REST API Tutorial"
+    },
+    "/notes/revealjs/": {
+      "permalink": "/notes/revealjs/",
+      "section": "notes",
+      "title": "RevealJS - HTML Presentation Framework"
+    },
+    "/notes/spring-modulith/": {
+      "permalink": "/notes/spring-modulith/",
+      "section": "notes",
+      "title": "Spring Modulith 1.3"
+    },
+    "/posts/job-vacancies-search/": {
+      "permalink": "/posts/job-vacancies-search/",
       "section": "posts",
-      "title": "What is REST?"
+      "title": "Searching LinkedIn vacancies using Google"
+    },
+    "/posts/maven-achetypes/": {
+      "permalink": "/posts/maven-achetypes/",
+      "section": "posts",
+      "title": "Maven archetypes"
+    },
+    "/posts/standalone-spring-tests/": {
+      "permalink": "/posts/standalone-spring-tests/",
+      "section": "posts",
+      "title": "Standalone Spring tests"
+    },
+    "/posts/static-site-generators/": {
+      "permalink": "/posts/static-site-generators/",
+      "section": "posts",
+      "title": "Static site generators"
+    },
+    "/posts/testcontainers-docker-compose-module/": {
+      "permalink": "/posts/testcontainers-docker-compose-module/",
+      "section": "posts",
+      "title": "Testcontainers Docker Compose module"
+    },
+    "/posts/what-is-api/": {
+      "permalink": "/posts/what-is-api/",
+      "section": "posts",
+      "title": "What is API?"
+    },
+    "/posts/where-is-all-the-money-in-the-world/": {
+      "permalink": "/posts/where-is-all-the-money-in-the-world/",
+      "section": "posts",
+      "title": "Where is all the money in the world?"
     }
   }
 }

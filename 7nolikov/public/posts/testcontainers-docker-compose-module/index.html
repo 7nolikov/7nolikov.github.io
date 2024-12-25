@@ -1,0 +1,687 @@
+<!doctype html>
+<html
+  lang="en-us"
+  dir="ltr"
+>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8" />
+<meta name="language" content="en" />
+<meta name="viewport" content="width=device-width" />
+<title>
+    Testcontainers Docker Compose module | 7nolikov | Dmitrii Novikov
+</title>
+  <meta name="description" content="Using Docker Compose module with Testcontainers you can simplify testing for applications that rely on multiple services like:
+Databases APIs Message queues This approach ensures that all dependencies start and work together as expected in a controlled, reproducible environment during your Java tests.
+Key features of the Docker Compose module It allows you to define complex service dependencies in a single docker-compose.yml file. During tests, Testcontainers can automatically start all services defined in the Compose file. It ensures your test environment is isolated and reproducible. The module also provides Java APIs to control the containers and check their status during tests. How to use the Docker Compose module Add Testcontainers Dependency Include the Testcontainers library in your pom.xml (for Maven) or build.gradle (for Gradle):" />
+<link rel="icon" type="image/png" href="/images/favicon.png" />
+<meta property="og:url" content="http://localhost:1313/posts/testcontainers-docker-compose-module/">
+  <meta property="og:site_name" content="7nolikov | Dmitrii Novikov">
+  <meta property="og:title" content="Testcontainers Docker Compose module">
+  <meta property="og:description" content="Using Docker Compose module with Testcontainers you can simplify testing for applications that rely on multiple services like:
+Databases APIs Message queues This approach ensures that all dependencies start and work together as expected in a controlled, reproducible environment during your Java tests.
+Key features of the Docker Compose module It allows you to define complex service dependencies in a single docker-compose.yml file. During tests, Testcontainers can automatically start all services defined in the Compose file. It ensures your test environment is isolated and reproducible. The module also provides Java APIs to control the containers and check their status during tests. How to use the Docker Compose module Add Testcontainers Dependency Include the Testcontainers library in your pom.xml (for Maven) or build.gradle (for Gradle):">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-12-15T00:00:00+00:00">
+
+
+  <meta itemprop="name" content="Testcontainers Docker Compose module">
+  <meta itemprop="description" content="Using Docker Compose module with Testcontainers you can simplify testing for applications that rely on multiple services like:
+Databases APIs Message queues This approach ensures that all dependencies start and work together as expected in a controlled, reproducible environment during your Java tests.
+Key features of the Docker Compose module It allows you to define complex service dependencies in a single docker-compose.yml file. During tests, Testcontainers can automatically start all services defined in the Compose file. It ensures your test environment is isolated and reproducible. The module also provides Java APIs to control the containers and check their status during tests. How to use the Docker Compose module Add Testcontainers Dependency Include the Testcontainers library in your pom.xml (for Maven) or build.gradle (for Gradle):">
+  <meta itemprop="datePublished" content="2024-12-15T00:00:00+00:00">
+  <meta itemprop="wordCount" content="420">
+  <meta itemprop="keywords" content="Testing">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Testcontainers Docker Compose module">
+  <meta name="twitter:description" content="Using Docker Compose module with Testcontainers you can simplify testing for applications that rely on multiple services like:
+Databases APIs Message queues This approach ensures that all dependencies start and work together as expected in a controlled, reproducible environment during your Java tests.
+Key features of the Docker Compose module It allows you to define complex service dependencies in a single docker-compose.yml file. During tests, Testcontainers can automatically start all services defined in the Compose file. It ensures your test environment is isolated and reproducible. The module also provides Java APIs to control the containers and check their status during tests. How to use the Docker Compose module Add Testcontainers Dependency Include the Testcontainers library in your pom.xml (for Maven) or build.gradle (for Gradle):">
+
+<link rel="canonical" href="http://localhost:1313/posts/testcontainers-docker-compose-module/" />
+
+    <link rel="stylesheet" href="/css/index.css" />
+
+
+      <script src="/js/main.js" defer></script>
+  
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@id": "http://localhost:1313/posts/testcontainers-docker-compose-module/",
+  "@type": "BlogPosting",
+  "articleSection": [
+    "Testing"
+  ],
+  "author": {
+    "@type": "Person",
+    "email": "7nolikov@gmail.com",
+    "name": "Dmitrii Novikov",
+    "url": "http://localhost:1313/about/"
+  },
+  "copyrightNotice": "Dmitrii Novikov",
+  "datePublished": "2024-12-15",
+  "description": "Using Docker Compose module with Testcontainers you can simplify testing for applications that rely on multiple services like:\nDatabases APIs Message queues This approach ensures that all dependencies start and work together as expected in a controlled, reproducible environment during your Java tests.\nKey features of the Docker Compose module It allows you to define complex service dependencies in a single docker-compose.yml file. During tests, Testcontainers can automatically start all services defined in the Compose file. It ensures your test environment is isolated and reproducible. The module also provides Java APIs to control the containers and check their status during tests. How to use the Docker Compose module Add Testcontainers Dependency Include the Testcontainers library in your pom.xml (for Maven) or build.gradle (for Gradle):",
+  "headline": "Testcontainers Docker Compose module",
+  "isPartOf": {
+    "@id": "http://localhost:1313/posts/",
+    "@type": "Blog",
+    "name": "Posts"
+  },
+  "mainEntityOfPage": "http://localhost:1313/posts/testcontainers-docker-compose-module/",
+  "name": "Testcontainers Docker Compose module",
+  "timeRequired": "PT2M",
+  "url": "http://localhost:1313/posts/testcontainers-docker-compose-module/",
+  "wordCount": 420
+}
+</script>
+
+
+  </head>
+  <body>
+    <div class="container mx-auto flex max-w-prose flex-col space-y-10 p-4 md:p-6">
+      <header class="flex flex-row items-center justify-between">
+        <div>
+  <a id="skip-nav" class="sr-only" href="#maincontent">Skip to main content</a>
+  <a class="font-semibold" href="/">7nolikov | Dmitrii Novikov</a>
+</div>
+
+  <nav>
+    <ul class="flex flex-row items-center justify-end space-x-4">
+    <li>
+      <a href="/about/">About</a
+      >
+    </li>
+    <li>
+      <a aria-current="true" class="ancestor" href="/posts/">Posts</a
+      >
+    </li>
+    <li>
+      <a href="/notes/">Notes</a
+      >
+    </li>
+    <li>
+      <a href="/graph/">Graph</a
+      >
+    </li>
+    </ul>
+  </nav>
+
+
+      </header>
+      <main class="prose prose-slate relative md:prose-lg prose-h1:text-[2em]" id="maincontent">
+        <article class="main">
+    <header>
+      <h1 class="!mb-1">Testcontainers Docker Compose module</h1><div class="flex flex-row items-center space-x-4">
+          <time class="text-sm italic opacity-80" datetime="2024-12-15T00:00:00&#43;00:00"
+            >December 15, 2024</time
+          >
+        </div>
+    </header>
+
+    <p>Using <strong>Docker Compose module</strong> with Testcontainers you can simplify testing for applications that rely on multiple services like:</p>
+<ul>
+<li>Databases</li>
+<li>APIs</li>
+<li>Message queues</li>
+</ul>
+<p>This approach ensures that all dependencies start and work together as expected in a controlled, reproducible environment during your Java tests.</p>
+<h3 id="key-features-of-the-docker-compose-module" class="scroll-mt-8 group">
+  Key features of the Docker Compose module
+  
+    <a href="#key-features-of-the-docker-compose-module"
+        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+        aria-hidden="true" title="Link to this heading" tabindex="-1">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
+
+    </a>
+  
+</h3>
+<ul>
+<li>It allows you to define complex service dependencies in a single docker-compose.yml file.</li>
+<li>During tests, Testcontainers can automatically start all services defined in the Compose file.</li>
+<li>It ensures your test environment is isolated and reproducible.</li>
+<li>The module also provides Java APIs to control the containers and check their status during tests.</li>
+</ul>
+<h3 id="how-to-use-the-docker-compose-module" class="scroll-mt-8 group">
+  How to use the Docker Compose module
+  
+    <a href="#how-to-use-the-docker-compose-module"
+        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+        aria-hidden="true" title="Link to this heading" tabindex="-1">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
+
+    </a>
+  
+</h3>
+<h4 id="add-testcontainers-dependency" class="scroll-mt-8 group">
+  Add Testcontainers Dependency
+  
+    <a href="#add-testcontainers-dependency"
+        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+        aria-hidden="true" title="Link to this heading" tabindex="-1">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
+
+    </a>
+  
+</h4>
+<p>Include the Testcontainers library in your pom.xml (for Maven) or build.gradle (for Gradle):</p>
+<figure class="codeblock not-prose relative scroll-mt-8" id="codeblock-01">
+  <aside
+    class="absolute right-0 top-0 hidden rounded-bl-sm rounded-tr-sm bg-white/10 px-2 py-1 text-white/70 transition-opacity md:inline-block"
+  >
+    <div class="codeblock-meta flex max-w-xs flex-row items-center space-x-3">
+      <div class="small-caps shrink cursor-default truncate font-mono text-xs" aria-hidden="true">
+        <span class="relative">xml</span>
+      </div>
+      <div>
+        <clipboard-copy
+          type="button"
+          aria-label="Copy code to clipboard"
+          title="Copy code to clipboard"
+          class="block cursor-pointer transition-colors hover:text-sky-400"
+          target="#codeblock-01 code"
+        >
+          <svg
+  xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="lucide lucide-clipboard h-4 w-4"
+  viewBox="0 0 24 24"
+>
+  <rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
+  <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+</svg>
+
+        </clipboard-copy>
+      </div>
+      <div>
+        <a
+          href="#codeblock-01"
+          class="block"
+          aria-label="Link to this code block"
+          title="Link to this code block"
+        >
+          <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
+
+        </a>
+      </div>
+    </div>
+  </aside>
+  <p class="sr-only">xml code snippet start</p>
+  <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;dependency&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;groupId&gt;</span>org.testcontainers<span class="nt">&lt;/groupId&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;artifactId&gt;</span>testcontainers<span class="nt">&lt;/artifactId&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;version&gt;</span>YOUR_VERSION<span class="nt">&lt;/version&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;scope&gt;</span>test<span class="nt">&lt;/scope&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/dependency&gt;</span></span></span></code></pre></div>
+  <p class="sr-only">xml code snippet end</p>
+
+  
+</figure>
+<h4 id="create-a-docker-compose-file" class="scroll-mt-8 group">
+  Create a Docker Compose File
+  
+    <a href="#create-a-docker-compose-file"
+        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+        aria-hidden="true" title="Link to this heading" tabindex="-1">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
+
+    </a>
+  
+</h4>
+<p>Define the services your application needs in a docker-compose.yml file:</p>
+<figure class="codeblock not-prose relative scroll-mt-8" id="codeblock-02">
+  <aside
+    class="absolute right-0 top-0 hidden rounded-bl-sm rounded-tr-sm bg-white/10 px-2 py-1 text-white/70 transition-opacity md:inline-block"
+  >
+    <div class="codeblock-meta flex max-w-xs flex-row items-center space-x-3">
+      <div class="small-caps shrink cursor-default truncate font-mono text-xs" aria-hidden="true">
+        <span class="relative">yaml</span>
+      </div>
+      <div>
+        <clipboard-copy
+          type="button"
+          aria-label="Copy code to clipboard"
+          title="Copy code to clipboard"
+          class="block cursor-pointer transition-colors hover:text-sky-400"
+          target="#codeblock-02 code"
+        >
+          <svg
+  xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="lucide lucide-clipboard h-4 w-4"
+  viewBox="0 0 24 24"
+>
+  <rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
+  <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+</svg>
+
+        </clipboard-copy>
+      </div>
+      <div>
+        <a
+          href="#codeblock-02"
+          class="block"
+          aria-label="Link to this code block"
+          title="Link to this code block"
+        >
+          <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
+
+        </a>
+      </div>
+    </div>
+  </aside>
+  <p class="sr-only">yaml code snippet start</p>
+  <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;3.8&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">services</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">db</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">postgres:15</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">environment</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">POSTGRES_USER</span><span class="p">:</span><span class="w"> </span><span class="l">test</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">POSTGRES_PASSWORD</span><span class="p">:</span><span class="w"> </span><span class="l">test</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">POSTGRES_DB</span><span class="p">:</span><span class="w"> </span><span class="l">testdb</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">ports</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="s2">&#34;5432:5432&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">redis</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">redis:latest</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">ports</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="s2">&#34;6379:6379&#34;</span></span></span></code></pre></div>
+  <p class="sr-only">yaml code snippet end</p>
+
+  
+</figure>
+<h4 id="write-the-test-class" class="scroll-mt-8 group">
+  Write the Test Class
+  
+    <a href="#write-the-test-class"
+        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+        aria-hidden="true" title="Link to this heading" tabindex="-1">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
+
+    </a>
+  
+</h4>
+<p>Use the DockerComposeContainer class in your test to manage services:</p>
+<figure class="codeblock not-prose relative scroll-mt-8" id="codeblock-03">
+  <aside
+    class="absolute right-0 top-0 hidden rounded-bl-sm rounded-tr-sm bg-white/10 px-2 py-1 text-white/70 transition-opacity md:inline-block"
+  >
+    <div class="codeblock-meta flex max-w-xs flex-row items-center space-x-3">
+      <div class="small-caps shrink cursor-default truncate font-mono text-xs" aria-hidden="true">
+        <span class="relative">java</span>
+      </div>
+      <div>
+        <clipboard-copy
+          type="button"
+          aria-label="Copy code to clipboard"
+          title="Copy code to clipboard"
+          class="block cursor-pointer transition-colors hover:text-sky-400"
+          target="#codeblock-03 code"
+        >
+          <svg
+  xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="lucide lucide-clipboard h-4 w-4"
+  viewBox="0 0 24 24"
+>
+  <rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
+  <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+</svg>
+
+        </clipboard-copy>
+      </div>
+      <div>
+        <a
+          href="#codeblock-03"
+          class="block"
+          aria-label="Link to this code block"
+          title="Link to this code block"
+        >
+          <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
+
+        </a>
+      </div>
+    </div>
+  </aside>
+  <p class="sr-only">java code snippet start</p>
+  <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">import</span><span class="w"> </span><span class="nn">org.junit.jupiter.api.Test</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kn">import</span><span class="w"> </span><span class="nn">org.testcontainers.containers.DockerComposeContainer</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kn">import</span><span class="w"> </span><span class="nn">org.testcontainers.junit.jupiter.Container</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kn">import</span><span class="w"> </span><span class="nn">org.testcontainers.junit.jupiter.Testcontainers</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kn">import</span><span class="w"> </span><span class="nn">java.io.File</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nd">@Testcontainers</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">MyAppIntegrationTest</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nd">@Container</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="n">DockerComposeContainer</span><span class="o">&lt;?&gt;</span><span class="w"> </span><span class="n">environment</span><span class="w"> </span><span class="o">=</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="k">new</span><span class="w"> </span><span class="n">DockerComposeContainer</span><span class="o">&lt;&gt;</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">File</span><span class="p">(</span><span class="s">&#34;src/test/resources/docker-compose.yml&#34;</span><span class="p">))</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="p">.</span><span class="na">withExposedService</span><span class="p">(</span><span class="s">&#34;db&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">5432</span><span class="p">)</span><span class="w">  </span><span class="c1">// Expose PostgreSQL</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="p">.</span><span class="na">withExposedService</span><span class="p">(</span><span class="s">&#34;redis&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">6379</span><span class="p">);</span><span class="w"> </span><span class="c1">// Expose Redis</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nd">@Test</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">testAppServices</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">String</span><span class="w"> </span><span class="n">dbHost</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">environment</span><span class="p">.</span><span class="na">getServiceHost</span><span class="p">(</span><span class="s">&#34;db&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">5432</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">Integer</span><span class="w"> </span><span class="n">dbPort</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">environment</span><span class="p">.</span><span class="na">getServicePort</span><span class="p">(</span><span class="s">&#34;db&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">5432</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">String</span><span class="w"> </span><span class="n">redisHost</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">environment</span><span class="p">.</span><span class="na">getServiceHost</span><span class="p">(</span><span class="s">&#34;redis&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">6379</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">Integer</span><span class="w"> </span><span class="n">redisPort</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">environment</span><span class="p">.</span><span class="na">getServicePort</span><span class="p">(</span><span class="s">&#34;redis&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">6379</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// Use these values to connect to the services and run assertions</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;DB is running at &#34;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">dbHost</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&#34;:&#34;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">dbPort</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Redis is running at &#34;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">redisHost</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&#34;:&#34;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">redisPort</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// Add assertions or actual app testing here</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span></span></span></code></pre></div>
+  <p class="sr-only">java code snippet end</p>
+
+  
+</figure>
+<h4 id="run-the-test" class="scroll-mt-8 group">
+  Run the Test
+  
+    <a href="#run-the-test"
+        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+        aria-hidden="true" title="Link to this heading" tabindex="-1">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
+
+    </a>
+  
+</h4>
+<p>The test automatically starts the services defined in docker-compose.yml before execution.
+Testcontainers ensures that the services shut down after the tests complete.</p>
+<h3 id="example-application-for-testing" class="scroll-mt-8 group">
+  Example Application for Testing
+  
+    <a href="#example-application-for-testing"
+        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+        aria-hidden="true" title="Link to this heading" tabindex="-1">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
+
+    </a>
+  
+</h3>
+<p>Imagine a shopping cart microservice that depends on:</p>
+<ul>
+<li>A PostgreSQL database for storing user and cart data.</li>
+<li>A Redis cache for storing temporary session data.</li>
+</ul>
+<p>With the Docker Compose module, you can:</p>
+<ul>
+<li>Simulate the interaction between these services.</li>
+<li>Write tests to validate database connectivity, query correctness, and cache behavior under test scenarios.</li>
+</ul>
+<h3 id="conclusion" class="scroll-mt-8 group">
+  Conclusion
+  
+    <a href="#conclusion"
+        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+        aria-hidden="true" title="Link to this heading" tabindex="-1">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
+
+    </a>
+  
+</h3>
+<p>This approach simplifies the setup for complex applications by managing dependencies, eliminating manual configuration, and ensuring consistency across test runs.</p>
+<p>Read more about Docker Compose module:
+<a href="https://java.testcontainers.org/modules/docker_compose/">https://java.testcontainers.org/modules/docker_compose/</a></p>
+
+  </article>
+    <aside class="not-prose flex flex-col space-y-8 border-t pt-6">
+    <section class="flex flex-col space-y-4">
+      <h2 class="flex flex-row items-center space-x-2 text-lg font-semibold">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-shapes h-4 w-4"
+  viewBox="0 0 24 24"
+  aria-hidden="true"
+>
+  <path
+    d="M8.3 10a.7.7 0 0 1-.626-1.079L11.4 3a.7.7 0 0 1 1.198-.043L16.3 8.9a.7.7 0 0 1-.572 1.1Z"
+  />
+  <rect width="7" height="7" x="3" y="14" rx="1" />
+  <circle cx="17.5" cy="17.5" r="3.5" />
+</svg>
+
+        <span>Categories</span>
+      </h2>
+
+      <ul class="ml-6 flex flex-row flex-wrap items-center space-x-2">
+          <li>
+            <a href="/categories/testing/" class="taxonomy category">testing</a>
+          </li>
+      </ul>
+    </section>
+    <section class="flex flex-col space-y-4" aria-hidden="true">
+      <h2 class="flex flex-row items-center space-x-2 text-lg font-semibold">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-chart-network h-4 w-4"
+  viewBox="0 0 24 24"
+  aria-hidden="true"
+>
+  <path
+    d="m13.11 7.664 1.78 2.672M14.162 12.788l-3.324 1.424M20 4l-6.06 1.515M3 3v16a2 2 0 0 0 2 2h16"
+  />
+  <circle cx="12" cy="6" r="2" />
+  <circle cx="16" cy="12" r="2" />
+  <circle cx="9" cy="15" r="2" />
+</svg>
+
+        <span>Graph</span>
+      </h2>
+
+      <content-network-graph
+  class="h-64 ml-6"
+  data-endpoint="/graph/index.json"
+  page="/posts/testcontainers-docker-compose-module/"
+></content-network-graph>
+
+    </section>
+</aside>
+
+
+      </main>
+      <footer class="mt-20 border-t border-neutral-100 pt-2 text-xs">
+        <section class="items-top flex flex-row justify-between opacity-70">
+  <div class="flex flex-col space-y-2">
+      <p>Copyright &copy; 2024, Dmitrii Novikov.</p>
+
+  </div>
+    <div>
+      <a
+        href="https://github.com/michenriksen/hugo-theme-til"
+        title="Today I Learned &#8212; A Hugo theme by Michael Henriksen"
+        data-theme-version="0.6.0"
+        >theme: til</a
+      >
+    </div>
+</section>
+
+      </footer>
+    </div>
+    
+  </body>
+</html>

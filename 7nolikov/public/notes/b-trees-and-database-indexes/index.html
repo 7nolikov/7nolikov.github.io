@@ -1,0 +1,306 @@
+<!doctype html>
+<html
+  lang="en-us"
+  dir="ltr"
+>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8" />
+<meta name="language" content="en" />
+<meta name="viewport" content="width=device-width" />
+<title>
+    B-Trees and database indexes | 7nolikov | Dmitrii Novikov
+</title>
+  <meta name="description" content="The article on PlanetScale’s blog explains how B-Trees, a data structure, are used in database indexes to make data retrieval faster and more efficient. Indexes act like a “table of contents” for databases, helping you quickly find the data you need without scanning the entire dataset.
+Key Points What Are B-Trees? B-Trees are a tree-like structure that organizes data in sorted order. They allow databases to quickly search, insert, and delete data by reducing the number of comparisons needed." />
+<link rel="icon" type="image/png" href="/images/favicon.png" />
+<meta property="og:url" content="http://localhost:1313/notes/b-trees-and-database-indexes/">
+  <meta property="og:site_name" content="7nolikov | Dmitrii Novikov">
+  <meta property="og:title" content="B-Trees and database indexes">
+  <meta property="og:description" content="The article on PlanetScale’s blog explains how B-Trees, a data structure, are used in database indexes to make data retrieval faster and more efficient. Indexes act like a “table of contents” for databases, helping you quickly find the data you need without scanning the entire dataset.
+Key Points What Are B-Trees? B-Trees are a tree-like structure that organizes data in sorted order. They allow databases to quickly search, insert, and delete data by reducing the number of comparisons needed.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2024-12-21T00:00:00+00:00">
+
+
+  <meta itemprop="name" content="B-Trees and database indexes">
+  <meta itemprop="description" content="The article on PlanetScale’s blog explains how B-Trees, a data structure, are used in database indexes to make data retrieval faster and more efficient. Indexes act like a “table of contents” for databases, helping you quickly find the data you need without scanning the entire dataset.
+Key Points What Are B-Trees? B-Trees are a tree-like structure that organizes data in sorted order. They allow databases to quickly search, insert, and delete data by reducing the number of comparisons needed.">
+  <meta itemprop="datePublished" content="2024-12-21T00:00:00+00:00">
+  <meta itemprop="wordCount" content="230">
+  <meta itemprop="keywords" content="Databases">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="B-Trees and database indexes">
+  <meta name="twitter:description" content="The article on PlanetScale’s blog explains how B-Trees, a data structure, are used in database indexes to make data retrieval faster and more efficient. Indexes act like a “table of contents” for databases, helping you quickly find the data you need without scanning the entire dataset.
+Key Points What Are B-Trees? B-Trees are a tree-like structure that organizes data in sorted order. They allow databases to quickly search, insert, and delete data by reducing the number of comparisons needed.">
+
+<link rel="canonical" href="http://localhost:1313/notes/b-trees-and-database-indexes/" />
+
+    <link rel="stylesheet" href="/css/index.css" />
+
+
+      <script src="/js/main.js" defer></script>
+  
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@id": "http://localhost:1313/notes/b-trees-and-database-indexes/",
+  "@type": "BlogPosting",
+  "articleSection": [
+    "Databases"
+  ],
+  "author": {
+    "@type": "Person",
+    "email": "7nolikov@gmail.com",
+    "name": "Dmitrii Novikov",
+    "url": "http://localhost:1313/about/"
+  },
+  "copyrightNotice": "Dmitrii Novikov",
+  "datePublished": "2024-12-21",
+  "description": "The article on PlanetScale’s blog explains how B-Trees, a data structure, are used in database indexes to make data retrieval faster and more efficient. Indexes act like a “table of contents” for databases, helping you quickly find the data you need without scanning the entire dataset.\nKey Points What Are B-Trees? B-Trees are a tree-like structure that organizes data in sorted order. They allow databases to quickly search, insert, and delete data by reducing the number of comparisons needed.",
+  "headline": "B-Trees and database indexes",
+  "isPartOf": {
+    "@id": "http://localhost:1313/notes/",
+    "@type": "Blog",
+    "name": "Notes"
+  },
+  "mainEntityOfPage": "http://localhost:1313/notes/b-trees-and-database-indexes/",
+  "name": "B-Trees and database indexes",
+  "timeRequired": "PT2M",
+  "url": "http://localhost:1313/notes/b-trees-and-database-indexes/",
+  "wordCount": 230
+}
+</script>
+
+
+  </head>
+  <body>
+    <div class="container mx-auto flex max-w-prose flex-col space-y-10 p-4 md:p-6">
+      <header class="flex flex-row items-center justify-between">
+        <div>
+  <a id="skip-nav" class="sr-only" href="#maincontent">Skip to main content</a>
+  <a class="font-semibold" href="/">7nolikov | Dmitrii Novikov</a>
+</div>
+
+  <nav>
+    <ul class="flex flex-row items-center justify-end space-x-4">
+    <li>
+      <a href="/about/">About</a
+      >
+    </li>
+    <li>
+      <a href="/posts/">Posts</a
+      >
+    </li>
+    <li>
+      <a aria-current="true" class="ancestor" href="/notes/">Notes</a
+      >
+    </li>
+    <li>
+      <a href="/graph/">Graph</a
+      >
+    </li>
+    </ul>
+  </nav>
+
+
+      </header>
+      <main class="prose prose-slate relative md:prose-lg prose-h1:text-[2em]" id="maincontent">
+        <article class="main">
+    <header>
+      <h1 class="!mb-1">B-Trees and database indexes</h1><div class="flex flex-row items-center space-x-4">
+          <time class="text-sm italic opacity-80" datetime="2024-12-21T00:00:00&#43;00:00"
+            >December 21, 2024</time
+          >
+        </div>
+    </header>
+
+    <p>The article on PlanetScale&rsquo;s blog explains how B-Trees, a data structure, are used in database indexes to make data retrieval faster and more efficient. Indexes act like a &ldquo;table of contents&rdquo; for databases, helping you quickly find the data you need without scanning the entire dataset.</p>
+<h3 id="key-points" class="scroll-mt-8 group">
+  Key Points
+  
+    <a href="#key-points"
+        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+        aria-hidden="true" title="Link to this heading" tabindex="-1">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
+
+    </a>
+  
+</h3>
+<ul>
+<li>
+<p>What Are B-Trees?
+B-Trees are a tree-like structure that organizes data in sorted order. They allow databases to quickly search, insert, and delete data by reducing the number of comparisons needed.</p>
+</li>
+<li>
+<p>Why Use B-Trees for Indexes?
+B-Trees are perfect for databases because:</p>
+<ul>
+<li>They keep data balanced, ensuring fast access even with large datasets.</li>
+<li>They reduce the number of disk reads, which speeds up queries.</li>
+<li>They work well for range queries (e.g., finding all records between two values).</li>
+</ul>
+</li>
+<li>
+<p>How It Helps Databases
+When you create an index on a database column, it uses B-Trees to store the data. This makes operations like searching for specific rows or sorting results significantly faster.</p>
+</li>
+</ul>
+<h3 id="practical-example" class="scroll-mt-8 group">
+  Practical Example
+  
+    <a href="#practical-example"
+        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+        aria-hidden="true" title="Link to this heading" tabindex="-1">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
+
+    </a>
+  
+</h3>
+<p>If you’re searching for all users with IDs between 100 and 200 in a table, an index using B-Trees will quickly find those rows instead of scanning the entire table.</p>
+<h3 id="why-it-matters" class="scroll-mt-8 group">
+  Why It Matters
+  
+    <a href="#why-it-matters"
+        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+        aria-hidden="true" title="Link to this heading" tabindex="-1">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
+
+    </a>
+  
+</h3>
+<p>Understanding B-Trees and indexes helps developers design faster, more efficient databases. Proper indexing can drastically improve performance for queries, especially on large datasets.</p>
+<p>For more details, check out the full article: <a href="https://planetscale.com/blog/btrees-and-database-indexes">PlanetScale Blog: B-Trees and Database Indexes</a></p>
+
+  </article>
+    <aside class="not-prose flex flex-col space-y-8 border-t pt-6">
+    <section class="flex flex-col space-y-4">
+      <h2 class="flex flex-row items-center space-x-2 text-lg font-semibold">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-shapes h-4 w-4"
+  viewBox="0 0 24 24"
+  aria-hidden="true"
+>
+  <path
+    d="M8.3 10a.7.7 0 0 1-.626-1.079L11.4 3a.7.7 0 0 1 1.198-.043L16.3 8.9a.7.7 0 0 1-.572 1.1Z"
+  />
+  <rect width="7" height="7" x="3" y="14" rx="1" />
+  <circle cx="17.5" cy="17.5" r="3.5" />
+</svg>
+
+        <span>Categories</span>
+      </h2>
+
+      <ul class="ml-6 flex flex-row flex-wrap items-center space-x-2">
+          <li>
+            <a href="/categories/databases/" class="taxonomy category">databases</a>
+          </li>
+      </ul>
+    </section>
+    <section class="flex flex-col space-y-4" aria-hidden="true">
+      <h2 class="flex flex-row items-center space-x-2 text-lg font-semibold">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-chart-network h-4 w-4"
+  viewBox="0 0 24 24"
+  aria-hidden="true"
+>
+  <path
+    d="m13.11 7.664 1.78 2.672M14.162 12.788l-3.324 1.424M20 4l-6.06 1.515M3 3v16a2 2 0 0 0 2 2h16"
+  />
+  <circle cx="12" cy="6" r="2" />
+  <circle cx="16" cy="12" r="2" />
+  <circle cx="9" cy="15" r="2" />
+</svg>
+
+        <span>Graph</span>
+      </h2>
+
+      <content-network-graph
+  class="h-64 ml-6"
+  data-endpoint="/graph/index.json"
+  page="/notes/b-trees-and-database-indexes/"
+></content-network-graph>
+
+    </section>
+</aside>
+
+
+      </main>
+      <footer class="mt-20 border-t border-neutral-100 pt-2 text-xs">
+        <section class="items-top flex flex-row justify-between opacity-70">
+  <div class="flex flex-col space-y-2">
+      <p>Copyright &copy; 2024, Dmitrii Novikov.</p>
+
+  </div>
+    <div>
+      <a
+        href="https://github.com/michenriksen/hugo-theme-til"
+        title="Today I Learned &#8212; A Hugo theme by Michael Henriksen"
+        data-theme-version="0.6.0"
+        >theme: til</a
+      >
+    </div>
+</section>
+
+      </footer>
+    </div>
+    
+  </body>
+</html>

@@ -2,26 +2,92 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://7nolikov.github.io/categories/</loc>
+    <loc>http://localhost:1313/categories/api/</loc>
   </url><url>
-    <loc>https://7nolikov.github.io/categories/git/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>https://7nolikov.github.io/notes/conventional-commits/</loc>
+    <loc>http://localhost:1313/notes/metal-wallet/</loc>
   </url><url>
-    <loc>https://7nolikov.github.io/</loc>
+    <loc>http://localhost:1313/</loc>
   </url><url>
-    <loc>https://7nolikov.github.io/notes/</loc>
+    <loc>http://localhost:1313/categories/inventory/</loc>
   </url><url>
-    <loc>https://7nolikov.github.io/posts/</loc>
+    <loc>http://localhost:1313/notes/</loc>
   </url><url>
-    <loc>https://7nolikov.github.io/categories/web/</loc>
+    <loc>http://localhost:1313/posts/</loc>
   </url><url>
-    <loc>https://7nolikov.github.io/posts/what-is-rest/</loc>
+    <loc>http://localhost:1313/posts/what-is-api/</loc>
   </url><url>
-    <loc>https://7nolikov.github.io/about/</loc>
+    <loc>http://localhost:1313/categories/spring/</loc>
   </url><url>
-    <loc>https://7nolikov.github.io/graph/</loc>
+    <loc>http://localhost:1313/notes/spring-modulith/</loc>
   </url><url>
-    <loc>https://7nolikov.github.io/tags/</loc>
+    <loc>http://localhost:1313/categories/games/</loc>
+  </url><url>
+    <loc>http://localhost:1313/notes/password-game/</loc>
+  </url><url>
+    <loc>http://localhost:1313/notes/b-trees-and-database-indexes/</loc>
+  </url><url>
+    <loc>http://localhost:1313/categories/databases/</loc>
+  </url><url>
+    <loc>http://localhost:1313/categories/datalake/</loc>
+  </url><url>
+    <loc>http://localhost:1313/notes/delta-lake-vs-apache-iceberg/</loc>
+  </url><url>
+    <loc>http://localhost:1313/categories/maven/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/maven-achetypes/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/testcontainers-docker-compose-module/</loc>
+  </url><url>
+    <loc>http://localhost:1313/categories/testing/</loc>
+  </url><url>
+    <loc>http://localhost:1313/categories/markdown/</loc>
+  </url><url>
+    <loc>http://localhost:1313/notes/doc-markdown-converter/</loc>
+  </url><url>
+    <loc>http://localhost:1313/categories/search/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/job-vacancies-search/</loc>
+  </url><url>
+    <loc>http://localhost:1313/categories/make/</loc>
+  </url><url>
+    <loc>http://localhost:1313/notes/modern-make/</loc>
+  </url><url>
+    <loc>http://localhost:1313/categories/git/</loc>
+  </url><url>
+    <loc>http://localhost:1313/notes/learn-git-branching/</loc>
+  </url><url>
+    <loc>http://localhost:1313/categories/rest/</loc>
+  </url><url>
+    <loc>http://localhost:1313/notes/rest-api-tutorial/</loc>
+  </url><url>
+    <loc>http://localhost:1313/notes/edge-db/</loc>
+  </url><url>
+    <loc>http://localhost:1313/categories/revealjs/</loc>
+  </url><url>
+    <loc>http://localhost:1313/notes/revealjs/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/standalone-spring-tests/</loc>
+  </url><url>
+    <loc>http://localhost:1313/categories/money/</loc>
+  </url><url>
+    <loc>http://localhost:1313/categories/postgresql/</loc>
+  </url><url>
+    <loc>http://localhost:1313/notes/postgresql-exercises/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/where-is-all-the-money-in-the-world/</loc>
+  </url><url>
+    <loc>http://localhost:1313/notes/conventional-commits/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/static-site-generators/</loc>
+  </url><url>
+    <loc>http://localhost:1313/categories/websites/</loc>
+  </url><url>
+    <loc>http://localhost:1313/about/</loc>
+  </url><url>
+    <loc>http://localhost:1313/graph/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
   </url>
 </urlset>
