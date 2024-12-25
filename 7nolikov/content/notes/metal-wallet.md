@@ -1,6 +1,6 @@
 ---
-title: B-Trees and database indexes
-date: 2024-12-22
+title: Compact metal wallet with keyholder
+date: 2024-12-24
 categories: [inventory]
 ---
 

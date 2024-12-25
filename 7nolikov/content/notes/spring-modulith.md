@@ -1,6 +1,6 @@
 ---
 title: Spring Modulith 1.3
-date: 2024-12-22
+date: 2024-12-23
 categories: [spring]
 ---
 
