@@ -8,6 +8,9 @@ categories: [websites]
 
 Static site generators are tools that create websites by converting templates and content into static HTML files.
 This approach makes websites faster, more secure, and easier to host.
+
+<!--more-->
+
 Let’s take a closer look at six popular static site generators:
 
 - Jekyll

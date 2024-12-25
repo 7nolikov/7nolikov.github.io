@@ -12,6 +12,8 @@ Using **Docker Compose module** with Testcontainers you can simplify testing for
 
 This approach ensures that all dependencies start and work together as expected in a controlled, reproducible environment during your Java tests.
 
+<!--more-->
+
 ## Key features of the Docker Compose module
 
 - It allows you to define complex service dependencies in a single docker-compose.yml file.

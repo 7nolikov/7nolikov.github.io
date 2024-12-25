@@ -8,6 +8,8 @@ categories: [money]
 
 Money is the lifeblood of the global economy, flowing through various sectors, industries, and institutions. Understanding where money is located provides valuable insights into the structure of the global economy, wealth distribution, and financial trends. In 2023, the global money supply is spread across financial institutions, governments, businesses, and households, reflecting diverse economic activities.
 
+<!--more-->
+
 ## Economic actors
 
 **Financial Institutions** are entities like banks, insurance companies, and investment firms that manage money through lending, saving, and investing. For example, JPMorgan Chase and Allianz are key players facilitating loans and managing funds globally.

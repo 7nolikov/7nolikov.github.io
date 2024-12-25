@@ -6,6 +6,8 @@ categories: [maven]
 
 Maven archetypes are templates that help developers quickly set up a new project with a predefined structure and files. Using an archetype, you can create a Maven project that already includes the necessary folders, configurations, and code for a specific type of application.
 
+<!--more-->
+
 ## How Maven Archetypes Work
 
 - Archetypes act as "project blueprints," saving time and ensuring consistency across projects.

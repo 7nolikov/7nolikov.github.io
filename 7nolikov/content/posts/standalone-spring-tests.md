@@ -7,6 +7,8 @@ categories: [spring, testing]
 I was surprised that Spring Test library doesn't support standalone acceptance tests format out of the box.
 Here's how I tackled this issue and why standalone tests are useful for modular Spring applications.
 
+<!--more-->
+
 ## Motivation
 
 My project separates core logic from cloud-specific modules. Usual Spring Test doesn't work for this. I needed standalone tests to validate HTTP status codes and response content as black-box tests.
