@@ -4,11 +4,7 @@ date: 2024-12-15
 categories: [testing]
 ---
 
-Using **Docker Compose module** with Testcontainers you can simplify testing for applications that rely on multiple services like:
-
-- Databases
-- APIs
-- Message queues
+Using **Docker Compose module** with Testcontainers you can simplify testing for applications that rely on multiple services like databases, APIs and message queues.
 
 This approach ensures that all dependencies start and work together as expected in a controlled, reproducible environment during your Java tests.
 
