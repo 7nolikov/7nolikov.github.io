@@ -4,9 +4,11 @@ date: 2024-12-13
 categories: [search]
 ---
 
-You can use advanced Google search queries to find job vacancies on LinkedIn that match specific roles and include details about visa sponsorship or relocation support. Here’s how the provided links work:
+You can use advanced Google search queries to find job vacancies on LinkedIn that match specific roles and include details about visa sponsorship or relocation support.
 
 <!--more-->
+
+Here’s how the provided links work:
 
 ## 1. Broad Search Query
 
