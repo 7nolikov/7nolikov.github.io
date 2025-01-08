@@ -12,6 +12,20 @@
     <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Analytics</title>
+      <link>http://localhost:1313/categories/analytics/</link>
+      <pubDate>Tue, 31 Dec 2024 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
+      <guid>http://localhost:1313/categories/analytics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Books</title>
+      <link>http://localhost:1313/categories/books/</link>
+      <pubDate>Thu, 26 Dec 2024 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
+      <guid>http://localhost:1313/categories/books/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Api</title>
       <link>http://localhost:1313/categories/api/</link>
       <pubDate>Tue, 24 Dec 2024 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
@@ -54,13 +68,6 @@
       <description></description>
     </item>
     <item>
-      <title>Maven</title>
-      <link>http://localhost:1313/categories/maven/</link>
-      <pubDate>Sun, 15 Dec 2024 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
-      <guid>http://localhost:1313/categories/maven/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Testing</title>
       <link>http://localhost:1313/categories/testing/</link>
       <pubDate>Sun, 15 Dec 2024 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
@@ -72,6 +79,13 @@
       <link>http://localhost:1313/categories/markdown/</link>
       <pubDate>Sat, 14 Dec 2024 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
       <guid>http://localhost:1313/categories/markdown/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Maven</title>
+      <link>http://localhost:1313/categories/maven/</link>
+      <pubDate>Sat, 14 Dec 2024 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
+      <guid>http://localhost:1313/categories/maven/</guid>
       <description></description>
     </item>
     <item>

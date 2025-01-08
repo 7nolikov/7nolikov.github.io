@@ -13,6 +13,11 @@ An API (Application Programming Interface) is a tool that allows different softw
 
 For example, when you book a flight online, the travel website uses an API to get flight details from the airline’s database.
 
+{{< goat >}}
+Client -> API_Server : HTTP Request (GET/POST)
+API_Server --> Client : HTTP Response (200 OK / 404 Not Found)
+{{< /goat >}}
+
 ## Types of APIs
 
 1. Web APIs

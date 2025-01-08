@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Books on 7nolikov | Dmitrii Novikov</title>
+    <link>http://localhost:1313/categories/books/</link>
+    <description>Recent content in Books on 7nolikov | Dmitrii Novikov</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <managingEditor>7nolikov@gmail.com (Dmitrii Novikov)</managingEditor>
+    <webMaster>7nolikov@gmail.com (Dmitrii Novikov)</webMaster>
+    <copyright>Dmitrii Novikov</copyright>
+    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/books/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Book - Going Offline</title>
+      <link>http://localhost:1313/notes/going-offline-book/</link>
+      <pubDate>Thu, 26 Dec 2024 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
+      <guid>http://localhost:1313/notes/going-offline-book/</guid>
+      <description>&lt;p&gt;The website &amp;ldquo;Going Offline&amp;rdquo; by Jeremy Keith is a resource that explains how to build progressive web apps (PWAs) that work offline. It focuses on making websites and web apps more reliable by ensuring they can function even without an internet connection.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

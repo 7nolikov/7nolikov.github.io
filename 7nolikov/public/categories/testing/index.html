@@ -107,95 +107,8 @@
             >
           </header>
 
-          <div class="text-sm"><p>Using <strong>Docker Compose module</strong> with Testcontainers you can simplify testing for applications that rely on multiple services like:</p>
-<ul>
-<li>Databases</li>
-<li>APIs</li>
-<li>Message queues</li>
-</ul>
-<p>This approach ensures that all dependencies start and work together as expected in a controlled, reproducible environment during your Java tests.</p>
-<h3 id="key-features-of-the-docker-compose-module" class="scroll-mt-8 group">
-  Key features of the Docker Compose module
-  
-    <a href="#key-features-of-the-docker-compose-module"
-        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
-        aria-hidden="true" title="Link to this heading" tabindex="-1">
-        <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="16"
-  height="16"
-  fill="none"
-  stroke="currentColor"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  class="lucide lucide-link w-4 h-4 block"
-  viewBox="0 0 24 24"
->
-  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-</svg>
-
-    </a>
-  
-</h3>
-<ul>
-<li>It allows you to define complex service dependencies in a single docker-compose.yml file.</li>
-<li>During tests, Testcontainers can automatically start all services defined in the Compose file.</li>
-<li>It ensures your test environment is isolated and reproducible.</li>
-<li>The module also provides Java APIs to control the containers and check their status during tests.</li>
-</ul>
-<h3 id="how-to-use-the-docker-compose-module" class="scroll-mt-8 group">
-  How to use the Docker Compose module
-  
-    <a href="#how-to-use-the-docker-compose-module"
-        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
-        aria-hidden="true" title="Link to this heading" tabindex="-1">
-        <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="16"
-  height="16"
-  fill="none"
-  stroke="currentColor"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  class="lucide lucide-link w-4 h-4 block"
-  viewBox="0 0 24 24"
->
-  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-</svg>
-
-    </a>
-  
-</h3>
-<h4 id="add-testcontainers-dependency" class="scroll-mt-8 group">
-  Add Testcontainers Dependency
-  
-    <a href="#add-testcontainers-dependency"
-        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
-        aria-hidden="true" title="Link to this heading" tabindex="-1">
-        <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="16"
-  height="16"
-  fill="none"
-  stroke="currentColor"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  class="lucide lucide-link w-4 h-4 block"
-  viewBox="0 0 24 24"
->
-  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-</svg>
-
-    </a>
-  
-</h4>
-<p>Include the Testcontainers library in your pom.xml (for Maven) or build.gradle (for Gradle):</p></div>
+          <div class="text-sm"><p>Using Docker Compose module with Testcontainers you can simplify testing for applications that rely on multiple services like databases, APIs and message queues.</p>
+<p>This approach ensures that all dependencies start and work together as expected in a controlled, reproducible environment during your Java tests.</p></div>
         </article>
       </li>
       <li class="mb-6">
@@ -213,33 +126,7 @@
           </header>
 
           <div class="text-sm"><p>I was surprised that Spring Test library doesn&rsquo;t support standalone acceptance tests format out of the box.
-Here&rsquo;s how I tackled this issue and why standalone tests are useful for modular Spring applications.</p>
-<h3 id="motivation" class="scroll-mt-8 group">
-  Motivation
-  
-    <a href="#motivation"
-        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
-        aria-hidden="true" title="Link to this heading" tabindex="-1">
-        <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="16"
-  height="16"
-  fill="none"
-  stroke="currentColor"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  class="lucide lucide-link w-4 h-4 block"
-  viewBox="0 0 24 24"
->
-  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-</svg>
-
-    </a>
-  
-</h3>
-<p>My project separates core logic from cloud-specific modules. Usual Spring Test doesn&rsquo;t work for this. I needed standalone tests to validate HTTP status codes and response content as black-box tests.</p></div>
+Here&rsquo;s how I tackled this issue and why standalone tests are useful for modular Spring applications.</p></div>
         </article>
       </li>
   </ol>
@@ -253,7 +140,7 @@ Here&rsquo;s how I tackled this issue and why standalone tests are useful for mo
       <footer class="mt-20 border-t border-neutral-100 pt-2 text-xs">
         <section class="items-top flex flex-row justify-between opacity-70">
   <div class="flex flex-col space-y-2">
-      <p>Copyright &copy; 2024, Dmitrii Novikov.</p>
+      <p>Copyright &copy; 2025, Dmitrii Novikov.</p>
 
   </div>
     <div>

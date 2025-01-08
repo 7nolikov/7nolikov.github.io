@@ -5,7 +5,9 @@
       "out": []
     },
     "/notes/conventional-commits/": {
-      "in": [],
+      "in": [
+        "/notes/learn-git-branching/"
+      ],
       "out": []
     },
     "/notes/delta-lake-vs-apache-iceberg/": {
@@ -20,9 +22,15 @@
       "in": [],
       "out": []
     },
-    "/notes/learn-git-branching/": {
+    "/notes/going-offline-book/": {
       "in": [],
       "out": []
+    },
+    "/notes/learn-git-branching/": {
+      "in": [],
+      "out": [
+        "/notes/conventional-commits/"
+      ]
     },
     "/notes/metal-wallet/": {
       "in": [],
@@ -37,6 +45,10 @@
       "out": []
     },
     "/notes/postgresql-exercises/": {
+      "in": [],
+      "out": []
+    },
+    "/notes/posthog/": {
       "in": [],
       "out": []
     },
@@ -107,6 +119,11 @@
       "section": "notes",
       "title": "EdgeDB - Turbocharged Postgres"
     },
+    "/notes/going-offline-book/": {
+      "permalink": "/notes/going-offline-book/",
+      "section": "notes",
+      "title": "Book - Going Offline"
+    },
     "/notes/learn-git-branching/": {
       "permalink": "/notes/learn-git-branching/",
       "section": "notes",
@@ -131,6 +148,11 @@
       "permalink": "/notes/postgresql-exercises/",
       "section": "notes",
       "title": "PostgreSQL Exercises"
+    },
+    "/notes/posthog/": {
+      "permalink": "/notes/posthog/",
+      "section": "notes",
+      "title": "PostHog"
     },
     "/notes/rest-api-tutorial/": {
       "permalink": "/notes/rest-api-tutorial/",
