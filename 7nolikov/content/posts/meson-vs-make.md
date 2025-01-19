@@ -57,7 +57,7 @@ test('example test', test_exe)
 
 ## Git and Meson
 
-In a recent article on the [Git blog](https://github.blog/open-source/git/highlights-from-git-2-48/), Git announced that it has started using **Meson** for its build system. This change highlights the growing popularity of Meson and its advantages over traditional tools like Make. The Git project is renowned for its complexity and scale, so switching to Meson is a strong endorsement of its efficiency and ease of use.
+In a recent article on the [Git blog](https://github.blog/open-source/git/highlights-from-git-2-48/#introducing-meson-into-git), Git announced that it has started using **Meson** for its build system. This change highlights the growing popularity of Meson and its advantages over traditional tools like Make. The Git project is renowned for its complexity and scale, so switching to Meson is a strong endorsement of its efficiency and ease of use.
 
 ## Conclusion
 
