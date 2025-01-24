@@ -1,6 +1,6 @@
 ---
 title: Open resume parser
-date: 2024-01-24
+date: 2025-01-24
 categories: [resume]
 ---
 
