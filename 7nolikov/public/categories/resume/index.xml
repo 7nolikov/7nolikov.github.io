@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Resume on 7nolikov | Dmitrii Novikov</title>
+    <link>http://localhost:1313/categories/resume/</link>
+    <description>Recent content in Resume on 7nolikov | Dmitrii Novikov</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <managingEditor>7nolikov@gmail.com (Dmitrii Novikov)</managingEditor>
+    <webMaster>7nolikov@gmail.com (Dmitrii Novikov)</webMaster>
+    <copyright>Dmitrii Novikov</copyright>
+    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/resume/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Open resume parser</title>
+      <link>http://localhost:1313/notes/open-resume-parser/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
+      <guid>http://localhost:1313/notes/open-resume-parser/</guid>
+      <description>&lt;p&gt;Check if your resume is ATS-friendly for free - Open-Resume&amp;rsquo;s parser analyzes your resume to ensure it can be easily read by Applicant Tracking Systems, boosting your chances of landing interviews.&lt;/p&gt;&#xA;&lt;p&gt;See it on github: &lt;a href=&#34;https://github.com/xitanggg/open-resume&#34;&gt;https://github.com/xitanggg/open-resume&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

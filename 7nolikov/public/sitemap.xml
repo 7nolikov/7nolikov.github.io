@@ -2,13 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/categories/analytics/</loc>
+    <loc>http://localhost:1313/notes/calendly/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
     <loc>http://localhost:1313/</loc>
   </url><url>
     <loc>http://localhost:1313/notes/</loc>
+  </url><url>
+    <loc>http://localhost:1313/categories/time-management/</loc>
+  </url><url>
+    <loc>http://localhost:1313/categories/build/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/meson-vs-make/</loc>
+  </url><url>
+    <loc>http://localhost:1313/notes/open-resume-parser/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+  </url><url>
+    <loc>http://localhost:1313/categories/resume/</loc>
+  </url><url>
+    <loc>http://localhost:1313/categories/analytics/</loc>
   </url><url>
     <loc>http://localhost:1313/notes/posthog/</loc>
   </url><url>
@@ -21,8 +35,6 @@
     <loc>http://localhost:1313/notes/metal-wallet/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/inventory/</loc>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
   </url><url>
     <loc>http://localhost:1313/posts/what-is-api/</loc>
   </url><url>

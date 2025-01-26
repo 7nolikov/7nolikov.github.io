@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Time-management on 7nolikov | Dmitrii Novikov</title>
+    <link>http://localhost:1313/categories/time-management/</link>
+    <description>Recent content in Time-management on 7nolikov | Dmitrii Novikov</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <managingEditor>7nolikov@gmail.com (Dmitrii Novikov)</managingEditor>
+    <webMaster>7nolikov@gmail.com (Dmitrii Novikov)</webMaster>
+    <copyright>Dmitrii Novikov</copyright>
+    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/time-management/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Calendly - Easy scheduling tool</title>
+      <link>http://localhost:1313/notes/calendly/</link>
+      <pubDate>Thu, 02 Jan 2025 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
+      <guid>http://localhost:1313/notes/calendly/</guid>
+      <description>&lt;p&gt;Calendly is an online service that helps you schedule meetings without the hassle of back-and-forth emails. You set your available time slots and share a link for others to book a slot that works for them.&lt;/p&gt;&#xA;&lt;h3 id=&#34;how-it-works&#34; class=&#34;scroll-mt-8 group&#34;&gt;&#xA;  How It Works&#xA;  &#xA;    &lt;a href=&#34;#how-it-works&#34;&#xA;        class=&#34;no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block&#34;&#xA;        aria-hidden=&#34;true&#34; title=&#34;Link to this heading&#34; tabindex=&#34;-1&#34;&gt;&#xA;        &lt;svg&#xA;  xmlns=&#34;http://www.w3.org/2000/svg&#34;&#xA;  width=&#34;16&#34;&#xA;  height=&#34;16&#34;&#xA;  fill=&#34;none&#34;&#xA;  stroke=&#34;currentColor&#34;&#xA;  stroke-linecap=&#34;round&#34;&#xA;  stroke-linejoin=&#34;round&#34;&#xA;  stroke-width=&#34;2&#34;&#xA;  class=&#34;lucide lucide-link w-4 h-4 block&#34;&#xA;  viewBox=&#34;0 0 24 24&#34;&#xA;&gt;&#xA;  &lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; /&gt;&#xA;  &lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; /&gt;&#xA;&lt;/svg&gt;&#xA;&#xA;    &lt;/a&gt;&#xA;  &#xA;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Set Availability: Choose the days and times you’re free.&lt;/li&gt;&#xA;&lt;li&gt;Share Your Link: Send your Calendly link via email or add it to your website.&lt;/li&gt;&#xA;&lt;li&gt;Book a Time: Others pick a suitable time from your available slots.&lt;/li&gt;&#xA;&lt;li&gt;Receive Confirmation: Both parties get confirmation emails with meeting details.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;key-features&#34; class=&#34;scroll-mt-8 group&#34;&gt;&#xA;  Key Features&#xA;  &#xA;    &lt;a href=&#34;#key-features&#34;&#xA;        class=&#34;no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block&#34;&#xA;        aria-hidden=&#34;true&#34; title=&#34;Link to this heading&#34; tabindex=&#34;-1&#34;&gt;&#xA;        &lt;svg&#xA;  xmlns=&#34;http://www.w3.org/2000/svg&#34;&#xA;  width=&#34;16&#34;&#xA;  height=&#34;16&#34;&#xA;  fill=&#34;none&#34;&#xA;  stroke=&#34;currentColor&#34;&#xA;  stroke-linecap=&#34;round&#34;&#xA;  stroke-linejoin=&#34;round&#34;&#xA;  stroke-width=&#34;2&#34;&#xA;  class=&#34;lucide lucide-link w-4 h-4 block&#34;&#xA;  viewBox=&#34;0 0 24 24&#34;&#xA;&gt;&#xA;  &lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; /&gt;&#xA;  &lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; /&gt;&#xA;&lt;/svg&gt;&#xA;&#xA;    &lt;/a&gt;&#xA;  &#xA;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Calendar Integration: Syncs with Google, Outlook, and other calendars to avoid double-booking.&lt;/li&gt;&#xA;&lt;li&gt;Custom Meeting Types: Create different meeting options with specific durations.&lt;/li&gt;&#xA;&lt;li&gt;Time Zone Detection: Automatically adjusts for different time zones.&lt;/li&gt;&#xA;&lt;li&gt;Reminders: Sends reminders to reduce missed appointments.&lt;/li&gt;&#xA;&lt;li&gt;Team Scheduling: Coordinate meetings with multiple team members.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Visit &lt;a href=&#34;https://calendly.com/&#34;&gt;calendly.com&lt;/a&gt; to sign up for a free account.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

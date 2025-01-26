@@ -4,6 +4,10 @@
       "in": [],
       "out": []
     },
+    "/notes/calendly/": {
+      "in": [],
+      "out": []
+    },
     "/notes/conventional-commits/": {
       "in": [
         "/notes/learn-git-branching/"
@@ -40,6 +44,10 @@
       "in": [],
       "out": []
     },
+    "/notes/open-resume-parser/": {
+      "in": [],
+      "out": []
+    },
     "/notes/password-game/": {
       "in": [],
       "out": []
@@ -72,6 +80,10 @@
       "in": [],
       "out": []
     },
+    "/posts/meson-vs-make/": {
+      "in": [],
+      "out": []
+    },
     "/posts/standalone-spring-tests/": {
       "in": [],
       "out": []
@@ -98,6 +110,11 @@
       "permalink": "/notes/b-trees-and-database-indexes/",
       "section": "notes",
       "title": "B-Trees and database indexes"
+    },
+    "/notes/calendly/": {
+      "permalink": "/notes/calendly/",
+      "section": "notes",
+      "title": "Calendly - Easy scheduling tool"
     },
     "/notes/conventional-commits/": {
       "permalink": "/notes/conventional-commits/",
@@ -139,6 +156,11 @@
       "section": "notes",
       "title": "Modern Make"
     },
+    "/notes/open-resume-parser/": {
+      "permalink": "/notes/open-resume-parser/",
+      "section": "notes",
+      "title": "Open resume parser"
+    },
     "/notes/password-game/": {
       "permalink": "/notes/password-game/",
       "section": "notes",
@@ -178,6 +200,11 @@
       "permalink": "/posts/maven-achetypes/",
       "section": "posts",
       "title": "Maven archetypes"
+    },
+    "/posts/meson-vs-make/": {
+      "permalink": "/posts/meson-vs-make/",
+      "section": "posts",
+      "title": "Meson vs Make - A simple comparison"
     },
     "/posts/standalone-spring-tests/": {
       "permalink": "/posts/standalone-spring-tests/",
