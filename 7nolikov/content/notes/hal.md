@@ -12,7 +12,6 @@ HAL (Hypertext Application Language) is a simple format for representing linked 
 - Includes hyperlinks (_links) to connect related resources.
 - Helps clients discover API functionality without hardcoding URLs.
 
-
 ## Example HAL Response
 
 ```json
