@@ -13,4 +13,4 @@ JSON API is a specification that standardizes how clients and servers exchange d
 - Sparse Fieldsets: Request only the fields you need.
 - Built-in Pagination, Filtering, and Sorting: Makes handling large datasets simpler.
 
-Learn more at [https://jsonapi.org/](:https://jsonapi.org/).
+Learn more at [https://jsonapi.org/](https://jsonapi.org/).
