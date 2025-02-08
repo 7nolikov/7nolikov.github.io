@@ -1,5 +1,5 @@
 ---
-title: Minitorch: A Minimal Deep Learning Library
+title: Minitorch - A Minimal Deep Learning Library
 date: 2025-01-05
 categories: [machine learning]
 ---

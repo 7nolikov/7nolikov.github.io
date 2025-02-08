@@ -30,6 +30,14 @@
       "in": [],
       "out": []
     },
+    "/notes/hal/": {
+      "in": [],
+      "out": []
+    },
+    "/notes/json-api/": {
+      "in": [],
+      "out": []
+    },
     "/notes/learn-git-branching/": {
       "in": [],
       "out": [
@@ -37,6 +45,10 @@
       ]
     },
     "/notes/metal-wallet/": {
+      "in": [],
+      "out": []
+    },
+    "/notes/minitorch/": {
       "in": [],
       "out": []
     },
@@ -141,6 +153,16 @@
       "section": "notes",
       "title": "Book - Going Offline"
     },
+    "/notes/hal/": {
+      "permalink": "/notes/hal/",
+      "section": "notes",
+      "title": "HAL - Hypertext Application Language"
+    },
+    "/notes/json-api/": {
+      "permalink": "/notes/json-api/",
+      "section": "notes",
+      "title": "JSON API - RESTful API Specification"
+    },
     "/notes/learn-git-branching/": {
       "permalink": "/notes/learn-git-branching/",
       "section": "notes",
@@ -150,6 +172,11 @@
       "permalink": "/notes/metal-wallet/",
       "section": "notes",
       "title": "Compact metal wallet with keyholder"
+    },
+    "/notes/minitorch/": {
+      "permalink": "/notes/minitorch/",
+      "section": "notes",
+      "title": "Minitorch - A Minimal Deep Learning Library"
     },
     "/notes/modern-make/": {
       "permalink": "/notes/modern-make/",

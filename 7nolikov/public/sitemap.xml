@@ -2,13 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/notes/calendly/</loc>
-  </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
     <loc>http://localhost:1313/</loc>
   </url><url>
+    <loc>http://localhost:1313/categories/machine-learning/</loc>
+  </url><url>
+    <loc>http://localhost:1313/notes/minitorch/</loc>
+  </url><url>
     <loc>http://localhost:1313/notes/</loc>
+  </url><url>
+    <loc>http://localhost:1313/notes/json-api/</loc>
+  </url><url>
+    <loc>http://localhost:1313/categories/rest/</loc>
+  </url><url>
+    <loc>http://localhost:1313/notes/hal/</loc>
+  </url><url>
+    <loc>http://localhost:1313/notes/calendly/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/time-management/</loc>
   </url><url>
@@ -77,8 +87,6 @@
     <loc>http://localhost:1313/categories/git/</loc>
   </url><url>
     <loc>http://localhost:1313/notes/learn-git-branching/</loc>
-  </url><url>
-    <loc>http://localhost:1313/categories/rest/</loc>
   </url><url>
     <loc>http://localhost:1313/notes/rest-api-tutorial/</loc>
   </url><url>
