@@ -1,6 +1,6 @@
 ---
 title: Meson vs Make - A simple comparison
-date: 2025-01-01
+date: 2024-12-25
 categories: [build]
 ---
 
@@ -63,4 +63,4 @@ In a recent article on the [Git blog](https://github.blog/open-source/git/highli
 
 Meson is a fresh alternative to Make, offering improved performance, easier configuration, and modern features that simplify the build process. With major projects like Git adopting it, Meson is proving to be a valuable tool in modern software development.
 
-See the [Meson documentation](https://mesonbuild.com/) for more information on how to get started with
+See the [Meson documentation](https://mesonbuild.com/) for more information on how to get started with.
