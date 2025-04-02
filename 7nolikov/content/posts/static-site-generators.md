@@ -17,7 +17,7 @@ Let’s take a closer look at six popular static site generators:
 - 11ty (Eleventy)
 - Gatsby
 - Hugo
-- Next
+- Next.js
 - Nuxt.js
 
 ### 1. Jekyll
