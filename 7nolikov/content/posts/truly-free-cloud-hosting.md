@@ -318,69 +318,69 @@ Azure's free tier also extends to frontend hosting.
 
 Some platforms are designed to simplify the deployment of both frontend and backend components of a full-stack application, often with integrated CI/CD and managed services.
 
-### Vercel
+### 1. Vercel
 
 Vercel is primarily known for frontend deployment but also supports serverless functions for backend logic, making it a full-stack solution for certain architectures.
 
-**Capabilities**: Provides serverless architecture, static website and frontend application hosting, and serverless functions. It is particularly strong for modern applications built with frameworks like React or Vue.js, especially when combined with Next.js.
+- **Capabilities**: Provides serverless architecture, static website and frontend application hosting, and serverless functions. It is particularly strong for modern applications built with frameworks like React or Vue.js, especially when combined with Next.js.
 
-**Free Tier Limits**: As detailed in the frontend section, the Hobby plan includes 100 GB of Fast Data Transfer, 100,000 function invocations, 100 GB-Hours of function duration, and 6,000 build minutes. It supports 50 custom domains per project.
+- **Free Tier Limits**: As detailed in the frontend section, the Hobby plan includes 100 GB of Fast Data Transfer, 100,000 function invocations, 100 GB-Hours of function duration, and 6,000 build minutes. It supports 50 custom domains per project.
 
-**Limitations**: Vercel is primarily designed for static sites and serverless functions; it is not an ideal choice for applications with high server-side requirements that necessitate persistent, long-running servers. Continuous deployment builds might take a long time. The Hobby plan is for non-commercial, personal use.
+- **Limitations**: Vercel is primarily designed for static sites and serverless functions; it is not an ideal choice for applications with high server-side requirements that necessitate persistent, long-running servers. Continuous deployment builds might take a long time. The Hobby plan is for non-commercial, personal use.
 
 {{< admonition >}}
 **Trigger for Paid Usage**: Exceeding any of the monthly limits for data transfer, function invocations, or build minutes will lead to service limitations or require an upgrade to a paid plan. The Pro plan offers significantly higher limits and commercial use.
 {{< /admonition >}}
 
-### Railway
+### 2. Railway
 
 Railway aims to streamline the deployment and hosting of web applications, including both frontend and backend.
 
-**Capabilities**: Simplifies web application deployment, provides managed database services (PostgreSQL, MySQL, Redis, MongoDB), and supports continuous deployment workflows with Git integration.
+- **Capabilities**: Simplifies web application deployment, provides managed database services (PostgreSQL, MySQL, Redis, MongoDB), and supports continuous deployment workflows with Git integration.
 
-**Free Tier Model**: As discussed, Railway offers a one-time $5 usage credit. Once this credit is exhausted, services stop until a paid plan is activated. The Hobby plan, which costs $5/month, includes $5 of usage.
+- **Free Tier Model**: As discussed, Railway offers a one-time $5 usage credit. Once this credit is exhausted, services stop until a paid plan is activated. The Hobby plan, which costs $5/month, includes $5 of usage.
 
-**Limitations**: The "free" aspect is very limited due to the one-time credit model. There is no native background worker model, requiring manual setup for async processing or scheduled tasks. Cron support is functional but has limitations on dynamic parameters.
+- **Limitations**: The "free" aspect is very limited due to the one-time credit model. There is no native background worker model, requiring manual setup for async processing or scheduled tasks. Cron support is functional but has limitations on dynamic parameters.
 
 {{< admonition >}}
 **Trigger for Paid Usage**: The fundamental trigger is the depletion of the initial $5 credit. For any sustained or growing usage, a paid plan (starting with the $5/month Hobby plan) is required, and exceeding the included usage on paid plans incurs additional charges.
 {{< /admonition >}}
 
-### Render
+### 3. Render
 
 Render is a cloud platform designed to simplify the deployment and scaling of web applications, supporting multiple stacks (Javascript, GoLang, PHP, Python, Ruby, Mongo).
 
-**Capabilities**: Supports various languages, offers Git-based deploys, includes CDN, custom domains (on paid plans), and automatic HTTPS. It also provides free PostgreSQL databases (with a 90-day deletion policy for free tier).
+- **Capabilities**: Supports various languages, offers Git-based deploys, includes CDN, custom domains (on paid plans), and automatic HTTPS. It also provides free PostgreSQL databases (with a 90-day deletion policy for free tier).
 
-**Free Tier Limits**: Includes 750 hours of free execution for services, 100GB outbound bandwidth per month, and 500 build minutes per month. Free web services may enter sleep mode after 15 minutes of inactivity. Custom domains are not available on the free tier.
+- **Free Tier Limits**: Includes 750 hours of free execution for services, 100GB outbound bandwidth per month, and 500 build minutes per month. Free web services may enter sleep mode after 15 minutes of inactivity. Custom domains are not available on the free tier.
 
-**Limitations**: Free tier has limitations on resources like memory and locations, affecting large-scaling applications. Free PostgreSQL databases are deleted after 90 days. Inactivity leads to sleep mode.
+- **Limitations**: Free tier has limitations on resources like memory and locations, affecting large-scaling applications. Free PostgreSQL databases are deleted after 90 days. Inactivity leads to sleep mode.
 
 {{< admonition >}}
 **Trigger for Paid Usage**: Exceeding the 750 collective service hours suspends services without overage charges, requiring a manual upgrade. Exceeding bandwidth (100GB/month) results in automatic $30 charges for each additional 100GB block. Exceeding build minutes causes deployments to fail unless overages are configured. Long-term database persistence requires an upgrade before the 90-day free tier expiry.
 {{< /admonition >}}
 
-### Fly.io
+### 4. Fly.io
 
 Fly.io focuses on deploying applications closer to end-users via a global edge network, optimizing performance and reducing latency.
 
-**Capabilities**: Allows developers to deploy containerized applications closer to end-users.
+- **Capabilities**: Allows developers to deploy containerized applications closer to end-users.
 
-**Free Tier Limits**: Offers 2340 shared CPU hours per month, 160GB outbound bandwidth per month (unlimited inbound), unlimited IPv6, and 1 IPv4 Anycast IP per active app.
+- **Free Tier Limits**: Offers 2340 shared CPU hours per month, 160GB outbound bandwidth per month (unlimited inbound), unlimited IPv6, and 1 IPv4 Anycast IP per active app.
 
-**Limitations**: The free tier has limitations on resources like memory and locations, affecting large-scaling applications. It is more focused on container-based deployment, which might require additional configuration. There is no uptime SLA, and access is primarily through CLI. A credit card is required to sign up.
+- **Limitations**: The free tier has limitations on resources like memory and locations, affecting large-scaling applications. It is more focused on container-based deployment, which might require additional configuration. There is no uptime SLA, and access is primarily through CLI. A credit card is required to sign up.
 
 {{< admonition >}}
 **Trigger for Paid Usage**: Exceeding the CPU hours or outbound bandwidth limits would result in charges. The requirement for a credit card upon signup indicates a pay-as-you-go model beyond the free tier.
 {{< /admonition >}}
 
-### PythonAnywhere
+### 5. PythonAnywhere
 
 PythonAnywhere is a cloud-based platform specifically designed to simplify the hosting and management of applications crafted with Python.
 
-**Capabilities**: Provides a reliable environment for hosting Python applications, web application deployment, and server-side logic execution for full-stack applications where Python is the primary language.
+- **Capabilities**: Provides a reliable environment for hosting Python applications, web application deployment, and server-side logic execution for full-stack applications where Python is the primary language.
 
-**Limitations**: While excellent for Python-based applications, it may not be the best choice for applications requiring specific technologies or extensive customization outside of Python. The free tier has limitations on resources, which may impact the scalability of larger projects.
+- **Limitations**: While excellent for Python-based applications, it may not be the best choice for applications requiring specific technologies or extensive customization outside of Python. The free tier has limitations on resources, which may impact the scalability of larger projects.
 
 {{< admonition >}}
 **Trigger for Paid Usage**: Exceeding resource limits (not explicitly detailed in snippets but implied) or needing non-Python technologies would necessitate an upgrade or a different platform.
