@@ -4,29 +4,26 @@ date: 2025-05-24
 categories: [cloud]
 ---
 
-## Motivation
-
 As a developer, I usually want to deploy applications with minimal or no upfront investment. The hosting free tiers options give a space for experimentation, learning, and the deployment of low-traffic personal projects or proofs-of-concept without immediate financial commitment.
 
 <!--more-->
 
 ## Typical problem
 
-{{< admonition type="warning" >}}
 However, the definition of "free" is highly nuanced, often including strict usage limits, time-bound offers, or an automatic transition to pay-as-you-go models once specific thresholds are exceeded.
+
+{{< admonition type="warning" >}}
+Automatic transition to pay-as-you-go plan can lead to unexpected costs.
 {{< /admonition >}}
 
 Practical considerations such as inactivity policies, the availability of custom domains, and the ease of monitoring usage are quite important for long-term sustainability and to prevent unexpected costs.
 
-This acticle provides a comparative analysis of "truly free" hosting solutions for both backend and frontend components, outlining their capabilities, limitations, and the specific conditions under which costs may be incurred.
-
-## Defining "Truly Free" in Cloud Hosting
-
-The term "free" in the context of cloud hosting is often subject to various interpretations. Cloud providers typically categorize their free offerings into three primary models:
+This acticle provides a comparative analysis of {{< sidenote "truly free" >}} The term "free" in the context of cloud hosting is often subject to various interpretations. Cloud providers typically categorize their free offerings into three primary models:
 
 - "Always Free"
 - "12-Month Free Tier"
 - "Trial Credits"
+{{< /sidenote >}} hosting solutions for both backend and frontend components, outlining their capabilities, limitations, and the specific conditions under which costs may be incurred.
 
 ### Always Free
 
@@ -106,13 +103,17 @@ Firebase, a Google-backed Backend-as-a-Service (BaaS) platform, simplifies backe
 
 4. **Other Services**: Firebase also includes free tiers for Authentication (50k monthly active users), Cloud Messaging (FCM), and Crashlytics.
 
-- **Trigger for Paid Usage**: Exceeding any of the daily or monthly limits for storage, data transfer, document operations (reads, writes, deletes), function invocations, or compute time will trigger charges under the Blaze Plan. For example, if a project exceeds 360 MB of data transfer in a day for hosting, or 50,000 document reads in a day for Firestore, it will incur costs. The free tier for Cloud Firestore is limited to one database per project, and certain features like TTL deletes or backup data require billing to be enabled.
+{{< admonition >}}
+**Trigger for Paid Usage**: Exceeding any of the daily or monthly limits for storage, data transfer, document operations (reads, writes, deletes), function invocations, or compute time will trigger charges under the Blaze Plan. For example, if a project exceeds 360 MB of data transfer in a day for hosting, or 50,000 document reads in a day for Firestore, it will incur costs. The free tier for Cloud Firestore is limited to one database per project, and certain features like TTL deletes or backup data require billing to be enabled.
+{{< /admonition >}}
 
 ### Cloudflare Workers
 
 Cloudflare Workers provide a serverless execution environment at the edge, ideal for highly performant and globally distributed backend logic. While the research material mentions Cloudflare Workers as a backend hosting platform, specific free tier limits for it are not detailed in the provided snippets. Generally, Cloudflare offers a generous free tier for its core CDN and DNS services, and Workers typically have a free usage allowance for a certain number of requests per day, making them suitable for lightweight API endpoints or edge logic.
 
-- **Trigger for Paid Usage**: Exceeding the daily free request limit or requiring more advanced features like increased compute time or persistent storage would lead to charges.
+{{< /admonition >}}
+**Trigger for Paid Usage**: Exceeding the daily free request limit or requiring more advanced features like increased compute time or persistent storage would lead to charges.
+{{< /admonition >}}
 
 ### AWS (Amazon Web Services)
 
@@ -130,7 +131,9 @@ AWS offers a comprehensive suite of services with various free tier components, 
 
 6. **Data Transfer**: 15 GB of bandwidth out aggregated across all AWS services for 12 months. CloudFront, AWS's CDN, offers 1 TB of data transfer out per month as part of its 12-month free tier.
 
-- **Trigger for Paid Usage**: For 12-month free tier services, charges apply after 12 months or if usage exceeds the monthly limits within that period. For "Always Free" services like Lambda and DynamoDB, exceeding the specified monthly limits will incur costs based on pay-as-you-go rates. Exceeding the aggregated 15GB outbound data transfer limit is a common trigger for costs.
+{{< admonition >}}
+**Trigger for Paid Usage**: For 12-month free tier services, charges apply after 12 months or if usage exceeds the monthly limits within that period. For "Always Free" services like Lambda and DynamoDB, exceeding the specified monthly limits will incur costs based on pay-as-you-go rates. Exceeding the aggregated 15GB outbound data transfer limit is a common trigger for costs.
+{{< /admonition >}}
 
 ### Google Cloud (GCP)
 
@@ -148,7 +151,9 @@ Google Cloud offers a robust "Free Tier" with "Always Free" products and a $300 
 
 6. Cloud Storage: 5 GB-months Standard Storage "Always Free".
 
-- **Trigger for Paid Usage**: Exceeding any of the "Always Free" monthly limits will result in charges. For new customers, the initial $300 credit covers usage beyond the free tier for a limited period (e.g., 90 days), after which standard pay-as-you-go rates apply.
+{{< admonition >}}
+**Trigger for Paid Usage**: Exceeding any of the "Always Free" monthly limits will result in charges. For new customers, the initial $300 credit covers usage beyond the free tier for a limited period (e.g., 90 days), after which standard pay-as-you-go rates apply.
+{{< /admonition >}}
 
 ### Azure (Microsoft Azure)
 
@@ -166,7 +171,9 @@ Azure provides a "Free Account" for new customers, including free monthly amount
 
 6. **Data Transfer**: The first 100 GB/month of egressed data is free to all customers in all Azure regions.
 
-- **Trigger for Paid Usage**: The $200 credit must be used within the first 30 days. After 12 months, or if usage exceeds the monthly limits for the 12-month free services, standard pay-as-you-go rates apply. Exceeding the 100 GB/month free egress limit will also incur charges. If a user signs up for a free account, they will be notified when it's time to decide whether to move to pay-as-you-go pricing; otherwise, the account and services will be disabled.
+{{< admonition >}}
+**Trigger for Paid Usage**: The $200 credit must be used within the first 30 days. After 12 months, or if usage exceeds the monthly limits for the 12-month free services, standard pay-as-you-go rates apply. Exceeding the 100 GB/month free egress limit will also incur charges. If a user signs up for a free account, they will be notified when it's time to decide whether to move to pay-as-you-go pricing; otherwise, the account and services will be disabled.
+{{< /admonition >}}
 
 ### Railway
 
@@ -178,7 +185,9 @@ Railway offers a unique "free tier" model that provides a one-time $5 in usage c
 
 **Features**: Railway supports Git-based deploys, persistent storage, and built-in database support for PostgreSQL, MySQL, Redis, and MongoDB. It charges based on actual usage (RAM hours, CPU hours, storage, network egress).
 
-- **Trigger for Paid Usage**: The primary trigger is the exhaustion of the one-time $5 trial credit, which immediately stops services. For the Hobby plan, exceeding the $5 monthly usage credit incurs additional charges. Railway's model is designed to quickly transition users to a paid structure once they demonstrate any significant usage.
+{{< admonition >}}
+**Trigger for Paid Usage**: The primary trigger is the exhaustion of the one-time $5 trial credit, which immediately stops services. For the Hobby plan, exceeding the $5 monthly usage credit incurs additional charges. Railway's model is designed to quickly transition users to a paid structure once they demonstrate any significant usage.
+{{< /admonition >}}
 
 ### Render
 
@@ -196,12 +205,14 @@ Render offers an "always-on" free tier for certain services, including static si
 
 - **Custom Domains**: Not available on the free tier; users must use Render's subdomain.
 
-- **Trigger for Paid Usage**:
+{{< admonition >}}
+**Trigger for Paid Usage**:
 
-  - **Service Hours**: Exceeding 750 hours of free execution suspends all Free Tier Services for the remainder of the month, with no overage charges. To restore service, an upgrade to a paid instance type is required.
-  - **Bandwidth**: Exceeding the free bandwidth allotment results in automatic overage charges ($30 for an additional 100 GB block).
-  - **Build Minutes**: Exceeding free pipeline minutes causes deployments to fail by default, though users can configure to allow overage charges.
-  - **Database Persistence**: The 90-day deletion policy for free PostgreSQL databases necessitates an upgrade for long-term data persistence.
+- **Service Hours**: Exceeding 750 hours of free execution suspends all Free Tier Services for the remainder of the month, with no overage charges. To restore service, an upgrade to a paid instance type is required.
+- **Bandwidth**: Exceeding the free bandwidth allotment results in automatic overage charges ($30 for an additional 100 GB block).
+- **Build Minutes**: Exceeding free pipeline minutes causes deployments to fail by default, though users can configure to allow overage charges.
+- **Database Persistence**: The 90-day deletion policy for free PostgreSQL databases necessitates an upgrade for long-term data persistence.
+{{< /admonition >}}
 
 ## Rating of Truly Free Frontend Hosting Plans
 
@@ -219,7 +230,9 @@ Netlify is highly popular for static site and JAMstack deployments, offering a "
 
 **Features**: Continuous Deployment from Git (GitHub, GitLab, Bitbucket), free SSL support, custom domains, and deploy previews. It is excellent for developers working with frameworks like React or Vue.js.
 
-- **Trigger for Paid Usage**: If a site exceeds its monthly usage limits (bandwidth, build minutes, function invocations), it enters a suspended state until the first of the next month. All sites on a Free account will be suspended if one site exceeds its limits. To restore service, an upgrade to a usage-based plan is required. Overage charges apply for additional bandwidth ($55 per 100GB), build minutes ($7 per 500 minutes), and function invocations ($25+ for serverless, $2/month for Edge Functions).
+{{< admonition >}}
+**Trigger for Paid Usage**: If a site exceeds its monthly usage limits (bandwidth, build minutes, function invocations), it enters a suspended state until the first of the next month. All sites on a Free account will be suspended if one site exceeds its limits. To restore service, an upgrade to a usage-based plan is required. Overage charges apply for additional bandwidth ($55 per 100GB), build minutes ($7 per 500 minutes), and function invocations ($25+ for serverless, $2/month for Edge Functions).
+{{< /admonition >}}
 
 ### Vercel
 
@@ -234,7 +247,9 @@ Vercel is a cloud platform primarily designed for web and full-stack developers,
 
 **Features**: Serverless architecture, static website and frontend application hosting, serverless functions, and continuous deployment builds.
 
-- **Trigger for Paid Usage**: The Hobby plan is explicitly for "non-commercial, personal use only". Exceeding usage limits on the Hobby plan typically requires waiting 30 days for the feature to reset, or upgrading to a Pro plan. The Pro plan offers 10x more data transfer, 1 million Serverless Function requests, and 1000 GB-hours of execution. Vercel can become expensive quickly once free limits are hit for high-traffic sites.
+{{< admonition >}}
+**Trigger for Paid Usage**: The Hobby plan is explicitly for "non-commercial, personal use only". Exceeding usage limits on the Hobby plan typically requires waiting 30 days for the feature to reset, or upgrading to a Pro plan. The Pro plan offers 10x more data transfer, 1 million Serverless Function requests, and 1000 GB-hours of execution. Vercel can become expensive quickly once free limits are hit for high-traffic sites.
+{{< /admonition >}}
 
 ### GitHub Pages
 
@@ -244,7 +259,9 @@ GitHub Pages offers free hosting for static sites directly integrated with GitHu
 
 **Limitations**: Only suitable for static sites; does not support dynamic content or database-driven applications.
 
-- **Trigger for Paid Usage**: Not directly applicable as it's purely for static content. Any dynamic requirements would necessitate a different hosting solution.
+{{< admonition >}}
+**Trigger for Paid Usage**: Not directly applicable as it's purely for static content. Any dynamic requirements would necessitate a different hosting solution.
+{{< /admonition >}}
 
 ### Other General Web Hosts
 
@@ -256,7 +273,9 @@ Several traditional web hosting services offer free plans, often with more basic
 
 3. **GoogieHost**: Offers 1 GB of space and 100 GB of monthly bandwidth, with support for PHP and MySQL. Suitable for small projects or beginners, but lacks advanced features of major cloud providers.
 
-- **Trigger for Paid Usage**: These services typically have limited features compared to premium plans. Exceeding their modest resource allocations, requiring advanced features, or needing higher performance would necessitate an upgrade. Many may also have limitations on customer support or place ads on sites (though InfinityFree claims no ads).
+{{< admonition >}}
+**Trigger for Paid Usage**: These services typically have limited features compared to premium plans. Exceeding their modest resource allocations, requiring advanced features, or needing higher performance would necessitate an upgrade. Many may also have limitations on customer support or place ads on sites (though InfinityFree claims no ads).
+{{< /admonition >}}
 
 ### AWS (Frontend Components)
 
@@ -266,7 +285,9 @@ Beyond backend, AWS services can host frontend applications.
 
 2. **Amazon CloudFront (CDN)**: 1 TB of data transfer out per month for 12 months. This is crucial for distributing frontend assets globally with low latency.
 
-- **Trigger for Paid Usage**: Exceeding S3 storage or request limits, or CloudFront data transfer limits after 12 months, will incur charges.
+{{< admonition >}}
+**Trigger for Paid Usage**: Exceeding S3 storage or request limits, or CloudFront data transfer limits after 12 months, will incur charges.
+{{< /admonition >}}
 
 ### Google Cloud (Frontend Components)
 
@@ -276,7 +297,9 @@ Google Cloud also offers options for frontend hosting.
 
 2. **Cloud Run**: While capable of hosting dynamic backends, Cloud Run can also serve static sites and frontend applications, with 2 million requests per month "Always Free".
 
-- **Trigger for Paid Usage**: Exceeding the storage limits for Cloud Storage or the request limits for Cloud Run will lead to charges.
+{{< admonition >}}
+**Trigger for Paid Usage**: Exceeding the storage limits for Cloud Storage or the request limits for Cloud Run will lead to charges.
+{{< /admonition >}}
 
 ### Azure (Frontend Components)
 
@@ -284,7 +307,9 @@ Azure's free tier also extends to frontend hosting.
 
 1. **Azure Blob Storage**: 5 GB locally redundant storage (LRS) hot block with 20,000 read and 10,000 write operations, free for 12 months. This is suitable for storing and serving static website content.
 
-- **Trigger for Paid Usage**: Exceeding Blob Storage limits or the 12-month free period will incur costs.
+{{< admonition >}}
+**Trigger for Paid Usage**: Exceeding Blob Storage limits or the 12-month free period will incur costs.
+{{< /admonition >}}
 
 ## Integrated Full-Stack Free Hosting Solutions
 
@@ -300,7 +325,9 @@ Vercel is primarily known for frontend deployment but also supports serverless f
 
 **Limitations**: Vercel is primarily designed for static sites and serverless functions; it is not an ideal choice for applications with high server-side requirements that necessitate persistent, long-running servers. Continuous deployment builds might take a long time. The Hobby plan is for non-commercial, personal use.
 
-- **Trigger for Paid Usage**: Exceeding any of the monthly limits for data transfer, function invocations, or build minutes will lead to service limitations or require an upgrade to a paid plan. The Pro plan offers significantly higher limits and commercial use.
+{{< admonition >}}
+**Trigger for Paid Usage**: Exceeding any of the monthly limits for data transfer, function invocations, or build minutes will lead to service limitations or require an upgrade to a paid plan. The Pro plan offers significantly higher limits and commercial use.
+{{< /admonition >}}
 
 ### Railway
 
@@ -312,7 +339,9 @@ Railway aims to streamline the deployment and hosting of web applications, inclu
 
 **Limitations**: The "free" aspect is very limited due to the one-time credit model. There is no native background worker model, requiring manual setup for async processing or scheduled tasks. Cron support is functional but has limitations on dynamic parameters.
 
-- **Trigger for Paid Usage**: The fundamental trigger is the depletion of the initial $5 credit. For any sustained or growing usage, a paid plan (starting with the $5/month Hobby plan) is required, and exceeding the included usage on paid plans incurs additional charges.
+{{< admonition >}}
+**Trigger for Paid Usage**: The fundamental trigger is the depletion of the initial $5 credit. For any sustained or growing usage, a paid plan (starting with the $5/month Hobby plan) is required, and exceeding the included usage on paid plans incurs additional charges.
+{{< /admonition >}}
 
 ### Render
 
@@ -324,7 +353,9 @@ Render is a cloud platform designed to simplify the deployment and scaling of we
 
 **Limitations**: Free tier has limitations on resources like memory and locations, affecting large-scaling applications. Free PostgreSQL databases are deleted after 90 days. Inactivity leads to sleep mode.
 
-- **Trigger for Paid Usage**: Exceeding the 750 collective service hours suspends services without overage charges, requiring a manual upgrade. Exceeding bandwidth (100GB/month) results in automatic $30 charges for each additional 100GB block. Exceeding build minutes causes deployments to fail unless overages are configured. Long-term database persistence requires an upgrade before the 90-day free tier expiry.
+{{< admonition >}}
+**Trigger for Paid Usage**: Exceeding the 750 collective service hours suspends services without overage charges, requiring a manual upgrade. Exceeding bandwidth (100GB/month) results in automatic $30 charges for each additional 100GB block. Exceeding build minutes causes deployments to fail unless overages are configured. Long-term database persistence requires an upgrade before the 90-day free tier expiry.
+{{< /admonition >}}
 
 ### Fly.io
 
@@ -336,7 +367,9 @@ Fly.io focuses on deploying applications closer to end-users via a global edge n
 
 **Limitations**: The free tier has limitations on resources like memory and locations, affecting large-scaling applications. It is more focused on container-based deployment, which might require additional configuration. There is no uptime SLA, and access is primarily through CLI. A credit card is required to sign up.
 
-- **Trigger for Paid Usage**: Exceeding the CPU hours or outbound bandwidth limits would result in charges. The requirement for a credit card upon signup indicates a pay-as-you-go model beyond the free tier.
+{{< admonition >}}
+**Trigger for Paid Usage**: Exceeding the CPU hours or outbound bandwidth limits would result in charges. The requirement for a credit card upon signup indicates a pay-as-you-go model beyond the free tier.
+{{< /admonition >}}
 
 ### PythonAnywhere
 
@@ -346,7 +379,9 @@ PythonAnywhere is a cloud-based platform specifically designed to simplify the h
 
 **Limitations**: While excellent for Python-based applications, it may not be the best choice for applications requiring specific technologies or extensive customization outside of Python. The free tier has limitations on resources, which may impact the scalability of larger projects.
 
-- **Trigger for Paid Usage**: Exceeding resource limits (not explicitly detailed in snippets but implied) or needing non-Python technologies would necessitate an upgrade or a different platform.
+{{< admonition >}}
+**Trigger for Paid Usage**: Exceeding resource limits (not explicitly detailed in snippets but implied) or needing non-Python technologies would necessitate an upgrade or a different platform.
+{{< /admonition >}}
 
 ## How to implement a zero-cost strategy?
 

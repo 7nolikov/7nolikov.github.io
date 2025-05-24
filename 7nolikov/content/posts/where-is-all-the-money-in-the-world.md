@@ -4,8 +4,6 @@ date: 2024-12-02
 categories: [money]
 ---
 
-## Overview of the global money supply
-
 Money is the lifeblood of the global economy, flowing through various sectors, industries, and institutions. Understanding where money is located provides valuable insights into the structure of the global economy, wealth distribution, and financial trends. In 2023, the global money supply is spread across financial institutions, governments, businesses, and households, reflecting diverse economic activities.
 
 <!--more-->

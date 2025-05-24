@@ -4,8 +4,6 @@ date: 2024-12-25
 categories: [build]
 ---
 
-## What is Meson?
-
 Meson is a modern build system designed to be fast and easy to use. It focuses on simplicity, better configuration management, and improved speed compared to older tools. Meson uses Ninja as its backend to speed up the actual building process, and its configuration files are written in a simple, human-readable language.
 
 <!--more-->

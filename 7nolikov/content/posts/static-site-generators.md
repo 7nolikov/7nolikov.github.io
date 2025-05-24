@@ -4,8 +4,6 @@ date: 2024-12-01
 categories: [websites]
 ---
 
-## Overview of the top 6 static site generators
-
 Static site generators are tools that create websites by converting templates and content into static HTML files.
 This approach makes websites faster, more secure, and easier to host.
 
