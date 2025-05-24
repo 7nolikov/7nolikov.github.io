@@ -36,4 +36,6 @@ You can try Learn Git Branching here: [Learn Git Branching](https://learngitbran
 
 It's a simple and effective way to learn Git and become more confident in managing your code.
 
-{{< backlink "conventional-commits" >}}
+See also:
+
+- {{< backlink "conventional-commits" >}}
