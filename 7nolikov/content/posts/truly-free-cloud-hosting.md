@@ -111,7 +111,7 @@ Firebase, a Google-backed Backend-as-a-Service (BaaS) platform, simplifies backe
 
 Cloudflare Workers provide a serverless execution environment at the edge, ideal for highly performant and globally distributed backend logic. While the research material mentions Cloudflare Workers as a backend hosting platform, specific free tier limits for it are not detailed in the provided snippets. Generally, Cloudflare offers a generous free tier for its core CDN and DNS services, and Workers typically have a free usage allowance for a certain number of requests per day, making them suitable for lightweight API endpoints or edge logic.
 
-{{< /admonition >}}
+{{< admonition >}}
 **Trigger for Paid Usage**: Exceeding the daily free request limit or requiring more advanced features like increased compute time or persistent storage would lead to charges.
 {{< /admonition >}}
 
