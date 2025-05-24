@@ -18,14 +18,11 @@ Automatic transition to pay-as-you-go plan can lead to unexpected costs.
 
 Practical considerations such as inactivity policies, the availability of custom domains, and the ease of monitoring usage are quite important for long-term sustainability and to prevent unexpected costs.
 
-This acticle provides a comparative analysis of {{< sidenote "truly free" >}} The term "free" in the context of cloud hosting is often subject to various interpretations. Cloud providers typically categorize their free offerings into three primary models:
+This acticle provides a comparative analysis of {{< sidenote "truly free" >}} The term "free" in the context of cloud hosting is often subject to various interpretations. Cloud providers typically categorize their free offerings into three primary models: "Always Free", "12-Month Free Tier", "Trial Credits".{{< /sidenote >}} hosting solutions for both backend and frontend components, outlining their capabilities, limitations, and the specific conditions under which costs may be incurred.
 
-- "Always Free"
-- "12-Month Free Tier"
-- "Trial Credits"
-{{< /sidenote >}} hosting solutions for both backend and frontend components, outlining their capabilities, limitations, and the specific conditions under which costs may be incurred.
+## Defining "Truly Free" in Cloud Hosting
 
-### Always Free
+### 1. Always Free
 
 These represent the most genuinely "truly free" offerings. They provide a perpetual free tier with specific monthly usage limits that are available indefinitely to both new and existing customers.
 
@@ -37,7 +34,7 @@ Similarly, Google Cloud provides an "Always Free" tier for services like Firesto
 
 Azure also features "always-free" services, including Azure SQL Database (up to 10 databases with 100,000 vCore seconds and 32 GB storage) and 100 GB/month of internet egress. These options are ideal for projects that consistently stay within these defined, recurring limits.
 
-### 12-Month Free Tier
+### 2. 12-Month Free Tier
 
 These are promotional offers primarily extended to new customers, typically valid for a period of 12 months from the account signup date. They often provide access to more substantial resources, such as virtual machines or larger storage allocations, and they will automatically transition to standard pay-as-you-go rates once the 12-month period concludes or if usage exceeds the specified limits within that timeframe.
 
@@ -47,33 +44,39 @@ Azure provides 750 hours each of B1s, B2pts v2, and B2ats v2 burstable VMs for W
 
 This model serves as a valuable introductory period for exploration and development, allowing users to experiment with a broader range of services, but it does not constitute a long-term "truly free" solution. Users must plan for potential costs after the promotional period.
 
-### Trial Credits
+### 3. Trial Credits
 
 This category involves a one-time monetary credit (e.g., $300 for Google Cloud, $200 for Azure) provided to new users, typically with a limited validity period (e.g., 30 or 90 days). Services consumed under these credits are free only until the credit is exhausted or the trial period expires. After this, users are required to transition to a paid plan or a pay-as-you-go model.
 
 ## Common Characteristics and Hidden Costs of Free Tiers
 
+{{< admonition type="warning" >}}
 Even within "always free" tiers, certain characteristics and potential cost triggers are common across providers. Understanding these can prevent unexpected charges and performance issues.
+{{< /admonition >}}
 
-### Inactivity Policies
+### 1. Inactivity Policies
 
 A prevalent characteristic of many free backend services is their tendency to "spin down" or "go to sleep" after a period of inactivity. This mechanism is employed by providers to conserve resources and is particularly common for services that run on dedicated compute instances rather than serverless functions.
 
-### Data Egress Charges
+### 2. Data Egress Charges
 
-Data transfer out from a cloud provider's network (egress) is a consistently significant and often overlooked cost trigger, even within free tiers. Cloud providers incur substantial operational costs for their global network infrastructure and the bandwidth required to transfer data, particularly when it leaves their data centers and travels across the public internet. This mechanism effectively ensures that a project with growing user engagement or data consumption will eventually contribute financially to the platform.
+Data transfer out from a cloud provider's network (egress) is a consistently significant and often overlooked cost trigger, even within free tiers. Cloud providers incur substantial operational costs for their global network infrastructure and the bandwidth required to transfer data, particularly when it leaves their data centers and travels across the public internet.
 
-### Resource Suspension vs. Overage Charges
+This mechanism effectively ensures that a project with growing user engagement or data consumption will eventually contribute financially to the platform.
+
+### 3. Resource Suspension vs. Overage Charges
 
 Providers employ different strategies when free tier limits are reached. Some, like Render for service hours, will suspend services, preventing further charges but also halting the application. This means the application becomes unavailable until the next billing cycle or until the user manually upgrades to a paid plan.
 
 Others, such as Netlify for bandwidth, build minutes, and functions, will automatically transition to a pay-as-you-go model for overages, potentially incurring costs if not diligently monitored. This approach ensures service continuity but shifts the financial risk to the user.
 
-### Database Limitations
+### 4. Database Limitations
 
 Free database offerings typically come with stringent limitations on storage capacity, the number of operations (reads, writes, deletes), and concurrent connections. These limitations are designed to support small-scale development and testing.
 
-A critical limitation for some, like Render's free PostgreSQL databases, is their potential deletion after a specified period (e.g., 90 days) if not upgraded to a paid plan. This policy underscores the temporary nature of some "free" database services and the importance of understanding data persistence guarantees.
+A critical limitation for some, like Render's free PostgreSQL databases, is their potential deletion after a specified period (e.g., 90 days) if not upgraded to a paid plan.
+
+This policy underscores the temporary nature of some "free" database services and the importance of understanding data persistence guarantees.
 
 ## Cloud providers' strategy
 
@@ -394,5 +397,9 @@ I prefer my service to be suspended instead of extra change when exceeding limit
 5. **Test Limits**: Conduct tests to understand at what point your usage approaches the free tier limits under realistic load.
 6. **Understand Inactivity Policies**: For backend services, be aware of "sleep mode" policies and their impact on application responsiveness. For production-like environments, consider if the cold start latency is acceptable or if a paid plan for "always-on" services is necessary.
 7. **Consider Hybrid Approaches**: For full-stack applications, a hybrid approach might be optimal: use a specialized frontend host (e.g., Netlify, Vercel) for static assets and serverless functions, and a separate backend provider (e.g., Firebase, AWS Lambda/DynamoDB) for database and core API logic. This can maximize free tier usage across different services.
+
+{{< admonition type="tip" >}}
+Alternative, such as VPS or self-hosting, can be considered for more control and potentially lower costs in the long run, but they require more management and technical expertise.
+{{< /admonition >}}
 
 By evaluating these factors and understanding the underlying economic models, users can effectively navigate the complex landscape of free hosting, maximizing cost savings while ensuring their applications remain performant and available.
