@@ -2,6 +2,8 @@
 title: "About me"
 ---
 
+{{< figure src="images/about.jpg" alt="About" >}}
+
 I'm Dmitrii, currently based in Herceg Novi, Montenegro.
 
 Professionally, I work as a Software Engineer at
@@ -18,5 +20,4 @@ Connect with me on:
 - [LinkedIn](https://www.linkedin.com/in/7nolikov/)
 - [Twitter](https://x.com/7nolikov)
 - [BlueSky](https://bsky.app/profile/7nolikov.bsky.social)
-
-{{< figure src="images/about.jpg" alt="About" >}}
+- [GitHub](https://github.com/7nolikov)
