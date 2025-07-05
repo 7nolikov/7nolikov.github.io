@@ -2,7 +2,9 @@
 title: "About me"
 ---
 
-I'm Dmitrii, currently based in Herceg Novi, Montenegro. 
+I'm Dmitrii, currently based in Herceg Novi, Montenegro.
+
+{{< figure src="images/about.jpg" alt="About" >}}
 
 Professionally, I work as a Software Engineer at
 EPAM. My main focus is on cloud-native technologies, distributed systems, and building scalable and reliable software.
