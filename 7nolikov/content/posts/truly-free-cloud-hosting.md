@@ -16,9 +16,9 @@ However, the definition of "free" is highly nuanced, often including strict usag
 Automatic transition to pay-as-you-go plan can lead to unexpected costs.
 {{< /admonition >}}
 
-Practical considerations such as inactivity policies, the availability of custom domains, and the ease of monitoring usage are quite important for long-term sustainability and to prevent unexpected costs.
+Practical considerations, such as inactivity policies, the availability of custom domains, and the ease of monitoring usage, are quite important for long-term sustainability and to prevent unexpected costs.
 
-This acticle provides a comparative analysis of {{< sidenote "truly free" >}} The term "free" in the context of cloud hosting is often subject to various interpretations. Cloud providers typically categorize their free offerings into three primary models: "Always Free", "12-Month Free Tier", "Trial Credits".{{< /sidenote >}} hosting solutions for both backend and frontend components, outlining their capabilities, limitations, and the specific conditions under which costs may be incurred.
+This article provides a comparative analysis of {{< sidenote "truly free" >}} The term "free" in the context of cloud hosting is often subject to various interpretations. Cloud providers typically categorize their free offerings into three primary models: "Always Free", "12-Month Free Tier", "Trial Credits".{{< /sidenote >}} hosting solutions for both backend and frontend components, outlining their capabilities, limitations, and the specific conditions under which costs may be incurred.
 
 ## Defining "Truly Free" in Cloud Hosting
 
