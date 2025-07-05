@@ -4,8 +4,6 @@ title: "About me"
 
 I'm Dmitrii, currently based in Herceg Novi, Montenegro.
 
-{{< figure src="images/about.jpg" alt="About" >}}
-
 Professionally, I work as a Software Engineer at
 EPAM. My main focus is on cloud-native technologies, distributed systems, and building scalable and reliable software.
 
@@ -18,5 +16,7 @@ You can find my latest CV on [Github](https://7nolikov.dev/cv/Dmitrii-Novikov-CV
 Connect with me on:
 
 - [LinkedIn](https://www.linkedin.com/in/7nolikov/)
-- [X](https://x.com/7nolikov)
+- [Twitter](https://x.com/7nolikov)
 - [BlueSky](https://bsky.app/profile/7nolikov.bsky.social)
+
+{{< figure src="images/about.jpg" alt="About" >}}
