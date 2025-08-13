@@ -1,0 +1,240 @@
+<!doctype html>
+<html
+  lang="en-us"
+  dir="ltr"
+>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8" />
+<meta name="language" content="en" />
+<meta name="viewport" content="width=device-width" />
+<title>
+    Go Templates injection solved | 7nolikov | Dmitrii Novikov
+</title>
+  <meta name="description" content="I personally encountered a Go templates injection problem in a project I was working on.
+The blog post below guides users through the basics of using Go templates for generating HTML. The guide covers:
+setting up templates using actions to inject dynamic data creating reusable layouts addressing common rendering challenges with practical code examples. Link to the code example: https://github.com/nilotpaul
+Link to the blog post: Learn Go Templates" />
+<link rel="icon" type="image/png" href="/images/favicon.png" />
+<meta property="og:url" content="http://localhost:1313/notes/go-templates-injection/">
+  <meta property="og:site_name" content="7nolikov | Dmitrii Novikov">
+  <meta property="og:title" content="Go Templates injection solved">
+  <meta property="og:description" content="I personally encountered a Go templates injection problem in a project I was working on.
+The blog post below guides users through the basics of using Go templates for generating HTML. The guide covers:
+setting up templates using actions to inject dynamic data creating reusable layouts addressing common rendering challenges with practical code examples. Link to the code example: https://github.com/nilotpaul
+Link to the blog post: Learn Go Templates">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2025-05-09T00:00:00+00:00">
+
+
+  <meta itemprop="name" content="Go Templates injection solved">
+  <meta itemprop="description" content="I personally encountered a Go templates injection problem in a project I was working on.
+The blog post below guides users through the basics of using Go templates for generating HTML. The guide covers:
+setting up templates using actions to inject dynamic data creating reusable layouts addressing common rendering challenges with practical code examples. Link to the code example: https://github.com/nilotpaul
+Link to the blog post: Learn Go Templates">
+  <meta itemprop="datePublished" content="2025-05-09T00:00:00+00:00">
+  <meta itemprop="wordCount" content="68">
+  <meta itemprop="keywords" content="Golang">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Go Templates injection solved">
+  <meta name="twitter:description" content="I personally encountered a Go templates injection problem in a project I was working on.
+The blog post below guides users through the basics of using Go templates for generating HTML. The guide covers:
+setting up templates using actions to inject dynamic data creating reusable layouts addressing common rendering challenges with practical code examples. Link to the code example: https://github.com/nilotpaul
+Link to the blog post: Learn Go Templates">
+
+<link rel="canonical" href="http://localhost:1313/notes/go-templates-injection/" />
+
+    <link rel="stylesheet" href="/css/index.css" />
+
+
+      <script src="/js/main.js" defer></script>
+  
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-V3HY4BP6JS"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-V3HY4BP6JS');
+        }
+      </script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@id": "http://localhost:1313/notes/go-templates-injection/",
+  "@type": "BlogPosting",
+  "articleSection": [
+    "Golang"
+  ],
+  "author": {
+    "@type": "Person",
+    "email": "7nolikov@gmail.com",
+    "name": "Dmitrii Novikov",
+    "url": "http://localhost:1313/about/"
+  },
+  "copyrightNotice": "Dmitrii Novikov",
+  "datePublished": "2025-05-09",
+  "description": "I personally encountered a Go templates injection problem in a project I was working on.\nThe blog post below guides users through the basics of using Go templates for generating HTML. The guide covers:\nsetting up templates using actions to inject dynamic data creating reusable layouts addressing common rendering challenges with practical code examples. Link to the code example: https://github.com/nilotpaul\nLink to the blog post: Learn Go Templates",
+  "headline": "Go Templates injection solved",
+  "isPartOf": {
+    "@id": "http://localhost:1313/notes/",
+    "@type": "Blog",
+    "name": "Notes"
+  },
+  "mainEntityOfPage": "http://localhost:1313/notes/go-templates-injection/",
+  "name": "Go Templates injection solved",
+  "timeRequired": "PT1M",
+  "url": "http://localhost:1313/notes/go-templates-injection/",
+  "wordCount": 68
+}
+</script>
+
+
+  </head>
+  <body>
+    <div class="container mx-auto flex max-w-prose flex-col space-y-10 p-4 md:p-6">
+      <header class="flex flex-row items-center justify-between">
+        <div>
+  <a id="skip-nav" class="sr-only" href="#maincontent">Skip to main content</a>
+  <a class="font-semibold" href="/">7nolikov | Dmitrii Novikov</a>
+</div>
+
+  <nav>
+    <ul class="flex flex-row items-center justify-end space-x-4">
+    <li>
+      <a href="/about/">About</a
+      >
+    </li>
+    <li>
+      <a href="/posts/">Posts</a
+      >
+    </li>
+    <li>
+      <a aria-current="true" class="ancestor" href="/notes/">Notes</a
+      >
+    </li>
+    <li>
+      <a href="/graph/">Graph</a
+      >
+    </li>
+    </ul>
+  </nav>
+
+
+      </header>
+      <main class="prose prose-slate relative md:prose-lg prose-h1:text-[2em]" id="maincontent">
+        <article class="main">
+    <header>
+      <h1 class="!mb-1">Go Templates injection solved</h1><div class="flex flex-row items-center space-x-4">
+          <time class="text-sm italic opacity-80" datetime="2025-05-09T00:00:00&#43;00:00"
+            >May 9, 2025</time
+          >
+        </div>
+    </header>
+
+    <p>I personally encountered a Go templates injection problem in a project I was working on.</p>
+<p>The blog post below guides users through the basics of using Go templates for generating HTML. The guide covers:</p>
+<ul>
+<li>setting up templates</li>
+<li>using actions to inject dynamic data</li>
+<li>creating reusable layouts</li>
+<li>addressing common rendering challenges with practical code examples.</li>
+</ul>
+<p>Link to the code example: <a href="https://github.com/nilotpaul/tutorials/blob/main/golang/mastering-golang-templates-a-practical-guide-to-layouts-data-binding-and-rendering/main.go">https://github.com/nilotpaul</a></p>
+<p>Link to the blog post: <a href="https://blog.logrocket.com/learn-go-templates-a-practical-guide-to-layouts-data-binding-and-rendering/">Learn Go Templates</a></p>
+
+  </article>
+    <aside class="not-prose flex flex-col space-y-8 border-t pt-6">
+    <section class="flex flex-col space-y-4">
+      <h2 class="flex flex-row items-center space-x-2 text-lg font-semibold">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-shapes h-4 w-4"
+  viewBox="0 0 24 24"
+  aria-hidden="true"
+>
+  <path
+    d="M8.3 10a.7.7 0 0 1-.626-1.079L11.4 3a.7.7 0 0 1 1.198-.043L16.3 8.9a.7.7 0 0 1-.572 1.1Z"
+  />
+  <rect width="7" height="7" x="3" y="14" rx="1" />
+  <circle cx="17.5" cy="17.5" r="3.5" />
+</svg>
+
+        <span>Categories</span>
+      </h2>
+
+      <ul class="ml-6 flex flex-row flex-wrap items-center space-x-2">
+          <li>
+            <a href="/categories/golang/" class="taxonomy category">golang</a>
+          </li>
+      </ul>
+    </section>
+    <section class="flex flex-col space-y-4" aria-hidden="true">
+      <h2 class="flex flex-row items-center space-x-2 text-lg font-semibold">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-chart-network h-4 w-4"
+  viewBox="0 0 24 24"
+  aria-hidden="true"
+>
+  <path
+    d="m13.11 7.664 1.78 2.672M14.162 12.788l-3.324 1.424M20 4l-6.06 1.515M3 3v16a2 2 0 0 0 2 2h16"
+  />
+  <circle cx="12" cy="6" r="2" />
+  <circle cx="16" cy="12" r="2" />
+  <circle cx="9" cy="15" r="2" />
+</svg>
+
+        <span>Graph</span>
+      </h2>
+
+      <content-network-graph
+  class="h-64 ml-6"
+  data-endpoint="/graph/index.json"
+  page="/notes/go-templates-injection/"
+></content-network-graph>
+
+    </section>
+</aside>
+
+
+      </main>
+      <footer class="mt-20 border-t border-neutral-100 pt-2 text-xs">
+        <section class="items-top flex flex-row justify-between opacity-70">
+  <div class="flex flex-col space-y-2">
+      <p>Copyright &copy; 2025, Dmitrii Novikov.</p>
+
+  </div>
+    <div>
+      <a
+        href="https://github.com/michenriksen/hugo-theme-til"
+        title="Today I Learned &#8212; A Hugo theme by Michael Henriksen"
+        data-theme-version="0.6.0"
+        >theme: til</a
+      >
+    </div>
+</section>
+
+      </footer>
+    </div>
+    
+  </body>
+</html>

@@ -1,0 +1,289 @@
+<!doctype html>
+<html
+  lang="en-us"
+  dir="ltr"
+>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8" />
+<meta name="language" content="en" />
+<meta name="viewport" content="width=device-width" />
+<title>
+    Google Agent Development Kit | 7nolikov | Dmitrii Novikov
+</title>
+  <meta name="description" content="Google introduced ADK: An open-source framework for AI Agent Development designed for developing and deploying AI agents.
+ADK facilitates the rapid creation of basic agents powered by Gemini and Google AI tools, while also providing the necessary structure and control for more intricate agent architectures and orchestration.
+Key Features Flexible Orchestration: Define agent workflows using sequential, parallel, or looping structures, or implement dynamic routing with LLM-driven agent transfer. Multi-Agent Architecture: Build scalable applications by composing specialized agents in hierarchical structures, enabling complex coordination and delegation of tasks. Rich Tool Ecosystem: Equip agents with pre-built tools (e.g., Search, Code Execution), custom functions, and integration with third-party libraries (e.g., LangChain, CrewAI), or even utilize other agents as tools. Deployment Ready: Containerize and deploy agents across various environments, including local machines, Vertex AI Agent Engine, Cloud Run, or Docker. Built-in Evaluation: Systematically assess agent performance by evaluating response quality and execution trajectory against defined test cases. Responsible AI: Provides guidance on implementing responsible AI principles and best practices in agent design. Getting Started Install the ADK using pip: pip install google-adk" />
+<link rel="icon" type="image/png" href="/images/favicon.png" />
+<meta property="og:url" content="http://localhost:1313/notes/google-adk/">
+  <meta property="og:site_name" content="7nolikov | Dmitrii Novikov">
+  <meta property="og:title" content="Google Agent Development Kit">
+  <meta property="og:description" content="Google introduced ADK: An open-source framework for AI Agent Development designed for developing and deploying AI agents.
+ADK facilitates the rapid creation of basic agents powered by Gemini and Google AI tools, while also providing the necessary structure and control for more intricate agent architectures and orchestration.
+Key Features Flexible Orchestration: Define agent workflows using sequential, parallel, or looping structures, or implement dynamic routing with LLM-driven agent transfer. Multi-Agent Architecture: Build scalable applications by composing specialized agents in hierarchical structures, enabling complex coordination and delegation of tasks. Rich Tool Ecosystem: Equip agents with pre-built tools (e.g., Search, Code Execution), custom functions, and integration with third-party libraries (e.g., LangChain, CrewAI), or even utilize other agents as tools. Deployment Ready: Containerize and deploy agents across various environments, including local machines, Vertex AI Agent Engine, Cloud Run, or Docker. Built-in Evaluation: Systematically assess agent performance by evaluating response quality and execution trajectory against defined test cases. Responsible AI: Provides guidance on implementing responsible AI principles and best practices in agent design. Getting Started Install the ADK using pip: pip install google-adk">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2025-04-12T00:00:00+00:00">
+
+
+  <meta itemprop="name" content="Google Agent Development Kit">
+  <meta itemprop="description" content="Google introduced ADK: An open-source framework for AI Agent Development designed for developing and deploying AI agents.
+ADK facilitates the rapid creation of basic agents powered by Gemini and Google AI tools, while also providing the necessary structure and control for more intricate agent architectures and orchestration.
+Key Features Flexible Orchestration: Define agent workflows using sequential, parallel, or looping structures, or implement dynamic routing with LLM-driven agent transfer. Multi-Agent Architecture: Build scalable applications by composing specialized agents in hierarchical structures, enabling complex coordination and delegation of tasks. Rich Tool Ecosystem: Equip agents with pre-built tools (e.g., Search, Code Execution), custom functions, and integration with third-party libraries (e.g., LangChain, CrewAI), or even utilize other agents as tools. Deployment Ready: Containerize and deploy agents across various environments, including local machines, Vertex AI Agent Engine, Cloud Run, or Docker. Built-in Evaluation: Systematically assess agent performance by evaluating response quality and execution trajectory against defined test cases. Responsible AI: Provides guidance on implementing responsible AI principles and best practices in agent design. Getting Started Install the ADK using pip: pip install google-adk">
+  <meta itemprop="datePublished" content="2025-04-12T00:00:00+00:00">
+  <meta itemprop="wordCount" content="190">
+  <meta itemprop="keywords" content="AI">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Google Agent Development Kit">
+  <meta name="twitter:description" content="Google introduced ADK: An open-source framework for AI Agent Development designed for developing and deploying AI agents.
+ADK facilitates the rapid creation of basic agents powered by Gemini and Google AI tools, while also providing the necessary structure and control for more intricate agent architectures and orchestration.
+Key Features Flexible Orchestration: Define agent workflows using sequential, parallel, or looping structures, or implement dynamic routing with LLM-driven agent transfer. Multi-Agent Architecture: Build scalable applications by composing specialized agents in hierarchical structures, enabling complex coordination and delegation of tasks. Rich Tool Ecosystem: Equip agents with pre-built tools (e.g., Search, Code Execution), custom functions, and integration with third-party libraries (e.g., LangChain, CrewAI), or even utilize other agents as tools. Deployment Ready: Containerize and deploy agents across various environments, including local machines, Vertex AI Agent Engine, Cloud Run, or Docker. Built-in Evaluation: Systematically assess agent performance by evaluating response quality and execution trajectory against defined test cases. Responsible AI: Provides guidance on implementing responsible AI principles and best practices in agent design. Getting Started Install the ADK using pip: pip install google-adk">
+
+<link rel="canonical" href="http://localhost:1313/notes/google-adk/" />
+
+    <link rel="stylesheet" href="/css/index.css" />
+
+
+      <script src="/js/main.js" defer></script>
+  
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-V3HY4BP6JS"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-V3HY4BP6JS');
+        }
+      </script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@id": "http://localhost:1313/notes/google-adk/",
+  "@type": "BlogPosting",
+  "articleSection": [
+    "AI"
+  ],
+  "author": {
+    "@type": "Person",
+    "email": "7nolikov@gmail.com",
+    "name": "Dmitrii Novikov",
+    "url": "http://localhost:1313/about/"
+  },
+  "copyrightNotice": "Dmitrii Novikov",
+  "datePublished": "2025-04-12",
+  "description": "Google introduced ADK: An open-source framework for AI Agent Development designed for developing and deploying AI agents.\nADK facilitates the rapid creation of basic agents powered by Gemini and Google AI tools, while also providing the necessary structure and control for more intricate agent architectures and orchestration.\nKey Features Flexible Orchestration: Define agent workflows using sequential, parallel, or looping structures, or implement dynamic routing with LLM-driven agent transfer. Multi-Agent Architecture: Build scalable applications by composing specialized agents in hierarchical structures, enabling complex coordination and delegation of tasks. Rich Tool Ecosystem: Equip agents with pre-built tools (e.g., Search, Code Execution), custom functions, and integration with third-party libraries (e.g., LangChain, CrewAI), or even utilize other agents as tools. Deployment Ready: Containerize and deploy agents across various environments, including local machines, Vertex AI Agent Engine, Cloud Run, or Docker. Built-in Evaluation: Systematically assess agent performance by evaluating response quality and execution trajectory against defined test cases. Responsible AI: Provides guidance on implementing responsible AI principles and best practices in agent design. Getting Started Install the ADK using pip: pip install google-adk",
+  "headline": "Google Agent Development Kit",
+  "isPartOf": {
+    "@id": "http://localhost:1313/notes/",
+    "@type": "Blog",
+    "name": "Notes"
+  },
+  "mainEntityOfPage": "http://localhost:1313/notes/google-adk/",
+  "name": "Google Agent Development Kit",
+  "timeRequired": "PT1M",
+  "url": "http://localhost:1313/notes/google-adk/",
+  "wordCount": 190
+}
+</script>
+
+
+  </head>
+  <body>
+    <div class="container mx-auto flex max-w-prose flex-col space-y-10 p-4 md:p-6">
+      <header class="flex flex-row items-center justify-between">
+        <div>
+  <a id="skip-nav" class="sr-only" href="#maincontent">Skip to main content</a>
+  <a class="font-semibold" href="/">7nolikov | Dmitrii Novikov</a>
+</div>
+
+  <nav>
+    <ul class="flex flex-row items-center justify-end space-x-4">
+    <li>
+      <a href="/about/">About</a
+      >
+    </li>
+    <li>
+      <a href="/posts/">Posts</a
+      >
+    </li>
+    <li>
+      <a aria-current="true" class="ancestor" href="/notes/">Notes</a
+      >
+    </li>
+    <li>
+      <a href="/graph/">Graph</a
+      >
+    </li>
+    </ul>
+  </nav>
+
+
+      </header>
+      <main class="prose prose-slate relative md:prose-lg prose-h1:text-[2em]" id="maincontent">
+        <article class="main">
+    <header>
+      <h1 class="!mb-1">Google Agent Development Kit</h1><div class="flex flex-row items-center space-x-4">
+          <time class="text-sm italic opacity-80" datetime="2025-04-12T00:00:00&#43;00:00"
+            >April 12, 2025</time
+          >
+        </div>
+    </header>
+
+    <p>Google introduced ADK: An open-source framework for AI Agent Development designed for developing and deploying AI agents.</p>
+<p>ADK facilitates the rapid creation of basic agents powered by Gemini and Google AI tools, while also providing the necessary structure and control for more intricate agent architectures and orchestration.</p>
+<h3 id="key-features" class="scroll-mt-8 group">
+  Key Features
+  
+    <a href="#key-features"
+        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+        aria-hidden="true" title="Link to this heading" tabindex="-1">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
+
+    </a>
+  
+</h3>
+<ul>
+<li><strong>Flexible Orchestration</strong>: Define agent workflows using sequential, parallel, or looping structures, or implement dynamic routing with LLM-driven agent transfer.</li>
+<li><strong>Multi-Agent Architecture</strong>: Build scalable applications by composing specialized agents in hierarchical structures, enabling complex coordination and delegation of tasks.</li>
+<li><strong>Rich Tool Ecosystem</strong>: Equip agents with pre-built tools (e.g., Search, Code Execution), custom functions, and integration with third-party libraries (e.g., LangChain, CrewAI), or even utilize other agents as tools.</li>
+<li><strong>Deployment Ready</strong>: Containerize and deploy agents across various environments, including local machines, Vertex AI Agent Engine, Cloud Run, or Docker.</li>
+<li><strong>Built-in Evaluation</strong>: Systematically assess agent performance by evaluating response quality and execution trajectory against defined test cases.</li>
+<li><strong>Responsible AI</strong>: Provides guidance on implementing responsible AI principles and best practices in agent design.</li>
+</ul>
+<h3 id="getting-started" class="scroll-mt-8 group">
+  Getting Started
+  
+    <a href="#getting-started"
+        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+        aria-hidden="true" title="Link to this heading" tabindex="-1">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
+
+    </a>
+  
+</h3>
+<p>Install the ADK using pip: <code>pip install google-adk</code></p>
+<p>Further resources, including quickstart guides and API references, are available here:
+<a href="https://google.github.io/adk-docs/#learn-more">https://google.github.io/adk-docs/#learn-more</a></p>
+
+  </article>
+    <aside class="not-prose flex flex-col space-y-8 border-t pt-6">
+    <section class="flex flex-col space-y-4">
+      <h2 class="flex flex-row items-center space-x-2 text-lg font-semibold">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-shapes h-4 w-4"
+  viewBox="0 0 24 24"
+  aria-hidden="true"
+>
+  <path
+    d="M8.3 10a.7.7 0 0 1-.626-1.079L11.4 3a.7.7 0 0 1 1.198-.043L16.3 8.9a.7.7 0 0 1-.572 1.1Z"
+  />
+  <rect width="7" height="7" x="3" y="14" rx="1" />
+  <circle cx="17.5" cy="17.5" r="3.5" />
+</svg>
+
+        <span>Categories</span>
+      </h2>
+
+      <ul class="ml-6 flex flex-row flex-wrap items-center space-x-2">
+          <li>
+            <a href="/categories/ai/" class="taxonomy category">AI</a>
+          </li>
+      </ul>
+    </section>
+    <section class="flex flex-col space-y-4" aria-hidden="true">
+      <h2 class="flex flex-row items-center space-x-2 text-lg font-semibold">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-chart-network h-4 w-4"
+  viewBox="0 0 24 24"
+  aria-hidden="true"
+>
+  <path
+    d="m13.11 7.664 1.78 2.672M14.162 12.788l-3.324 1.424M20 4l-6.06 1.515M3 3v16a2 2 0 0 0 2 2h16"
+  />
+  <circle cx="12" cy="6" r="2" />
+  <circle cx="16" cy="12" r="2" />
+  <circle cx="9" cy="15" r="2" />
+</svg>
+
+        <span>Graph</span>
+      </h2>
+
+      <content-network-graph
+  class="h-64 ml-6"
+  data-endpoint="/graph/index.json"
+  page="/notes/google-adk/"
+></content-network-graph>
+
+    </section>
+</aside>
+
+
+      </main>
+      <footer class="mt-20 border-t border-neutral-100 pt-2 text-xs">
+        <section class="items-top flex flex-row justify-between opacity-70">
+  <div class="flex flex-col space-y-2">
+      <p>Copyright &copy; 2025, Dmitrii Novikov.</p>
+
+  </div>
+    <div>
+      <a
+        href="https://github.com/michenriksen/hugo-theme-til"
+        title="Today I Learned &#8212; A Hugo theme by Michael Henriksen"
+        data-theme-version="0.6.0"
+        >theme: til</a
+      >
+    </div>
+</section>
+
+      </footer>
+    </div>
+    
+  </body>
+</html>

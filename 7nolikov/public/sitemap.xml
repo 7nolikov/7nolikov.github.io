@@ -4,13 +4,43 @@
   <url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
+    <loc>http://localhost:1313/categories/cloud/</loc>
+  </url><url>
     <loc>http://localhost:1313/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/machine-learning/</loc>
+    <loc>http://localhost:1313/posts/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/truly-free-cloud-hosting/</loc>
+  </url><url>
+    <loc>http://localhost:1313/notes/no-yaml/</loc>
+  </url><url>
+    <loc>http://localhost:1313/notes/</loc>
+  </url><url>
+    <loc>http://localhost:1313/categories/yaml/</loc>
+  </url><url>
+    <loc>http://localhost:1313/notes/jpmorgan-python-training/</loc>
+  </url><url>
+    <loc>http://localhost:1313/categories/python/</loc>
+  </url><url>
+    <loc>http://localhost:1313/notes/go-templates-injection/</loc>
+  </url><url>
+    <loc>http://localhost:1313/categories/golang/</loc>
+  </url><url>
+    <loc>http://localhost:1313/notes/software-architecture-premier/</loc>
+  </url><url>
+    <loc>http://localhost:1313/categories/system-design/</loc>
+  </url><url>
+    <loc>http://localhost:1313/categories/ai/</loc>
+  </url><url>
+    <loc>http://localhost:1313/notes/google-adk/</loc>
+  </url><url>
+    <loc>http://localhost:1313/notes/rust-exercises/</loc>
+  </url><url>
+    <loc>http://localhost:1313/categories/rust/</loc>
   </url><url>
     <loc>http://localhost:1313/notes/minitorch/</loc>
   </url><url>
-    <loc>http://localhost:1313/notes/</loc>
+    <loc>http://localhost:1313/categories/ml/</loc>
   </url><url>
     <loc>http://localhost:1313/notes/json-api/</loc>
   </url><url>
@@ -22,15 +52,13 @@
   </url><url>
     <loc>http://localhost:1313/categories/time-management/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/build/</loc>
-  </url><url>
-    <loc>http://localhost:1313/posts/meson-vs-make/</loc>
+    <loc>http://localhost:1313/categories/api/</loc>
   </url><url>
     <loc>http://localhost:1313/notes/open-resume-parser/</loc>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-  </url><url>
     <loc>http://localhost:1313/categories/resume/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/what-is-api/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/analytics/</loc>
   </url><url>
@@ -40,13 +68,13 @@
   </url><url>
     <loc>http://localhost:1313/categories/books/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/api/</loc>
+    <loc>http://localhost:1313/categories/build/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/meson-vs-make/</loc>
   </url><url>
     <loc>http://localhost:1313/notes/metal-wallet/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/inventory/</loc>
-  </url><url>
-    <loc>http://localhost:1313/posts/what-is-api/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/spring/</loc>
   </url><url>

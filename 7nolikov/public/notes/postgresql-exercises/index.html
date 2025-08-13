@@ -34,8 +34,8 @@ It’s free, no registration required, and you can start practicing right away. 
 https://pgexercises.com/
 Big thanks to Alisdair Owens for creating and maintaining this fantastic resource!">
   <meta itemprop="datePublished" content="2024-12-02T00:00:00+00:00">
-  <meta itemprop="wordCount" content="74">
-  <meta itemprop="keywords" content="Postgresql">
+  <meta itemprop="wordCount" content="84">
+  <meta itemprop="keywords" content="Databases,Postgresql">
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="PostgreSQL Exercises">
@@ -51,6 +51,20 @@ Big thanks to Alisdair Owens for creating and maintaining this fantastic resourc
 
       <script src="/js/main.js" defer></script>
   
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-V3HY4BP6JS"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-V3HY4BP6JS');
+        }
+      </script>
 
 <script type="application/ld+json">
 {
@@ -58,6 +72,7 @@ Big thanks to Alisdair Owens for creating and maintaining this fantastic resourc
   "@id": "http://localhost:1313/notes/postgresql-exercises/",
   "@type": "BlogPosting",
   "articleSection": [
+    "Databases",
     "Postgresql"
   ],
   "author": {
@@ -79,7 +94,7 @@ Big thanks to Alisdair Owens for creating and maintaining this fantastic resourc
   "name": "PostgreSQL Exercises",
   "timeRequired": "PT1M",
   "url": "http://localhost:1313/notes/postgresql-exercises/",
-  "wordCount": 74
+  "wordCount": 84
 }
 </script>
 
@@ -130,6 +145,13 @@ Big thanks to Alisdair Owens for creating and maintaining this fantastic resourc
 <p>It&rsquo;s free, no registration required, and you can start practicing right away. The exercises are extremely helpful for interview preparation, learning SQL, or refreshing your database skills.</p>
 <p><a href="https://pgexercises.com/">https://pgexercises.com/</a></p>
 <p>Big thanks to <a href="https://alisdairowens.net/">Alisdair Owens</a> for creating and maintaining this fantastic resource!</p>
+<p>See also:</p>
+<ul>
+<li><a href="/notes/edge-db/" class="backlink">EdgeDB - Turbocharged Postgres</a>
+</li>
+<li><a href="/notes/b-trees-and-database-indexes/" class="backlink">B-Trees and database indexes</a>
+</li>
+</ul>
 
   </article>
     <aside class="not-prose flex flex-col space-y-8 border-t pt-6">
@@ -157,6 +179,9 @@ Big thanks to Alisdair Owens for creating and maintaining this fantastic resourc
       </h2>
 
       <ul class="ml-6 flex flex-row flex-wrap items-center space-x-2">
+          <li>
+            <a href="/categories/databases/" class="taxonomy category">databases</a>
+          </li>
           <li>
             <a href="/categories/postgresql/" class="taxonomy category">postgresql</a>
           </li>
@@ -192,6 +217,99 @@ Big thanks to Alisdair Owens for creating and maintaining this fantastic resourc
   page="/notes/postgresql-exercises/"
 ></content-network-graph>
 
+    </section>
+    <section class="flex flex-col space-y-4">
+      <h2 class="flex flex-row items-center space-x-2 text-lg font-semibold">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-notebook-text h-4 w-4"
+  viewBox="0 0 24 24"
+  aria-hidden="true"
+>
+  <path d="M2 6h4M2 10h4M2 14h4M2 18h4" />
+  <rect width="16" height="20" x="4" y="2" rx="2" />
+  <path d="M9.5 8h5M9.5 12H16M9.5 16H14" />
+</svg>
+
+        <span>Notes</span>
+      </h2>
+        <section class="flex flex-col space-y-1">
+          <h3 class="flex flex-row items-center space-x-2 text-sm font-semibold">
+            <svg
+  xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-arrow-up-from-dot h-4 w-4"
+  viewBox="0 0 24 24"
+  aria-hidden="true"
+>
+  <path d="m5 9 7-7 7 7M12 16V2" />
+  <circle cx="12" cy="21" r="1" />
+</svg>
+
+            <span>Outgoing</span>
+          </h3>
+
+          <ol class="not-prose ml-6">
+    <li>
+      <article class="flex flex-row items-center">
+        <header class="grow">
+          <h3>
+            <a
+              href="/notes/edge-db/"
+              class="truncate text-sm underline decoration-slate-300 decoration-2 underline-offset-4 hover:decoration-inherit"
+              title="EdgeDB - Turbocharged Postgres"
+              >EdgeDB - Turbocharged Postgres</a
+            >
+          </h3>
+        </header>
+          <ul class="flex flex-row items-center justify-end space-x-2">
+              <li>
+                <a
+                  href="/categories/databases/"
+                  class="taxonomy"
+                  title="Posts and notes on Databases"
+                  >Databases</a
+                >
+              </li>
+          </ul>
+      </article>
+    </li>
+    <li>
+      <article class="flex flex-row items-center">
+        <header class="grow">
+          <h3>
+            <a
+              href="/notes/b-trees-and-database-indexes/"
+              class="truncate text-sm underline decoration-slate-300 decoration-2 underline-offset-4 hover:decoration-inherit"
+              title="B-Trees and database indexes"
+              >B-Trees and database indexes</a
+            >
+          </h3>
+        </header>
+          <ul class="flex flex-row items-center justify-end space-x-2">
+              <li>
+                <a
+                  href="/categories/databases/"
+                  class="taxonomy"
+                  title="Posts and notes on Databases"
+                  >Databases</a
+                >
+              </li>
+          </ul>
+      </article>
+    </li>
+</ol>
+
+        </section>
     </section>
 </aside>
 

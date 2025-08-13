@@ -1,7 +1,9 @@
 {
   "graph": {
     "/notes/b-trees-and-database-indexes/": {
-      "in": [],
+      "in": [
+        "/notes/postgresql-exercises/"
+      ],
       "out": []
     },
     "/notes/calendly/": {
@@ -23,6 +25,12 @@
       "out": []
     },
     "/notes/edge-db/": {
+      "in": [
+        "/notes/postgresql-exercises/"
+      ],
+      "out": []
+    },
+    "/notes/go-templates-injection/": {
       "in": [],
       "out": []
     },
@@ -30,7 +38,15 @@
       "in": [],
       "out": []
     },
+    "/notes/google-adk/": {
+      "in": [],
+      "out": []
+    },
     "/notes/hal/": {
+      "in": [],
+      "out": []
+    },
+    "/notes/jpmorgan-python-training/": {
       "in": [],
       "out": []
     },
@@ -56,6 +72,10 @@
       "in": [],
       "out": []
     },
+    "/notes/no-yaml/": {
+      "in": [],
+      "out": []
+    },
     "/notes/open-resume-parser/": {
       "in": [],
       "out": []
@@ -66,7 +86,10 @@
     },
     "/notes/postgresql-exercises/": {
       "in": [],
-      "out": []
+      "out": [
+        "/notes/edge-db/",
+        "/notes/b-trees-and-database-indexes/"
+      ]
     },
     "/notes/posthog/": {
       "in": [],
@@ -77,6 +100,14 @@
       "out": []
     },
     "/notes/revealjs/": {
+      "in": [],
+      "out": []
+    },
+    "/notes/rust-exercises/": {
+      "in": [],
+      "out": []
+    },
+    "/notes/software-architecture-premier/": {
       "in": [],
       "out": []
     },
@@ -105,6 +136,10 @@
       "out": []
     },
     "/posts/testcontainers-docker-compose-module/": {
+      "in": [],
+      "out": []
+    },
+    "/posts/truly-free-cloud-hosting/": {
       "in": [],
       "out": []
     },
@@ -148,15 +183,30 @@
       "section": "notes",
       "title": "EdgeDB - Turbocharged Postgres"
     },
+    "/notes/go-templates-injection/": {
+      "permalink": "/notes/go-templates-injection/",
+      "section": "notes",
+      "title": "Go Templates injection solved"
+    },
     "/notes/going-offline-book/": {
       "permalink": "/notes/going-offline-book/",
       "section": "notes",
       "title": "Book - Going Offline"
     },
+    "/notes/google-adk/": {
+      "permalink": "/notes/google-adk/",
+      "section": "notes",
+      "title": "Google Agent Development Kit"
+    },
     "/notes/hal/": {
       "permalink": "/notes/hal/",
       "section": "notes",
       "title": "HAL - Hypertext Application Language"
+    },
+    "/notes/jpmorgan-python-training/": {
+      "permalink": "/notes/jpmorgan-python-training/",
+      "section": "notes",
+      "title": "JPMorgan Chase Python Training"
     },
     "/notes/json-api/": {
       "permalink": "/notes/json-api/",
@@ -182,6 +232,11 @@
       "permalink": "/notes/modern-make/",
       "section": "notes",
       "title": "Modern Make"
+    },
+    "/notes/no-yaml/": {
+      "permalink": "/notes/no-yaml/",
+      "section": "notes",
+      "title": "No YAML"
     },
     "/notes/open-resume-parser/": {
       "permalink": "/notes/open-resume-parser/",
@@ -212,6 +267,16 @@
       "permalink": "/notes/revealjs/",
       "section": "notes",
       "title": "RevealJS - HTML Presentation Framework"
+    },
+    "/notes/rust-exercises/": {
+      "permalink": "/notes/rust-exercises/",
+      "section": "notes",
+      "title": "100 Exercises to learn Rust"
+    },
+    "/notes/software-architecture-premier/": {
+      "permalink": "/notes/software-architecture-premier/",
+      "section": "notes",
+      "title": "Software Architecture Premier"
     },
     "/notes/spring-modulith/": {
       "permalink": "/notes/spring-modulith/",
@@ -247,6 +312,11 @@
       "permalink": "/posts/testcontainers-docker-compose-module/",
       "section": "posts",
       "title": "Testcontainers Docker Compose module"
+    },
+    "/posts/truly-free-cloud-hosting/": {
+      "permalink": "/posts/truly-free-cloud-hosting/",
+      "section": "posts",
+      "title": "Truly free cloud hosting for developers"
     },
     "/posts/what-is-api/": {
       "permalink": "/posts/what-is-api/",

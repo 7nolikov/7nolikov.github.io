@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rust on 7nolikov | Dmitrii Novikov</title>
+    <link>http://localhost:1313/categories/rust/</link>
+    <description>Recent content in Rust on 7nolikov | Dmitrii Novikov</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <managingEditor>7nolikov@gmail.com (Dmitrii Novikov)</managingEditor>
+    <webMaster>7nolikov@gmail.com (Dmitrii Novikov)</webMaster>
+    <copyright>Dmitrii Novikov</copyright>
+    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/rust/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>100 Exercises to learn Rust</title>
+      <link>http://localhost:1313/notes/rust-exercises/</link>
+      <pubDate>Tue, 18 Feb 2025 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
+      <guid>http://localhost:1313/notes/rust-exercises/</guid>
+      <description>&lt;p&gt;This GitHub repository offers 100 exercises designed to help you learn Rust, a modern system programming language. The exercises cover basic syntax, control structures, memory management, and more. Perfect for beginners, these challenges let you practice Rust step by step.&lt;/p&gt;&#xA;&lt;p&gt;Learn more at &lt;a href=&#34;https://github.com/mainmatter/100-exercises-to-learn-rust&#34;&gt;100 Exercises to Learn Rust&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

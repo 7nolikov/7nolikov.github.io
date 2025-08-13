@@ -4,6 +4,7 @@ title = '7nolikov | Dmitrii Novikov'
 copyright = 'Dmitrii Novikov'
 enableRobotsTXT = true
 titleCaseStyle = "firstupper"
+googleAnalytics = "G-V3HY4BP6JS"
 
 [module]
   [[module.imports]]

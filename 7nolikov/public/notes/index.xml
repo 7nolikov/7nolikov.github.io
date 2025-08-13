@@ -12,6 +12,48 @@
     <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/notes/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>No YAML</title>
+      <link>http://localhost:1313/notes/no-yaml/</link>
+      <pubDate>Mon, 19 May 2025 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
+      <guid>http://localhost:1313/notes/no-yaml/</guid>
+      <description>&lt;p&gt;The website noyaml.com humorously critiques the use of YAML in DevOps, particularly with Kubernetes. It highlights YAML&amp;rsquo;s lack of error handling, potential security vulnerabilities, and quirks (like misinterpreting &amp;ldquo;NO&amp;rdquo; as a boolean). Despite these issues, the site sarcastically acknowledges YAML&amp;rsquo;s widespread adoption, especially by Kubernetes, and its superiority to older configuration formats.&lt;/p&gt;&#xA;&lt;p&gt;See it on &lt;a href=&#34;https://noyaml.com/&#34;&gt;noyaml.com&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>JPMorgan Chase Python Training</title>
+      <link>http://localhost:1313/notes/jpmorgan-python-training/</link>
+      <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
+      <guid>http://localhost:1313/notes/jpmorgan-python-training/</guid>
+      <description>&lt;p&gt;The JPMorgan Chase Python Training repository offers materials designed for business analysts, traders, and select clients of JPMorgan. This course focuses on numerical computing and data visualization in Python and is tailored for individuals without formal programming backgrounds. The training, intended for in-person delivery by JPMorgan professionals, utilizes resources from the Binder project and incorporates financial data.&lt;/p&gt;&#xA;&lt;p&gt;Link here: &lt;a href=&#34;https://github.com/jpmorganchase/python-training&#34;&gt;JPMorgan Chase Python Training&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Go Templates injection solved</title>
+      <link>http://localhost:1313/notes/go-templates-injection/</link>
+      <pubDate>Fri, 09 May 2025 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
+      <guid>http://localhost:1313/notes/go-templates-injection/</guid>
+      <description>&lt;p&gt;I personally encountered a Go templates injection problem in a project I was working on.&lt;/p&gt;&#xA;&lt;p&gt;The blog post below guides users through the basics of using Go templates for generating HTML. The guide covers:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;setting up templates&lt;/li&gt;&#xA;&lt;li&gt;using actions to inject dynamic data&lt;/li&gt;&#xA;&lt;li&gt;creating reusable layouts&lt;/li&gt;&#xA;&lt;li&gt;addressing common rendering challenges with practical code examples.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Link to the code example: &lt;a href=&#34;https://github.com/nilotpaul/tutorials/blob/main/golang/mastering-golang-templates-a-practical-guide-to-layouts-data-binding-and-rendering/main.go&#34;&gt;https://github.com/nilotpaul&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Link to the blog post: &lt;a href=&#34;https://blog.logrocket.com/learn-go-templates-a-practical-guide-to-layouts-data-binding-and-rendering/&#34;&gt;Learn Go Templates&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Software Architecture Premier</title>
+      <link>http://localhost:1313/notes/software-architecture-premier/</link>
+      <pubDate>Thu, 08 May 2025 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
+      <guid>http://localhost:1313/notes/software-architecture-premier/</guid>
+      <description>&lt;p&gt;The sivaprasadreddy/software-architecture-premier GitHub repository offers reference materials for learning about Software Architecture and Design.&lt;/p&gt;&#xA;&lt;p&gt;It covers topics like:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Software Architecture Patterns&lt;/li&gt;&#xA;&lt;li&gt;Microservices&lt;/li&gt;&#xA;&lt;li&gt;Domain-Driven Design&lt;/li&gt;&#xA;&lt;li&gt;documenting architecture&lt;/li&gt;&#xA;&lt;li&gt;enforcing coding and architectural guidelines.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;It also includes reference implementations using Spring Boot.&lt;/p&gt;&#xA;&lt;p&gt;Link here: &lt;a href=&#34;https://github.com/sivaprasadreddy/software-architecture-premier&#34;&gt;Software Architecture Premier&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Google Agent Development Kit</title>
+      <link>http://localhost:1313/notes/google-adk/</link>
+      <pubDate>Sat, 12 Apr 2025 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
+      <guid>http://localhost:1313/notes/google-adk/</guid>
+      <description>&lt;p&gt;Google introduced ADK: An open-source framework for AI Agent Development designed for developing and deploying AI agents.&lt;/p&gt;&#xA;&lt;p&gt;ADK facilitates the rapid creation of basic agents powered by Gemini and Google AI tools, while also providing the necessary structure and control for more intricate agent architectures and orchestration.&lt;/p&gt;&#xA;&lt;h3 id=&#34;key-features&#34; class=&#34;scroll-mt-8 group&#34;&gt;&#xA;  Key Features&#xA;  &#xA;    &lt;a href=&#34;#key-features&#34;&#xA;        class=&#34;no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block&#34;&#xA;        aria-hidden=&#34;true&#34; title=&#34;Link to this heading&#34; tabindex=&#34;-1&#34;&gt;&#xA;        &lt;svg&#xA;  xmlns=&#34;http://www.w3.org/2000/svg&#34;&#xA;  width=&#34;16&#34;&#xA;  height=&#34;16&#34;&#xA;  fill=&#34;none&#34;&#xA;  stroke=&#34;currentColor&#34;&#xA;  stroke-linecap=&#34;round&#34;&#xA;  stroke-linejoin=&#34;round&#34;&#xA;  stroke-width=&#34;2&#34;&#xA;  class=&#34;lucide lucide-link w-4 h-4 block&#34;&#xA;  viewBox=&#34;0 0 24 24&#34;&#xA;&gt;&#xA;  &lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; /&gt;&#xA;  &lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; /&gt;&#xA;&lt;/svg&gt;&#xA;&#xA;    &lt;/a&gt;&#xA;  &#xA;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Flexible Orchestration&lt;/strong&gt;: Define agent workflows using sequential, parallel, or looping structures, or implement dynamic routing with LLM-driven agent transfer.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Multi-Agent Architecture&lt;/strong&gt;: Build scalable applications by composing specialized agents in hierarchical structures, enabling complex coordination and delegation of tasks.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Rich Tool Ecosystem&lt;/strong&gt;: Equip agents with pre-built tools (e.g., Search, Code Execution), custom functions, and integration with third-party libraries (e.g., LangChain, CrewAI), or even utilize other agents as tools.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Deployment Ready&lt;/strong&gt;: Containerize and deploy agents across various environments, including local machines, Vertex AI Agent Engine, Cloud Run, or Docker.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Built-in Evaluation&lt;/strong&gt;: Systematically assess agent performance by evaluating response quality and execution trajectory against defined test cases.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Responsible AI&lt;/strong&gt;: Provides guidance on implementing responsible AI principles and best practices in agent design.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;getting-started&#34; class=&#34;scroll-mt-8 group&#34;&gt;&#xA;  Getting Started&#xA;  &#xA;    &lt;a href=&#34;#getting-started&#34;&#xA;        class=&#34;no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block&#34;&#xA;        aria-hidden=&#34;true&#34; title=&#34;Link to this heading&#34; tabindex=&#34;-1&#34;&gt;&#xA;        &lt;svg&#xA;  xmlns=&#34;http://www.w3.org/2000/svg&#34;&#xA;  width=&#34;16&#34;&#xA;  height=&#34;16&#34;&#xA;  fill=&#34;none&#34;&#xA;  stroke=&#34;currentColor&#34;&#xA;  stroke-linecap=&#34;round&#34;&#xA;  stroke-linejoin=&#34;round&#34;&#xA;  stroke-width=&#34;2&#34;&#xA;  class=&#34;lucide lucide-link w-4 h-4 block&#34;&#xA;  viewBox=&#34;0 0 24 24&#34;&#xA;&gt;&#xA;  &lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; /&gt;&#xA;  &lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; /&gt;&#xA;&lt;/svg&gt;&#xA;&#xA;    &lt;/a&gt;&#xA;  &#xA;&lt;/h3&gt;&#xA;&lt;p&gt;Install the ADK using pip: &lt;code&gt;pip install google-adk&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>100 Exercises to learn Rust</title>
+      <link>http://localhost:1313/notes/rust-exercises/</link>
+      <pubDate>Tue, 18 Feb 2025 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
+      <guid>http://localhost:1313/notes/rust-exercises/</guid>
+      <description>&lt;p&gt;This GitHub repository offers 100 exercises designed to help you learn Rust, a modern system programming language. The exercises cover basic syntax, control structures, memory management, and more. Perfect for beginners, these challenges let you practice Rust step by step.&lt;/p&gt;&#xA;&lt;p&gt;Learn more at &lt;a href=&#34;https://github.com/mainmatter/100-exercises-to-learn-rust&#34;&gt;100 Exercises to Learn Rust&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Minitorch - A Minimal Deep Learning Library</title>
       <link>http://localhost:1313/notes/minitorch/</link>
       <pubDate>Sun, 05 Jan 2025 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
