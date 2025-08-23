@@ -51,7 +51,7 @@ googleAnalytics = "G-V3HY4BP6JS"
         block = true
 
 [params]
-  description = "Trustworthy posts from a software engineer on tech, side projects, life, and invest topics."
+  description = "The best software developer in my flat."
 
   # Author details for the JSON-LD structured data.
   [params.author]
