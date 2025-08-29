@@ -19,5 +19,5 @@ Connect with me on:
 
 - [LinkedIn](https://www.linkedin.com/in/7nolikov/)
 - [Twitter](https://x.com/7nolikov)
-- [BlueSky](https://bsky.app/profile/7nolikov.bsky.social)
+- [BlueSky](https://bsky.app/profile/7nolikov.dev)
 - [GitHub](https://github.com/7nolikov)
