@@ -9,14 +9,15 @@ This approach makes websites faster, more secure, and easier to host.
 
 <!--more-->
 
-Let’s take a closer look at six popular static site generators:
+## The easiest way to create a website
 
-- Jekyll
-- 11ty (Eleventy)
-- Gatsby
-- Hugo
-- Next.js
-- Nuxt.js
+Just use a static site generator (SSG). If you don't familiar with Javascript, HTML or CSS - SSGs allow you to write content in simple formats like Markdown, and then they generate the HTML files for your site. This means you don't have to worry about server-side code or databases, making it easier to manage and deploy your website.
+
+1. Install SSG and configure the theme
+2. Write content in Markdown or other simple formats
+3. Deploy the generated static files to a free GitHub Pages, free domain .github.io included 🚀
+
+## Choosing the right SSG
 
 ### 1. Jekyll
 
@@ -76,7 +77,7 @@ Although Hugo’s plugin system is more limited compared to Gatsby or Jekyll, it
 
 v0 choice, Next.js is not a traditional SSG but a hybrid framework that supports both server-side rendering (SSR) and static site generation. Built on React, it allows developers to create modern, high-performing websites with dynamic functionality.
 
-Next.js is perfect for projects that need a mix of static and dynamic content, but its flexibility can lead to slightly more complex workflows. 
+Next.js is perfect for projects that need a mix of static and dynamic content, but its flexibility can lead to slightly more complex workflows.
 Anyway, who cares, you can thow it out and generate new version of your site in seconds.
 
 **Best for**: Hybrid sites with dynamic content.
