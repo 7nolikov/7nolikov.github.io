@@ -12,14 +12,14 @@ This approach ensures that all dependencies start and work together as expected 
 
 ## Key features of the Docker Compose module
 
-- It allows you to define complex service dependencies in a single docker-compose.yml file.
-- During tests, Testcontainers can automatically start all services defined in the Compose file.
-- It ensures your test environment is isolated and reproducible.
-- The module also provides Java APIs to control the containers and check their status during tests.
+1. It allows you to define complex service dependencies in a single docker-compose.yml file.
+2. During tests, Testcontainers can automatically start all services defined in the Compose file.
+3. It ensures your test environment is isolated and reproducible.
+4. The module also provides Java APIs to control the containers and check their status during tests.
 
 ## How to use the Docker Compose module
 
-### Add Testcontainers Dependency
+### 1. Add Testcontainers Dependency
 
 Include the Testcontainers library in your pom.xml (for Maven) or build.gradle (for Gradle):
 
@@ -32,7 +32,7 @@ Include the Testcontainers library in your pom.xml (for Maven) or build.gradle (
 </dependency>
 ```
 
-### Create a Docker Compose File
+### 2. Create a Docker Compose File
   
 Define the services your application needs in a docker-compose.yml file:
 
@@ -54,7 +54,7 @@ services:
       - "6379:6379"
 ```
 
-### Write the Test Class
+### 3. Write the Test Class
   
 Use the DockerComposeContainer class in your test to manage services:
 
@@ -92,7 +92,7 @@ public class MyAppIntegrationTest {
 }
 ```
 
-### Run the Test
+### 4. Run the Test
 
 The test automatically starts the services defined in docker-compose.yml before execution.
 Testcontainers ensures that the services shut down after the tests complete.
@@ -101,13 +101,13 @@ Testcontainers ensures that the services shut down after the tests complete.
 
 Imagine a shopping cart microservice that depends on:
 
-- A PostgreSQL database for storing user and cart data.
-- A Redis cache for storing temporary session data.
+1. A PostgreSQL database for storing user and cart data.
+2. A Redis cache for storing temporary session data.
+3. An external payment API mock service.
+4. Kafka for handling order events.
+5. Keycloak for user authentication.
 
-With the Docker Compose module, you can:
-
-- Simulate the interaction between these services.
-- Write tests to validate database connectivity, query correctness, and cache behavior under test scenarios.
+With the Docker Compose module it's not a problem anymore.
 
 ## Conclusion
 

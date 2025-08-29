@@ -87,4 +87,4 @@ Compared to plain Java tests, standalone Spring tests leverage features like **d
 
 Cucumber, RestAssured, or Robot Framework are possible alternatives. But standalone Spring tests strike a balance between simplicity, modularity, and the power of Spring features.
 
-What are your thoughts on this approach? Have you used standalone Spring tests in your projects? Share your experience!
+What would you use for acceptance testing of Spring application?
