@@ -4,7 +4,9 @@ date: 2024-12-02
 categories: [money]
 ---
 
-Money is the lifeblood of the global economy, flowing through various sectors, industries, and institutions. Understanding where money is located provides valuable insights into the structure of the global economy, wealth distribution, and financial trends. In 2023, the global money supply is spread across financial institutions, governments, businesses, and households, reflecting diverse economic activities.
+TLDR: Financial sector holds more than 30% of the world's money.
+
+Money is the lifeblood of the global economy. Understanding where money is located provides valuable insights into the structure of the global economy, wealth distribution, and financial trends.
 
 <!--more-->
 
@@ -20,7 +22,7 @@ Money is the lifeblood of the global economy, flowing through various sectors, i
 
 ## Global Money in 2023
 
-The total global money supply (M3, which includes cash, deposits, and other liquid assets) in 2023 is estimated at **$160 trillion**. This figure includes money held by governments, businesses, and individuals. Here's a breakdown of how this money is distributed globally:
+The total global money supply (M3, which includes cash, deposits, and other liquid assets) in 2023 is estimated at $160 trillion. This figure includes money held by governments, businesses, and individuals. Here's a breakdown of how this money is distributed globally:
 
 | Category | Estimated Amount (Trillions $) | Share of Total (%) |
 |----------|---------------------------------|--------------------|
@@ -28,17 +30,6 @@ The total global money supply (M3, which includes cash, deposits, and other liqu
 | Governments | 25 | 16% |
 | Non-Financial Corporations | 40 | 25% |
 | Households | 25 | 15% |
-
-## Money in the U.S. Economy
-
-The United States, as the world's largest economy, has a significant portion of global money. In 2023, the U.S. money supply (M2) is around **$21.5 trillion**. The distribution reflects the country's advanced financial system and robust consumer market:
-
-| Sector | Estimated Amount (Trillions $) | Share of U.S. Total (%) |
-|---------|---------------------------------|--------------------------|
-| Financial Institutions | 8.5 | 40% |
-| Non-Financial Corporations | 6.5 | 30% |
-| Government | 3.0 | 14% |
-| Households | 3.5 | 16% |
 
 ## Physical vs Legal Entities
 
@@ -70,28 +61,8 @@ To further understand the distribution of global money, it is useful to analyze 
 | Real Estate | 7 | 4% |
 | Communication Services | 10 | 6% |
 
-### U.S. Money by Sector
-
-| Sector | Estimated Amount (Trillions $) | Share of Total (%) |
-|--------|---------------------------------|--------------------|
-| Financials | 8.0 | 37% |
-| Technology | 3.0 | 14% |
-| Healthcare | 2.8 | 13% |
-| Energy | 1.5 | 7% |
-| Consumer Staples | 1.2 | 6% |
-| Consumer Discretionary | 1.4 | 6% |
-| Industrials | 1.8 | 8% |
-| Utilities | 0.8 | 4% |
-| Materials | 0.7 | 3% |
-| Real Estate | 1.1 | 5% |
-| Communication Services | 1.2 | 6% |
-
-## Key Insights
-
-1. Financial Institutions: These entities dominate the money landscape, especially in developed economies, managing cash flows through savings, investments, and loans.
-2. Individuals: Households, especially in high-income countries, hold a significant share of the money, primarily through bank accounts and investments.
-3. Governments and Corporations: Governments and businesses are major players, reflecting their roles in managing economies and driving growth.
+In U.S. financial sector alone, the estimated money supply is around $8 trillion, which is about 37% of the total money held by financial institutions.
 
 ## Conclusion
 
-Money in the world is not equally distributed, with financial institutions and businesses holding the largest shares. The United States remains a central hub for global finances, while households and governments play critical roles. Understanding these dynamics helps policymakers, businesses, and individuals make informed decisions about wealth and investments.
+Money in the world is not equally distributed, with financial institutions and big corporations holding the largest shares. The United States remains a central hub for global finances. Understanding these dynamics helps individuals make informed decisions about wealth and investments.

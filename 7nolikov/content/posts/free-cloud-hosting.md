@@ -26,7 +26,7 @@ This model is highly desirable for long-term, cost-free operation of small-scale
 
 For instance, AWS Lambda offers 1 million free requests per month and 400,000 GB-seconds of compute time, alongside 25 GB of storage and 200 million requests per month for Amazon DynamoDB, all available indefinitely.
 
-Similarly, Google Cloud provides an "Always Free" tier for services like Firestore (1 GiB storage, 50,000 document reads/day, 20,000 document writes/day, 20,000 document deletes/day, 10 GiB outbound data transfer/month), Cloud Run (2 million requests/month), and Cloud Functions (2 million invocations/month, 400K GB-seconds/month). 
+Similarly, Google Cloud provides an "Always Free" tier for services like Firestore (1 GiB storage, 50,000 document reads/day, 20,000 document writes/day, 20,000 document deletes/day, 10 GiB outbound data transfer/month), Cloud Run (2 million requests/month), and Cloud Functions (2 million invocations/month, 400K GB-seconds/month).
 
 Azure also features "always-free" services, including Azure SQL Database (up to 10 databases with 100,000 vCore seconds and 32 GB storage) and 100 GB/month of internet egress. These options are ideal for projects that consistently stay within these defined, recurring limits.
 
