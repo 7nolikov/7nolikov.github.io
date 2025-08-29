@@ -11,7 +11,7 @@ This approach makes websites faster, more secure, and easier to host.
 
 ## The easiest way to create a website
 
-Just use a static site generator (SSG). If you don't familiar with Javascript, HTML or CSS - SSGs allow you to write content in simple formats like Markdown, and then they generate the HTML files for your site. This means you don't have to worry about server-side code or databases, making it easier to manage and deploy your website.
+Just use a static site generator! You don't have to worry about Javascript, HTML or CSS, server-side code or databases. It's very easy to manage and deploy your website.
 
 1. Install SSG and configure the theme
 2. Write content in Markdown or other simple formats
