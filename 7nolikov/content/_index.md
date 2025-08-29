@@ -2,7 +2,7 @@
 title: "Home"
 ---
 
-Trustworthy posts from a Software Engineer on tech, side-projects, life, and invest topics.
+The best software developer in my flat.
 
 {{< figure src="images/home.jpg" alt="Home" >}}
 

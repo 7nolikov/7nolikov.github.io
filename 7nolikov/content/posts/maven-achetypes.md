@@ -4,7 +4,8 @@ date: 2024-12-14
 categories: [maven]
 ---
 
-Maven archetypes are templates that help developers quickly set up a new project with a predefined structure and files. Using an archetype, you can create a Maven project that already includes the necessary folders, configurations, and code for a specific type of application.
+Maven archetypes are templates that help developers quickly set up a new project with a predefined structure, files, and code for a specific type of application.
+It's extremely useful for livecoding interviews when you need to quickly create a project skeleton.
 
 <!--more-->
 
@@ -20,7 +21,7 @@ Maven archetypes are templates that help developers quickly set up a new project
 
 - Ideal for setting up a basic Java project.
 - Includes a standard directory structure (src/main/java, src/test/java) and a simple App.java file with a main method.
-- Perfect for beginners or small projects where no specific framework is required.
+- Perfect for small projects where no specific framework is required.
 
 ### maven-archetype-webapp
 
@@ -33,10 +34,14 @@ Maven archetypes are templates that help developers quickly set up a new project
 1. Generate the Project with Maven Quickstart Archetype Run the following command in your terminal:
 
     ```bash
-    mvn archetype:generate -DgroupId=com.example -DartifactId=spring-app -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+    mvn archetype:generate 
+    -DgroupId=com.example 
+    -DartifactId=spring-app 
+    -DarchetypeArtifactId=maven-archetype-quickstart 
+    -DinteractiveMode=false
     ```
 
-2. Add Spring Dependencies Open the pom.xml file in the generated project and add the required dependencies for Spring. For example:
+2. Open the pom.xml file in the generated project and add the required dependencies for Spring. For example:
 
     ```xml
     <dependencies>
@@ -129,7 +134,8 @@ If you're open to using a modern tool, **Spring Initializr** is the recommended 
 If you prefer the speed of command-line tools, you can also use the Spring CLI to create a new Spring project. The following command generates a basic Spring Boot project with common dependencies:
 
 ```bash
-spring init --dependencies=web,data-jpa,actuator,devtools,h2,lombok -t=maven-project demo-project
+spring init --dependencies=web,data-jpa,actuator,devtools,h2,lombok 
+-t=maven-project demo-project
 ```
 
 I've just added this command to my hotkey list, so I can start a new Spring project in seconds!
