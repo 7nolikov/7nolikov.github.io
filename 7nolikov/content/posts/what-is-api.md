@@ -4,7 +4,7 @@ date: 2025-01-01
 categories: [api]
 ---
 
-**Application Programming Interface** is a tool that allows different software applications to communicate with each other. Think of it as a bridge that connects systems, enabling them to share data and perform tasks without knowing the details of how the other system works.
+Application Programming Interface is a tool that allows different software applications to communicate with each other. Think of it as a bridge that connects systems, enabling them to share data and perform tasks without knowing the details of how the other system works.
 
 <!--more-->
 

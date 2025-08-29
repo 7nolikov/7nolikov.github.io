@@ -20,23 +20,13 @@ This article provides a comparative analysis of {{< sidenote "truly free" >}} Th
 
 ### 1. Always Free
 
-These represent the most genuinely "truly free" offerings. They provide a perpetual free tier with specific monthly usage limits that are available indefinitely to both new and existing customers.
+These represent the most genuinely "truly free" offerings.
 
 This model is highly desirable for long-term, cost-free operation of small-scale or hobby projects.
-
-For instance, AWS Lambda offers 1 million free requests per month and 400,000 GB-seconds of compute time, alongside 25 GB of storage and 200 million requests per month for Amazon DynamoDB, all available indefinitely.
-
-Similarly, Google Cloud provides an "Always Free" tier for services like Firestore (1 GiB storage, 50,000 document reads/day, 20,000 document writes/day, 20,000 document deletes/day, 10 GiB outbound data transfer/month), Cloud Run (2 million requests/month), and Cloud Functions (2 million invocations/month, 400K GB-seconds/month).
-
-Azure also features "always-free" services, including Azure SQL Database (up to 10 databases with 100,000 vCore seconds and 32 GB storage) and 100 GB/month of internet egress. These options are ideal for projects that consistently stay within these defined, recurring limits.
 
 ### 2. 12-Month Free Tier
 
 These are promotional offers primarily extended to new customers, typically valid for a period of 12 months from the account signup date. They often provide access to more substantial resources, such as virtual machines or larger storage allocations, and they will automatically transition to standard pay-as-you-go rates once the 12-month period concludes or if usage exceeds the specified limits within that timeframe.
-
-For example, AWS offers 750 hours per month of EC2 t2.micro or t3.micro instances and 5 GB of S3 standard storage for 12 months.
-
-Azure provides 750 hours each of B1s, B2pts v2, and B2ats v2 burstable VMs for Windows and Linux, and 5 GB of locally redundant storage for Blob Storage, all for 12 months.
 
 This model serves as a valuable introductory period for exploration and development, allowing users to experiment with a broader range of services, but it does not constitute a long-term "truly free" solution. Users must plan for potential costs after the promotional period.
 
@@ -44,7 +34,7 @@ This model serves as a valuable introductory period for exploration and developm
 
 This category involves a one-time monetary credit (e.g., $300 for Google Cloud, $200 for Azure) provided to new users, typically with a limited validity period (e.g., 30 or 90 days). Services consumed under these credits are free only until the credit is exhausted or the trial period expires. After this, users are required to transition to a paid plan or a pay-as-you-go model.
 
-## Common Characteristics and Hidden Costs of Free Tiers
+## Hidden Costs of Free Tiers
 
 {{< admonition type="warning" >}}
 Even within "always free" tiers, certain characteristics and potential cost triggers are common across providers. Understanding these can prevent unexpected charges and performance issues.
@@ -52,58 +42,62 @@ Even within "always free" tiers, certain characteristics and potential cost trig
 
 ### 1. Inactivity Policies
 
-A prevalent characteristic of many free backend services is their tendency to "spin down" or "go to sleep" after a period of inactivity. This mechanism is employed by providers to conserve resources and is particularly common for services that run on dedicated compute instances rather than serverless functions.
+Many free backend services tends to "spin down" or "go to sleep" after a period of inactivity. This mechanism is employed by providers to conserve resources and is particularly common for services that run on dedicated compute instances rather than serverless functions. Or you can lose your data.
 
 ### 2. Data Egress Charges
 
-Data transfer out from a cloud provider's network (egress) is a consistently significant and often overlooked cost trigger, even within free tiers. Cloud providers incur substantial operational costs for their global network infrastructure and the bandwidth required to transfer data, particularly when it leaves their data centers and travels across the public internet.
+Data transfer out from a cloud provider's network (egress) is a consistently significant and often overlooked cost trigger, even within free tiers.
 
 This mechanism effectively ensures that a project with growing user engagement or data consumption will eventually contribute financially to the platform.
 
 ### 3. Resource Suspension vs. Overage Charges
 
-Providers employ different strategies when free tier limits are reached. Some, like Render for service hours, will suspend services, preventing further charges but also halting the application. This means the application becomes unavailable until the next billing cycle or until the user manually upgrades to a paid plan.
+Providers employ different strategies when free tier limits are reached.
+
+Some, like Render for service hours, will suspend services, preventing further charges but also halting the application. This means the application becomes unavailable until the next billing cycle or until the user manually upgrades to a paid plan.
 
 Others, such as Netlify for bandwidth, build minutes, and functions, will automatically transition to a pay-as-you-go model for overages, potentially incurring costs if not diligently monitored. This approach ensures service continuity but shifts the financial risk to the user.
 
 ### 4. Database Limitations
 
-Free database offerings typically come with stringent limitations on storage capacity, the number of operations (reads, writes, deletes), and concurrent connections. These limitations are designed to support small-scale development and testing.
-
-A critical limitation for some, like Render's free PostgreSQL databases, is their potential deletion after a specified period (e.g., 90 days) if not upgraded to a paid plan.
+Free database offerings typically come with strict limitations on storage capacity, the number of operations (reads, writes, deletes), and concurrent connections. These limitations are designed to support small-scale development and testing.
 
 This policy underscores the temporary nature of some "free" database services and the importance of understanding data persistence guarantees.
 
-## Cloud providers' strategy
+## Cloud providers' marketing strategy
 
 "Free tiers" across major cloud providers is not a philanthropic gesture but a strategic business imperative. These offerings are designed to lower the barrier to entry for developers, allowing them to build projects on the platform without initial financial commitment. As projects mature, gain traction, or exceed the often-generous but finite free limits, users are incentivized to convert to paid plans.
 
-## Rating of Truly Free Backend Hosting Plans
-
-Backend hosting involves managing server-side logic, databases, and APIs. Several providers offer free tiers for these components, each with distinct advantages and limitations.
+## Examples of Free Backend Hosting Plans
 
 ### Back4app
 
-Back4app is a free backend server hosting provider based on open-source technologies like Docker, Node.js, REST, GraphQL, Redis, and Parse Server. It offers a free tier plan for containers with key offerings such as 100GB data transfer and 0.25 shared CPU. This makes it suitable for projects requiring a flexible, open-source-based backend without immediate cost.
+Back4app is a free backend server hosting provider based on open-source technologies like Docker, Node.js, REST, GraphQL, Redis, and Parse Server. It offers a free tier plan for containers. This makes it suitable for projects requiring a flexible, open-source-based backend without immediate cost.
 
 {{< admonition >}}
-**Trigger for Paid Usage**: Exceeding the 100GB data transfer limit or requiring more CPU resources would necessitate an upgrade. The shared CPU implies that performance might be inconsistent under heavy load, pushing users towards paid plans for dedicated resources.
+**Trigger for Paid Usage**:
+
+- Exceeding the 100GB data transfer limit.
+- The shared CPU implies that performance might be inconsistent under heavy load, pushing users towards paid plans for dedicated resources.
 {{< /admonition >}}
 
 ### Firebase (Google-backed BaaS)
 
 Firebase, a Google-backed Backend-as-a-Service (BaaS) platform, simplifies backend deployment with a single command. It offers a generous free tier (Spark Plan) for various services, making it highly attractive for mobile and web application development.
 
-1. **Firebase Hosting**: Provides 10 GB of storage, 360 MB data transfer per day, free SSL, multiple sites, and custom domains. This is ideal for serving static frontend assets and small dynamic applications.
+1. **Firebase Hosting**: Provides storage, data transfer, free SSL, multiple sites, and custom domains. This is ideal for serving static frontend assets and small dynamic applications.
 
-2. **Cloud Firestore (NoSQL Database)**: The free tier includes 1 GiB total stored data, 10 GiB/month network egress, 20K document writes/day, 50K document reads/day, and 20K document deletes/day. It allows exactly one free database per project.
+2. **Cloud Firestore (NoSQL Database)**: The free tier includes exactly one free database per project.
 
-3. **Cloud Functions (Serverless)**: The Blaze Plan (which includes a no-cost tier) offers up to 2M invocations/month, 400K GB-seconds/month, 200K CPU-seconds/month, and 5 GB/month outbound networking.
+3. **Cloud Functions (Serverless)**: The Blaze Plan (which includes a no-cost tier) offers up to 2M invocations/month.
 
 4. **Other Services**: Firebase also includes free tiers for Authentication (50k monthly active users), Cloud Messaging (FCM), and Crashlytics.
 
 {{< admonition >}}
-**Trigger for Paid Usage**: Exceeding any of the daily or monthly limits for storage, data transfer, document operations (reads, writes, deletes), function invocations, or compute time will trigger charges under the Blaze Plan. For example, if a project exceeds 360 MB of data transfer in a day for hosting, or 50,000 document reads in a day for Firestore, it will incur costs. The free tier for Cloud Firestore is limited to one database per project, and certain features like TTL deletes or backup data require billing to be enabled.
+**Trigger for Paid Usage**:
+
+- Exceeding any of the daily or monthly limits for storage, data transfer, document operations, function invocations, or compute time will trigger charges under the Blaze Plan.
+- The free tier for Cloud Firestore is limited to one database per project, and certain features like TTL deletes or backup data require billing to be enabled.
 {{< /admonition >}}
 
 ### Cloudflare Workers
