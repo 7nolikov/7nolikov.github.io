@@ -124,7 +124,7 @@ AWS offers a comprehensive suite of services with various free tier components, 
 Trigger for Paid Usage:
 
 - For 12-month free tier services, charges apply after 12 months or if usage exceeds the monthly limits within that period.
-- For "Always Free" services like Lambda and DynamoDB, exceeding the specified monthly limits will incur costs based on pay-as-you-go rates. 
+- For "Always Free" services like Lambda and DynamoDB, exceeding the specified monthly limits will incur costs based on pay-as-you-go rates.
 - Exceeding the aggregated 15GB outbound data transfer limit is a common trigger for costs.
 
 ### 5. Google Cloud (GCP)
