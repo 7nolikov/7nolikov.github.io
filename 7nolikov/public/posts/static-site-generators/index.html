@@ -25,7 +25,7 @@
   <meta itemprop="name" content="Static site generators">
   <meta itemprop="description" content="Static site generators are tools that create websites by converting templates and content into static HTML files. This approach makes websites faster, more secure, and easier to host.">
   <meta itemprop="datePublished" content="2024-12-01T00:00:00+00:00">
-  <meta itemprop="wordCount" content="661">
+  <meta itemprop="wordCount" content="707">
   <meta itemprop="keywords" content="Websites">
 
   <meta name="twitter:card" content="summary">
@@ -81,7 +81,7 @@
   "name": "Static site generators",
   "timeRequired": "PT4M",
   "url": "http://localhost:1313/posts/static-site-generators/",
-  "wordCount": 661
+  "wordCount": 707
 }
 </script>
 
@@ -113,6 +113,10 @@
       <a href="/graph/">Graph</a
       >
     </li>
+    <li>
+      <a>Projects</a
+      >
+    </li>
     </ul>
   </nav>
 
@@ -130,15 +134,62 @@
 
     <p>Static site generators are tools that create websites by converting templates and content into static HTML files.
 This approach makes websites faster, more secure, and easier to host.</p>
-<p>Let’s take a closer look at six popular static site generators:</p>
-<ul>
-<li>Jekyll</li>
-<li>11ty (Eleventy)</li>
-<li>Gatsby</li>
-<li>Hugo</li>
-<li>Next.js</li>
-<li>Nuxt.js</li>
-</ul>
+<h3 id="the-easiest-way-to-create-a-website" class="scroll-mt-8 group">
+  The easiest way to create a website
+  
+    <a href="#the-easiest-way-to-create-a-website"
+        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+        aria-hidden="true" title="Link to this heading" tabindex="-1">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
+
+    </a>
+  
+</h3>
+<p>Just use a static site generator! You don&rsquo;t have to worry about Javascript, HTML or CSS, server-side code or databases. It&rsquo;s very easy to manage and deploy your website.</p>
+<ol>
+<li>Install SSG and configure the theme</li>
+<li>Write content in Markdown or other simple formats</li>
+<li>Deploy the generated static files to a free GitHub Pages, free domain .github.io included 🚀</li>
+</ol>
+<h3 id="choosing-the-right-ssg" class="scroll-mt-8 group">
+  Choosing the right SSG
+  
+    <a href="#choosing-the-right-ssg"
+        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+        aria-hidden="true" title="Link to this heading" tabindex="-1">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
+
+    </a>
+  
+</h3>
 <h4 id="1-jekyll" class="scroll-mt-8 group">
   1. Jekyll
   
@@ -164,10 +215,9 @@ This approach makes websites faster, more secure, and easier to host.</p>
     </a>
   
 </h4>
-<p>Jekyll is one of the oldest and most widely used SSGs. It is written in Ruby and works seamlessly with <strong>GitHub Pages</strong>, making it an excellent choice for blogs and simple documentation websites.
+<p>I personally don&rsquo;t like Jekyll. Jekyll is one of the oldest and most widely used SSGs. It is written in Ruby and works seamlessly with <strong>GitHub Pages</strong>, making it an excellent choice for blogs and simple documentation websites.
 Jekyll uses Markdown and Liquid templates, offering a straightforward way to write and organize content.</p>
-<p>However, Jekyll can be slow when generating large sites, and its reliance on Ruby might not appeal to everyone, especially if you’re not familiar with the language.</p>
-<p><strong>Best for</strong>: Blogs, personal sites, and projects hosted on GitHub Pages.</p>
+<p>However, Jekyll can be very slow when generating large sites, and its reliance on Ruby might not appeal to everyone, especially if you’re not familiar with the language (Ha-Ha).</p>
 <p><strong>Strengths</strong>: Easy integration with GitHub, rich plugin ecosystem.</p>
 <p><strong>Weaknesses</strong>: Slower build times and dependency on Ruby.</p>
 <p><a href="https://jekyllrb.com/">More about Jekyll</a></p>
@@ -199,9 +249,8 @@ Jekyll uses Markdown and Liquid templates, offering a straightforward way to wri
 <p>11ty is a modern, lightweight SSG built on JavaScript. It offers developers full control over their projects and supports multiple templating languages like HTML, Markdown, and JavaScript.
 Unlike Jekyll, it does not have strict dependencies, making it highly flexible.</p>
 <p>Its simplicity and speed make it a great choice for projects of any size, especially for developers already working in a Node.js environment.</p>
-<p><strong>Best for</strong>: Custom projects and sites that need flexibility.</p>
-<p><strong>Strengths</strong>: Fast, flexible, and beginner-friendly.</p>
-<p><strong>Weaknesses</strong>: Growing but less extensive plugin ecosystem.</p>
+<p><strong>Strengths</strong>: Flexible, and beginner-friendly.</p>
+<p><strong>Weaknesses</strong>: JavaScript.</p>
 <p><a href="https://www.11ty.dev/">More about 11ty</a></p>
 <h4 id="3-gatsby" class="scroll-mt-8 group">
   3. Gatsby
@@ -231,9 +280,8 @@ Unlike Jekyll, it does not have strict dependencies, making it highly flexible.<
 <p>Gatsby is a React-based SSG that focuses on creating highly dynamic and interactive websites. It uses GraphQL to fetch data, which makes it powerful but also adds complexity.
 Gatsby is great for integrating data from multiple sources, like CMSs, APIs, or Markdown files.</p>
 <p>While Gatsby creates visually impressive websites, it can be slow to build large projects due to its reliance on GraphQL.</p>
-<p><strong>Best for</strong>: Dynamic websites, portfolios, and apps.</p>
-<p><strong>Strengths</strong>: React ecosystem, powerful data handling.</p>
-<p><strong>Weaknesses</strong>: Steeper learning curve and slower build times.</p>
+<p><strong>Strengths</strong>: React ecosystem, powerful data handling, posibily to build dynamic websites and apps.</p>
+<p><strong>Weaknesses</strong>: React, steeper learning curve and slower build times.</p>
 <p><a href="https://www.gatsbyjs.com/">More about Gatsby</a></p>
 <h4 id="4-hugo" class="scroll-mt-8 group">
   4. Hugo
@@ -260,7 +308,7 @@ Gatsby is great for integrating data from multiple sources, like CMSs, APIs, or 
     </a>
   
 </h4>
-<p>Hugo is one of the fastest SSGs, written in Go. It is perfect for building large websites quickly, thanks to its incredible speed and scalability.
+<p>This is interesting one, Hugo is one of the fastest SSGs, written in Go. It is perfect for building large websites quickly, thanks to its incredible speed and scalability.
 Hugo uses simple configuration and supports many content formats, making it an efficient choice for developers who want quick results without compromising quality.</p>
 <p>Although Hugo’s plugin system is more limited compared to Gatsby or Jekyll, its performance and simplicity make it a favorite for many.</p>
 <p><strong>Best for</strong>: Large static sites and sites with a lot of content.</p>
@@ -292,8 +340,9 @@ Hugo uses simple configuration and supports many content formats, making it an e
     </a>
   
 </h4>
-<p>Next.js is not a traditional SSG but a hybrid framework that supports both server-side rendering (SSR) and static site generation. Built on React, it allows developers to create modern, high-performing websites with dynamic functionality.</p>
-<p>Next.js is perfect for projects that need a mix of static and dynamic content, but its flexibility can lead to slightly more complex workflows.</p>
+<p>v0 choice, Next.js is not a traditional SSG but a hybrid framework that supports both server-side rendering (SSR) and static site generation. Built on React, it allows developers to create modern, high-performing websites with dynamic functionality.</p>
+<p>Next.js is perfect for projects that need a mix of static and dynamic content, but its flexibility can lead to slightly more complex workflows.
+Anyway, who cares, you can thow it out and generate new version of your site in seconds.</p>
 <p><strong>Best for</strong>: Hybrid sites with dynamic content.</p>
 <p><strong>Strengths</strong>: Flexibility, React ecosystem.</p>
 <p><strong>Weaknesses</strong>: Not purely static; may feel overkill for simple projects.</p>
@@ -323,9 +372,8 @@ Hugo uses simple configuration and supports many content formats, making it an e
     </a>
   
 </h4>
-<p>Nuxt.js is the Vue.js counterpart to Next.js. It provides a similarly flexible setup, supporting both SSR and SSG. It’s an excellent choice for developers who prefer Vue.js over React and want the same level of flexibility.</p>
+<p>For true fans of Vue - Nuxt.js is the Vue.js counterpart to Next.js. It provides a similarly flexible setup, supporting both SSR and SSG. It’s an excellent choice for developers who prefer Vue.js over React and want the same level of flexibility.</p>
 <p>Nuxt.js also includes features like automatic routing and optimized builds, making it an efficient tool for dynamic and content-driven sites.</p>
-<p><strong>Best for</strong>: Vue.js developers who need hybrid or static sites.</p>
 <p><strong>Strengths</strong>: Vue ecosystem, ease of use.</p>
 <p><strong>Weaknesses</strong>: Like Next.js, not purely static.</p>
 <p><a href="https://nuxtjs.org/">More about Nuxt.js</a></p>
@@ -354,7 +402,7 @@ Hugo uses simple configuration and supports many content formats, making it an e
     </a>
   
 </h3>
-<p>Each of these static site generators has its strengths and weaknesses. The best choice depends on your project’s requirements, your familiarity with the underlying technologies, and the complexity of your site. For blogs and simple pages, Jekyll or 11ty may be the easiest. For dynamic, React-based projects, Gatsby or Next.js shine. If speed is a priority, Hugo is unbeatable, while Nuxt.js is ideal for Vue enthusiasts.</p>
+<p>Each of these static site generators has its strengths and weaknesses. The best choice depends on your project’s requirements, your familiarity with the underlying technologies, and the complexity of your site. For blogs and simple pages, Jekyll or 11ty may be the easiest start. For dynamic, React-based projects, Gatsby or Next.js shine. If speed is a priority, Hugo is unbeatable!</p>
   </article>
     <aside class="not-prose flex flex-col space-y-8 border-t pt-6">
     <section class="flex flex-col space-y-4">

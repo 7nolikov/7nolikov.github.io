@@ -12,10 +12,10 @@
     <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Truly free cloud hosting for developers</title>
-      <link>http://localhost:1313/posts/truly-free-cloud-hosting/</link>
+      <title>Free cloud hosting for developers</title>
+      <link>http://localhost:1313/posts/free-cloud-hosting/</link>
       <pubDate>Sat, 24 May 2025 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
-      <guid>http://localhost:1313/posts/truly-free-cloud-hosting/</guid>
+      <guid>http://localhost:1313/posts/free-cloud-hosting/</guid>
       <description>&lt;p&gt;As a developer, I usually want to deploy applications with minimal or no upfront investment. The hosting free tiers options give a space for experimentation, learning, and the deployment of low-traffic personal projects or proofs-of-concept without immediate financial commitment.&lt;/p&gt;</description>
     </item>
     <item>
@@ -23,7 +23,7 @@
       <link>http://localhost:1313/posts/what-is-api/</link>
       <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
       <guid>http://localhost:1313/posts/what-is-api/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Application Programming Interface&lt;/strong&gt; is a tool that allows different software applications to communicate with each other. Think of it as a bridge that connects systems, enabling them to share data and perform tasks without knowing the details of how the other system works.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Application Programming Interface is a tool that allows different software applications to communicate with each other. Think of it as a bridge that connects systems, enabling them to share data and perform tasks without knowing the details of how the other system works.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Meson vs Make - A simple comparison</title>
@@ -44,14 +44,14 @@
       <link>http://localhost:1313/posts/maven-achetypes/</link>
       <pubDate>Sat, 14 Dec 2024 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
       <guid>http://localhost:1313/posts/maven-achetypes/</guid>
-      <description>&lt;p&gt;Maven archetypes are templates that help developers quickly set up a new project with a predefined structure and files. Using an archetype, you can create a Maven project that already includes the necessary folders, configurations, and code for a specific type of application.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Maven archetypes are templates that help developers quickly set up a new project with a predefined structure, files, and code for a specific type of application.&#xA;It&amp;rsquo;s extremely useful for livecoding interviews when you need to quickly create a project skeleton.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Searching LinkedIn vacancies using Google</title>
       <link>http://localhost:1313/posts/job-vacancies-search/</link>
       <pubDate>Fri, 13 Dec 2024 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
       <guid>http://localhost:1313/posts/job-vacancies-search/</guid>
-      <description>&lt;p&gt;You can use advanced Google search queries to find job vacancies on LinkedIn that match specific roles and include details about visa sponsorship or relocation support.&lt;/p&gt;</description>
+      <description>&lt;p&gt;You can use advanced Google search queries to find job vacancies that match specific roles and include details about visa sponsorship or relocation support.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Standalone Spring tests</title>
@@ -65,7 +65,7 @@
       <link>http://localhost:1313/posts/where-is-all-the-money-in-the-world/</link>
       <pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
       <guid>http://localhost:1313/posts/where-is-all-the-money-in-the-world/</guid>
-      <description>&lt;p&gt;Money is the lifeblood of the global economy, flowing through various sectors, industries, and institutions. Understanding where money is located provides valuable insights into the structure of the global economy, wealth distribution, and financial trends. In 2023, the global money supply is spread across financial institutions, governments, businesses, and households, reflecting diverse economic activities.&lt;/p&gt;</description>
+      <description>&lt;p&gt;TLDR: Financial sector holds more than 30% of the world&amp;rsquo;s money.&lt;/p&gt;&#xA;&lt;p&gt;Money is the lifeblood of the global economy. Understanding where money is located provides valuable insights into the structure of the global economy, wealth distribution, and financial trends.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Static site generators</title>

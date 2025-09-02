@@ -4,13 +4,23 @@
   <url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/cloud/</loc>
-  </url><url>
     <loc>http://localhost:1313/</loc>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>http://localhost:1313/categories/landing/</loc>
   </url><url>
-    <loc>http://localhost:1313/posts/truly-free-cloud-hosting/</loc>
+    <loc>http://localhost:1313/projects/</loc>
+  </url><url>
+    <loc>http://localhost:1313/projects/waitlist/</loc>
+  </url><url>
+    <loc>http://localhost:1313/projects/recommendation-service/</loc>
+  </url><url>
+    <loc>http://localhost:1313/categories/test-task/</loc>
+  </url><url>
+    <loc>http://localhost:1313/categories/cloud/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/free-cloud-hosting/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
   </url><url>
     <loc>http://localhost:1313/notes/no-yaml/</loc>
   </url><url>
@@ -145,5 +155,9 @@
     <loc>http://localhost:1313/graph/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
+  </url><url>
+    <loc>http://localhost:1313/categories/test/</loc>
+  </url><url>
+    <loc>http://localhost:1313/categories/test-/</loc>
   </url>
 </urlset>

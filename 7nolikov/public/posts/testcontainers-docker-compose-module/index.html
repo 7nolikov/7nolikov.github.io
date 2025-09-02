@@ -28,7 +28,7 @@ This approach ensures that all dependencies start and work together as expected 
   <meta itemprop="description" content="Using Docker Compose module with Testcontainers you can simplify testing for applications that rely on multiple services like databases, APIs and message queues.
 This approach ensures that all dependencies start and work together as expected in a controlled, reproducible environment during your Java tests.">
   <meta itemprop="datePublished" content="2024-12-15T00:00:00+00:00">
-  <meta itemprop="wordCount" content="421">
+  <meta itemprop="wordCount" content="423">
   <meta itemprop="keywords" content="Testing">
 
   <meta name="twitter:card" content="summary">
@@ -85,7 +85,7 @@ This approach ensures that all dependencies start and work together as expected 
   "name": "Testcontainers Docker Compose module",
   "timeRequired": "PT2M",
   "url": "http://localhost:1313/posts/testcontainers-docker-compose-module/",
-  "wordCount": 421
+  "wordCount": 423
 }
 </script>
 
@@ -115,6 +115,10 @@ This approach ensures that all dependencies start and work together as expected 
     </li>
     <li>
       <a href="/graph/">Graph</a
+      >
+    </li>
+    <li>
+      <a>Projects</a
       >
     </li>
     </ul>
@@ -159,12 +163,12 @@ This approach ensures that all dependencies start and work together as expected 
     </a>
   
 </h3>
-<ul>
+<ol>
 <li>It allows you to define complex service dependencies in a single docker-compose.yml file.</li>
 <li>During tests, Testcontainers can automatically start all services defined in the Compose file.</li>
 <li>It ensures your test environment is isolated and reproducible.</li>
 <li>The module also provides Java APIs to control the containers and check their status during tests.</li>
-</ul>
+</ol>
 <h3 id="how-to-use-the-docker-compose-module" class="scroll-mt-8 group">
   How to use the Docker Compose module
   
@@ -190,10 +194,10 @@ This approach ensures that all dependencies start and work together as expected 
     </a>
   
 </h3>
-<h4 id="add-testcontainers-dependency" class="scroll-mt-8 group">
-  Add Testcontainers Dependency
+<h4 id="1-add-testcontainers-dependency" class="scroll-mt-8 group">
+  1. Add Testcontainers Dependency
   
-    <a href="#add-testcontainers-dependency"
+    <a href="#1-add-testcontainers-dependency"
         class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
         aria-hidden="true" title="Link to this heading" tabindex="-1">
         <svg
@@ -286,10 +290,10 @@ This approach ensures that all dependencies start and work together as expected 
 
   
 </figure>
-<h4 id="create-a-docker-compose-file" class="scroll-mt-8 group">
-  Create a Docker Compose File
+<h4 id="2-create-a-docker-compose-file" class="scroll-mt-8 group">
+  2. Create a Docker Compose File
   
-    <a href="#create-a-docker-compose-file"
+    <a href="#2-create-a-docker-compose-file"
         class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
         aria-hidden="true" title="Link to this heading" tabindex="-1">
         <svg
@@ -391,10 +395,10 @@ This approach ensures that all dependencies start and work together as expected 
 
   
 </figure>
-<h4 id="write-the-test-class" class="scroll-mt-8 group">
-  Write the Test Class
+<h4 id="3-write-the-test-class" class="scroll-mt-8 group">
+  3. Write the Test Class
   
-    <a href="#write-the-test-class"
+    <a href="#3-write-the-test-class"
         class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
         aria-hidden="true" title="Link to this heading" tabindex="-1">
         <svg
@@ -512,10 +516,10 @@ This approach ensures that all dependencies start and work together as expected 
 
   
 </figure>
-<h4 id="run-the-test" class="scroll-mt-8 group">
-  Run the Test
+<h4 id="4-run-the-test" class="scroll-mt-8 group">
+  4. Run the Test
   
-    <a href="#run-the-test"
+    <a href="#4-run-the-test"
         class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
         aria-hidden="true" title="Link to this heading" tabindex="-1">
         <svg
@@ -565,15 +569,14 @@ Testcontainers ensures that the services shut down after the tests complete.</p>
   
 </h3>
 <p>Imagine a shopping cart microservice that depends on:</p>
-<ul>
+<ol>
 <li>A PostgreSQL database for storing user and cart data.</li>
 <li>A Redis cache for storing temporary session data.</li>
-</ul>
-<p>With the Docker Compose module, you can:</p>
-<ul>
-<li>Simulate the interaction between these services.</li>
-<li>Write tests to validate database connectivity, query correctness, and cache behavior under test scenarios.</li>
-</ul>
+<li>An external payment API mock service.</li>
+<li>Kafka for handling order events.</li>
+<li>Keycloak for user authentication.</li>
+</ol>
+<p>With the Docker Compose module it&rsquo;s not a problem anymore.</p>
 <h3 id="conclusion" class="scroll-mt-8 group">
   Conclusion
   

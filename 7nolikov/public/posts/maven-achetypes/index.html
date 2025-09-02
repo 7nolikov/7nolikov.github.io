@@ -10,12 +10,12 @@
 <title>
     Maven archetypes | 7nolikov | Dmitrii Novikov
 </title>
-  <meta name="description" content="Maven archetypes are templates that help developers quickly set up a new project with a predefined structure and files. Using an archetype, you can create a Maven project that already includes the necessary folders, configurations, and code for a specific type of application." />
+  <meta name="description" content="Maven archetypes are templates that help developers quickly set up a new project with a predefined structure, files, and code for a specific type of application. It’s extremely useful for livecoding interviews when you need to quickly create a project skeleton." />
 <link rel="icon" type="image/png" href="/images/favicon.png" />
 <meta property="og:url" content="http://localhost:1313/posts/maven-achetypes/">
   <meta property="og:site_name" content="7nolikov | Dmitrii Novikov">
   <meta property="og:title" content="Maven archetypes">
-  <meta property="og:description" content="Maven archetypes are templates that help developers quickly set up a new project with a predefined structure and files. Using an archetype, you can create a Maven project that already includes the necessary folders, configurations, and code for a specific type of application.">
+  <meta property="og:description" content="Maven archetypes are templates that help developers quickly set up a new project with a predefined structure, files, and code for a specific type of application. It’s extremely useful for livecoding interviews when you need to quickly create a project skeleton.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -23,14 +23,14 @@
 
 
   <meta itemprop="name" content="Maven archetypes">
-  <meta itemprop="description" content="Maven archetypes are templates that help developers quickly set up a new project with a predefined structure and files. Using an archetype, you can create a Maven project that already includes the necessary folders, configurations, and code for a specific type of application.">
+  <meta itemprop="description" content="Maven archetypes are templates that help developers quickly set up a new project with a predefined structure, files, and code for a specific type of application. It’s extremely useful for livecoding interviews when you need to quickly create a project skeleton.">
   <meta itemprop="datePublished" content="2024-12-14T00:00:00+00:00">
-  <meta itemprop="wordCount" content="613">
+  <meta itemprop="wordCount" content="606">
   <meta itemprop="keywords" content="Maven">
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Maven archetypes">
-  <meta name="twitter:description" content="Maven archetypes are templates that help developers quickly set up a new project with a predefined structure and files. Using an archetype, you can create a Maven project that already includes the necessary folders, configurations, and code for a specific type of application.">
+  <meta name="twitter:description" content="Maven archetypes are templates that help developers quickly set up a new project with a predefined structure, files, and code for a specific type of application. It’s extremely useful for livecoding interviews when you need to quickly create a project skeleton.">
 
 <link rel="canonical" href="http://localhost:1313/posts/maven-achetypes/" />
 
@@ -70,7 +70,7 @@
   },
   "copyrightNotice": "Dmitrii Novikov",
   "datePublished": "2024-12-14",
-  "description": "Maven archetypes are templates that help developers quickly set up a new project with a predefined structure and files. Using an archetype, you can create a Maven project that already includes the necessary folders, configurations, and code for a specific type of application.",
+  "description": "Maven archetypes are templates that help developers quickly set up a new project with a predefined structure, files, and code for a specific type of application. It’s extremely useful for livecoding interviews when you need to quickly create a project skeleton.",
   "headline": "Maven archetypes",
   "isPartOf": {
     "@id": "http://localhost:1313/posts/",
@@ -81,7 +81,7 @@
   "name": "Maven archetypes",
   "timeRequired": "PT3M",
   "url": "http://localhost:1313/posts/maven-achetypes/",
-  "wordCount": 613
+  "wordCount": 606
 }
 </script>
 
@@ -113,6 +113,10 @@
       <a href="/graph/">Graph</a
       >
     </li>
+    <li>
+      <a>Projects</a
+      >
+    </li>
     </ul>
   </nav>
 
@@ -128,7 +132,8 @@
         </div>
     </header>
 
-    <p>Maven archetypes are templates that help developers quickly set up a new project with a predefined structure and files. Using an archetype, you can create a Maven project that already includes the necessary folders, configurations, and code for a specific type of application.</p>
+    <p>Maven archetypes are templates that help developers quickly set up a new project with a predefined structure, files, and code for a specific type of application.
+It&rsquo;s extremely useful for livecoding interviews when you need to quickly create a project skeleton.</p>
 <h3 id="how-maven-archetypes-work" class="scroll-mt-8 group">
   How Maven Archetypes Work
   
@@ -212,7 +217,7 @@
 <ul>
 <li>Ideal for setting up a basic Java project.</li>
 <li>Includes a standard directory structure (src/main/java, src/test/java) and a simple App.java file with a main method.</li>
-<li>Perfect for beginners or small projects where no specific framework is required.</li>
+<li>Perfect for small projects where no specific framework is required.</li>
 </ul>
 <h4 id="maven-archetype-webapp" class="scroll-mt-8 group">
   maven-archetype-webapp
@@ -332,14 +337,18 @@
     </div>
   </aside>
   <p class="sr-only">bash code snippet start</p>
-  <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">mvn archetype:generate -DgroupId<span class="o">=</span>com.example -DartifactId<span class="o">=</span>spring-app -DarchetypeArtifactId<span class="o">=</span>maven-archetype-quickstart -DinteractiveMode<span class="o">=</span>false</span></span></code></pre></div>
+  <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">mvn archetype:generate 
+</span></span><span class="line"><span class="cl">-DgroupId<span class="o">=</span>com.example 
+</span></span><span class="line"><span class="cl">-DartifactId<span class="o">=</span>spring-app 
+</span></span><span class="line"><span class="cl">-DarchetypeArtifactId<span class="o">=</span>maven-archetype-quickstart 
+</span></span><span class="line"><span class="cl">-DinteractiveMode<span class="o">=</span>false</span></span></code></pre></div>
   <p class="sr-only">bash code snippet end</p>
 
   
 </figure>
 </li>
 <li>
-<p>Add Spring Dependencies Open the pom.xml file in the generated project and add the required dependencies for Spring. For example:</p>
+<p>Open the pom.xml file in the generated project and add the required dependencies for Spring. For example:</p>
 <figure class="codeblock not-prose relative scroll-mt-8" id="codeblock-02">
   <aside
     class="absolute right-0 top-0 hidden rounded-bl-sm rounded-tr-sm bg-white/10 px-2 py-1 text-white/70 transition-opacity md:inline-block"
@@ -830,7 +839,8 @@ If the project is configured correctly, running the application will output:</p>
     </div>
   </aside>
   <p class="sr-only">bash code snippet start</p>
-  <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">spring init --dependencies<span class="o">=</span>web,data-jpa,actuator,devtools,h2,lombok -t<span class="o">=</span>maven-project demo-project</span></span></code></pre></div>
+  <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">spring init --dependencies<span class="o">=</span>web,data-jpa,actuator,devtools,h2,lombok 
+</span></span><span class="line"><span class="cl">-t<span class="o">=</span>maven-project demo-project</span></span></code></pre></div>
   <p class="sr-only">bash code snippet end</p>
 
   

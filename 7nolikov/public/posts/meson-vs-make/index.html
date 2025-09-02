@@ -25,7 +25,7 @@
   <meta itemprop="name" content="Meson vs Make - A simple comparison">
   <meta itemprop="description" content="Meson is a modern build system designed to be fast and easy to use. It focuses on simplicity, better configuration management, and improved speed compared to older tools. Meson uses Ninja as its backend to speed up the actual building process, and its configuration files are written in a simple, human-readable language.">
   <meta itemprop="datePublished" content="2024-12-25T00:00:00+00:00">
-  <meta itemprop="wordCount" content="428">
+  <meta itemprop="wordCount" content="426">
   <meta itemprop="keywords" content="Build">
 
   <meta name="twitter:card" content="summary">
@@ -79,9 +79,9 @@
   },
   "mainEntityOfPage": "http://localhost:1313/posts/meson-vs-make/",
   "name": "Meson vs Make - A simple comparison",
-  "timeRequired": "PT3M",
+  "timeRequired": "PT2M",
   "url": "http://localhost:1313/posts/meson-vs-make/",
-  "wordCount": 428
+  "wordCount": 426
 }
 </script>
 
@@ -111,6 +111,10 @@
     </li>
     <li>
       <a href="/graph/">Graph</a
+      >
+    </li>
+    <li>
+      <a>Projects</a
       >
     </li>
     </ul>
@@ -154,7 +158,7 @@
     </a>
   
 </h3>
-<p><strong>Make</strong> has been around for a long time and is well-known in the software development world. It uses Makefiles that contain rules describing how to build the project. While Make is powerful, it can be complex to maintain and sometimes slow when handling large projects.</p>
+<p>We loved Make. Make has been around for a long time and is well-known in the software development world. It uses Makefiles that contain rules describing how to build the project. While Make is powerful, it can be complex to maintain and sometimes slow when handling large projects.</p>
 <h4 id="meson-offers-several-advantages-over-make" class="scroll-mt-8 group">
   Meson offers several advantages over Make
   
@@ -180,12 +184,12 @@
     </a>
   
 </h4>
-<ul>
+<ol>
 <li><strong>Simplicity</strong>: Meson&rsquo;s configuration files are easier to read and write than complex Makefiles.</li>
 <li><strong>Speed</strong>: By using Ninja for the backend, Meson can build projects more quickly.</li>
 <li><strong>Modern Features</strong>: Meson includes better dependency management, cross-compilation support, and cleaner syntax.</li>
 <li><strong>Error Handling</strong>: Meson provides more understandable error messages, making it easier for developers to troubleshoot issues.</li>
-</ul>
+</ol>
 <h3 id="usage-example" class="scroll-mt-8 group">
   Usage example
   
@@ -211,7 +215,7 @@
     </a>
   
 </h3>
-<p>Below is an additional section demonstrating a complex, real-world usage example of Meson. Imagine you have a C++ project that builds a shared library, an executable that depends on that library, and a test suite. With Meson, you can manage these components in a single meson.build file. Here&rsquo;s an example:</p>
+<p>Below is an additional section demonstrating a complex, real-world usage example of Meson. Imagine you have a C++ project that builds a shared library, an executable that depends on that library, and a test suite. With Meson, you can manage these components in a single <code>meson.build</code> file. Here&rsquo;s an example:</p>
 <figure class="codeblock not-prose relative scroll-mt-8" id="codeblock-01">
   <aside
     class="absolute right-0 top-0 hidden rounded-bl-sm rounded-tr-sm bg-white/10 px-2 py-1 text-white/70 transition-opacity md:inline-block"
@@ -328,7 +332,7 @@
     </a>
   
 </h3>
-<p>In a recent article on the <a href="https://github.blog/open-source/git/highlights-from-git-2-48/#introducing-meson-into-git">Git blog</a>, Git announced that it has started using <strong>Meson</strong> for its build system. This change highlights the growing popularity of Meson and its advantages over traditional tools like Make. The Git project is renowned for its complexity and scale, so switching to Meson is a strong endorsement of its efficiency and ease of use.</p>
+<p>In a recent article on the <a href="https://github.blog/open-source/git/highlights-from-git-2-48/#introducing-meson-into-git">Git blog</a>, Git announced that it has started using Meson for its build system. This change highlights the growing popularity of Meson and its advantages over traditional tools like Make. The Git project is renowned for its complexity and scale, so switching to Meson is a strong endorsement of its efficiency and ease of use.</p>
 <h3 id="conclusion" class="scroll-mt-8 group">
   Conclusion
   
@@ -355,7 +359,7 @@
   
 </h3>
 <p>Meson is a fresh alternative to Make, offering improved performance, easier configuration, and modern features that simplify the build process. With major projects like Git adopting it, Meson is proving to be a valuable tool in modern software development.</p>
-<p>See the <a href="https://mesonbuild.com/">Meson documentation</a> for more information on how to get started with.</p>
+<p>See the <a href="https://mesonbuild.com/">Meson documentation</a> for getting started with.</p>
   </article>
     <aside class="not-prose flex flex-col space-y-8 border-t pt-6">
     <section class="flex flex-col space-y-4">

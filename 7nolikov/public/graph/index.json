@@ -115,6 +115,10 @@
       "in": [],
       "out": []
     },
+    "/posts/free-cloud-hosting/": {
+      "in": [],
+      "out": []
+    },
     "/posts/job-vacancies-search/": {
       "in": [],
       "out": []
@@ -136,10 +140,6 @@
       "out": []
     },
     "/posts/testcontainers-docker-compose-module/": {
-      "in": [],
-      "out": []
-    },
-    "/posts/truly-free-cloud-hosting/": {
       "in": [],
       "out": []
     },
@@ -283,6 +283,11 @@
       "section": "notes",
       "title": "Spring Modulith 1.3"
     },
+    "/posts/free-cloud-hosting/": {
+      "permalink": "/posts/free-cloud-hosting/",
+      "section": "posts",
+      "title": "Free cloud hosting for developers"
+    },
     "/posts/job-vacancies-search/": {
       "permalink": "/posts/job-vacancies-search/",
       "section": "posts",
@@ -312,11 +317,6 @@
       "permalink": "/posts/testcontainers-docker-compose-module/",
       "section": "posts",
       "title": "Testcontainers Docker Compose module"
-    },
-    "/posts/truly-free-cloud-hosting/": {
-      "permalink": "/posts/truly-free-cloud-hosting/",
-      "section": "posts",
-      "title": "Truly free cloud hosting for developers"
     },
     "/posts/what-is-api/": {
       "permalink": "/posts/what-is-api/",
