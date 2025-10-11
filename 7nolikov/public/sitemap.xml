@@ -155,9 +155,5 @@
     <loc>http://localhost:1313/graph/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
-  </url><url>
-    <loc>http://localhost:1313/categories/test/</loc>
-  </url><url>
-    <loc>http://localhost:1313/categories/test-/</loc>
   </url>
 </urlset>
