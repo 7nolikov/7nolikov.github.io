@@ -52,7 +52,7 @@ Gatsby is great for integrating data from multiple sources, like CMSs, APIs, or 
 
 While Gatsby creates visually impressive websites, it can be slow to build large projects due to its reliance on GraphQL.
 
-**Strengths**: React ecosystem, powerful data handling, posibily to build dynamic websites and apps.
+**Strengths**: React ecosystem, powerful data handling, possibility to build dynamic websites and apps.
 
 **Weaknesses**: React, steeper learning curve and slower build times.
 
@@ -78,7 +78,7 @@ Although Hugo’s plugin system is more limited compared to Gatsby or Jekyll, it
 v0 choice, Next.js is not a traditional SSG but a hybrid framework that supports both server-side rendering (SSR) and static site generation. Built on React, it allows developers to create modern, high-performing websites with dynamic functionality.
 
 Next.js is perfect for projects that need a mix of static and dynamic content, but its flexibility can lead to slightly more complex workflows.
-Anyway, who cares, you can thow it out and generate new version of your site in seconds.
+Anyway, who cares, you can throw it out and generate new version of your site in seconds.
 
 **Best for**: Hybrid sites with dynamic content.
 

@@ -21,4 +21,4 @@ Technologies used:
 - React
 
 Source code and instructions at:
-[https://github.com/7nolikov/recommendation-service]([https://github.com/7nolikov/recommendation-service)
+[https://github.com/7nolikov/recommendation-service](https://github.com/7nolikov/recommendation-service)
