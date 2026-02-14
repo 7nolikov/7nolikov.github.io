@@ -13,7 +13,7 @@ permissions:
 
 concurrency:
   group: "pages"
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 defaults:
   run:
@@ -23,7 +23,7 @@ jobs:
   build:
     runs-on: ubuntu-slim
     env:
-      HUGO_VERSION: 0.155.3
+      HUGO_VERSION: 0.137.1
     steps:
       - name: Install Hugo CLI
         run: |
@@ -35,6 +35,7 @@ jobs:
         uses: actions/setup-go@v5
         with:
           go-version: '1.23.2'
+          cache: true
       - name: Checkout
         uses: actions/checkout@v4
         with:
