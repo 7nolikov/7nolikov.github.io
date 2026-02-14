@@ -36,6 +36,7 @@ jobs:
         with:
           go-version: '1.23.2'
           cache: true
+          cache-dependency-path: ./7nolikov/go.sum
       - name: Checkout
         uses: actions/checkout@v4
         with:
