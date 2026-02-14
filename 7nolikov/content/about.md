@@ -12,4 +12,4 @@ I care most about the intersection of distributed systems and observability — 
 
 Outside of work, I build things in Go.
 I write here about distributed systems, Go, observability patterns, and lessons from operating microservices in production.
-Find me on [https://www.linkedin.com/in/7nolikov/](https://www.linkedin.com/in/7nolikov/) and [https://github.com/7nolikov](https://github.com/7nolikov).
+Find me on [LinkedIn](https://www.linkedin.com/in/7nolikov/) and [GitHub](https://github.com/7nolikov).

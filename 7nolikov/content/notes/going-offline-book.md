@@ -1,7 +1,7 @@
 ---
 title: Book - Going Offline
 date: 2024-12-26
-categories: [books]
+categories: [architecture]
 ---
 
 The website "Going Offline" by Jeremy Keith is a resource that explains how to build progressive web apps (PWAs) that work offline. It focuses on making websites and web apps more reliable by ensuring they can function even without an internet connection.

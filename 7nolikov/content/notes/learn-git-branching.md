@@ -1,7 +1,7 @@
 ---
 title: Learn git branching
 date: 2024-12-11
-categories: [git]
+categories: [tools]
 ---
 
 ## Why it's important?
