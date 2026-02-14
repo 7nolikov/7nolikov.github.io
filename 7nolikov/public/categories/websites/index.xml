@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Websites on 7nolikov | Dmitrii Novikov</title>
-    <link>http://localhost:1313/categories/websites/</link>
+    <link>https://7nolikov.github.io/categories/websites/</link>
     <description>Recent content in Websites on 7nolikov | Dmitrii Novikov</description>
     <generator>Hugo</generator>
     <language>en-us</language>
@@ -10,12 +10,12 @@
     <webMaster>7nolikov@gmail.com (Dmitrii Novikov)</webMaster>
     <copyright>Dmitrii Novikov</copyright>
     <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/websites/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://7nolikov.github.io/categories/websites/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Static site generators</title>
-      <link>http://localhost:1313/posts/static-site-generators/</link>
+      <link>https://7nolikov.github.io/posts/static-site-generators/</link>
       <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
-      <guid>http://localhost:1313/posts/static-site-generators/</guid>
+      <guid>https://7nolikov.github.io/posts/static-site-generators/</guid>
       <description>&lt;p&gt;Static site generators are tools that create websites by converting templates and content into static HTML files.&#xA;This approach makes websites faster, more secure, and easier to host.&lt;/p&gt;</description>
     </item>
   </channel>

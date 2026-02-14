@@ -1,7 +1,7 @@
 ---
 title: New MS Office to .MD converter
 date: 2024-12-14
-categories: [markdown]
+categories: [tools]
 ---
 
 Microsoft has created a tool called **MarkItDown** that converts Office files like **.docx**, **.xlsx**, **.pptx**, and even **PDF** files into Markdown format. Markdown is a simple, lightweight way to format text for websites or documentation, making it ideal for developers and writers.

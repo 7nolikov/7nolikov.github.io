@@ -1,7 +1,7 @@
 ---
 title: REST API Tutorial
 date: 2024-12-10
-categories: [rest]
+categories: [architecture]
 ---
 
 The website **RestfulAPI.net** is a helpful resource for learning about RESTful APIs (Representational State Transfer Application Programming Interfaces). A RESTful API allows different software systems to communicate with each other over the internet using simple HTTP methods like GET, POST, PUT, and DELETE.

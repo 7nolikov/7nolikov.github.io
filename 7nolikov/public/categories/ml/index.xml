@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ML on 7nolikov | Dmitrii Novikov</title>
-    <link>http://localhost:1313/categories/ml/</link>
+    <link>https://7nolikov.github.io/categories/ml/</link>
     <description>Recent content in ML on 7nolikov | Dmitrii Novikov</description>
     <generator>Hugo</generator>
     <language>en-us</language>
@@ -10,12 +10,12 @@
     <webMaster>7nolikov@gmail.com (Dmitrii Novikov)</webMaster>
     <copyright>Dmitrii Novikov</copyright>
     <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/ml/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://7nolikov.github.io/categories/ml/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Minitorch - A Minimal Deep Learning Library</title>
-      <link>http://localhost:1313/notes/minitorch/</link>
+      <link>https://7nolikov.github.io/notes/minitorch/</link>
       <pubDate>Sun, 05 Jan 2025 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
-      <guid>http://localhost:1313/notes/minitorch/</guid>
+      <guid>https://7nolikov.github.io/notes/minitorch/</guid>
       <description>&lt;p&gt;Minitorch is a lightweight deep learning library that demonstrates how machine learning works with minimal code. It features a simple automatic differentiation engine and basic tools to build small neural networks. Ideal for students and beginners, Minitorch lets you experiment with deep learning concepts without the complexity of larger frameworks.&lt;/p&gt;&#xA;&lt;p&gt;Learn more at &lt;a href=&#34;https://minitorch.github.io/&#34;&gt;https://minitorch.github.io/&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>

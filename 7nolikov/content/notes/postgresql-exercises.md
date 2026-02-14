@@ -1,7 +1,7 @@
 ---
 title: PostgreSQL Exercises
 date: 2024-12-02
-categories: [databases, postgresql]
+categories: [databases]
 ---
 
 PostgreSQL Exercises is a free online resource that helps you practice SQL queries on a sample database. It covers a wide range of topics, from basic SELECT statements to complex JOIN operations and subqueries.

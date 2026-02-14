@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Markdown on 7nolikov | Dmitrii Novikov</title>
-    <link>http://localhost:1313/categories/markdown/</link>
+    <link>https://7nolikov.github.io/categories/markdown/</link>
     <description>Recent content in Markdown on 7nolikov | Dmitrii Novikov</description>
     <generator>Hugo</generator>
     <language>en-us</language>
@@ -10,12 +10,12 @@
     <webMaster>7nolikov@gmail.com (Dmitrii Novikov)</webMaster>
     <copyright>Dmitrii Novikov</copyright>
     <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://7nolikov.github.io/categories/markdown/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>New MS Office to .MD converter</title>
-      <link>http://localhost:1313/notes/doc-markdown-converter/</link>
+      <link>https://7nolikov.github.io/notes/doc-markdown-converter/</link>
       <pubDate>Sat, 14 Dec 2024 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
-      <guid>http://localhost:1313/notes/doc-markdown-converter/</guid>
+      <guid>https://7nolikov.github.io/notes/doc-markdown-converter/</guid>
       <description>&lt;p&gt;Microsoft has created a tool called &lt;strong&gt;MarkItDown&lt;/strong&gt; that converts Office files like &lt;strong&gt;.docx&lt;/strong&gt;, &lt;strong&gt;.xlsx&lt;/strong&gt;, &lt;strong&gt;.pptx&lt;/strong&gt;, and even &lt;strong&gt;PDF&lt;/strong&gt; files into Markdown format. Markdown is a simple, lightweight way to format text for websites or documentation, making it ideal for developers and writers.&lt;/p&gt;&#xA;&lt;h3 id=&#34;key-features&#34; class=&#34;scroll-mt-8 group&#34;&gt;&#xA;  Key Features&#xA;  &#xA;    &lt;a href=&#34;#key-features&#34;&#xA;        class=&#34;no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block&#34;&#xA;        aria-hidden=&#34;true&#34; title=&#34;Link to this heading&#34; tabindex=&#34;-1&#34;&gt;&#xA;        &lt;svg&#xA;  xmlns=&#34;http://www.w3.org/2000/svg&#34;&#xA;  width=&#34;16&#34;&#xA;  height=&#34;16&#34;&#xA;  fill=&#34;none&#34;&#xA;  stroke=&#34;currentColor&#34;&#xA;  stroke-linecap=&#34;round&#34;&#xA;  stroke-linejoin=&#34;round&#34;&#xA;  stroke-width=&#34;2&#34;&#xA;  class=&#34;lucide lucide-link w-4 h-4 block&#34;&#xA;  viewBox=&#34;0 0 24 24&#34;&#xA;&gt;&#xA;  &lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; /&gt;&#xA;  &lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; /&gt;&#xA;&lt;/svg&gt;&#xA;&#xA;    &lt;/a&gt;&#xA;  &#xA;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Supports many formats: You can convert Word documents, Excel spreadsheets, PowerPoint presentations, and PDFs.&lt;/li&gt;&#xA;&lt;li&gt;Open-source: The tool is available on GitHub, allowing developers to customize or contribute to it.&lt;/li&gt;&#xA;&lt;li&gt;Device-friendly: Someone has even made a web app version that runs directly on your device, so you can convert files without installing anything.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;similar-update-from-google&#34; class=&#34;scroll-mt-8 group&#34;&gt;&#xA;  Similar Update from Google&#xA;  &#xA;    &lt;a href=&#34;#similar-update-from-google&#34;&#xA;        class=&#34;no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block&#34;&#xA;        aria-hidden=&#34;true&#34; title=&#34;Link to this heading&#34; tabindex=&#34;-1&#34;&gt;&#xA;        &lt;svg&#xA;  xmlns=&#34;http://www.w3.org/2000/svg&#34;&#xA;  width=&#34;16&#34;&#xA;  height=&#34;16&#34;&#xA;  fill=&#34;none&#34;&#xA;  stroke=&#34;currentColor&#34;&#xA;  stroke-linecap=&#34;round&#34;&#xA;  stroke-linejoin=&#34;round&#34;&#xA;  stroke-width=&#34;2&#34;&#xA;  class=&#34;lucide lucide-link w-4 h-4 block&#34;&#xA;  viewBox=&#34;0 0 24 24&#34;&#xA;&gt;&#xA;  &lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; /&gt;&#xA;  &lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; /&gt;&#xA;&lt;/svg&gt;&#xA;&#xA;    &lt;/a&gt;&#xA;  &#xA;&lt;/h3&gt;&#xA;&lt;p&gt;A few months ago, Google added the ability to export Google Docs in Markdown format, making it easier to integrate with content management systems or code repositories.&lt;/p&gt;</description>
     </item>
   </channel>

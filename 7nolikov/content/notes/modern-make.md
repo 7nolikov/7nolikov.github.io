@@ -1,7 +1,7 @@
 ---
 title: Modern Make
 date: 2024-12-12
-categories: [make]
+categories: [tools]
 ---
 
 The website **Makefile.site** is a simple and user-friendly resource for learning how to create and use Makefiles. A Makefile is a special file used in programming to manage the build process of a project. It automates compiling and linking your code, saving time and effort. The site explains the basic structure and commands in a Makefile, making it easier for beginners to understand.

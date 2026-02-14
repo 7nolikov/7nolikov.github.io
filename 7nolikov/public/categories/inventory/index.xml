@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Inventory on 7nolikov | Dmitrii Novikov</title>
-    <link>http://localhost:1313/categories/inventory/</link>
+    <link>https://7nolikov.github.io/categories/inventory/</link>
     <description>Recent content in Inventory on 7nolikov | Dmitrii Novikov</description>
     <generator>Hugo</generator>
     <language>en-us</language>
@@ -10,13 +10,13 @@
     <webMaster>7nolikov@gmail.com (Dmitrii Novikov)</webMaster>
     <copyright>Dmitrii Novikov</copyright>
     <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/inventory/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://7nolikov.github.io/categories/inventory/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Compact metal wallet with keyholder</title>
-      <link>http://localhost:1313/notes/metal-wallet/</link>
+      <link>https://7nolikov.github.io/notes/metal-wallet/</link>
       <pubDate>Tue, 24 Dec 2024 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
-      <guid>http://localhost:1313/notes/metal-wallet/</guid>
-      <description>&lt;p&gt;This is a compact metal wallet.&#xA;Use it for two years. Very handy. Keys are not rattling around. It can store several cards, cash, and air tag. I like this form factor.&lt;/p&gt;&#xA;&lt;p&gt;Alternatives include Ridge Wallet, Ekster, Secrid, and Vaultskin wallets, which also offer slim designs and strong materials.&lt;/p&gt;&#xA;&lt;p&gt;You definitely need to try one of these wallets:&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/metal-wallet.jpg&#34;&#xA;    alt=&#34;Metal wallet image&#34;&gt;&#xA;&lt;/figure&gt;</description>
+      <guid>https://7nolikov.github.io/notes/metal-wallet/</guid>
+      <description>&lt;p&gt;This is a compact metal wallet.&#xA;Use it for two years. Very handy. Keys are not rattling around. It can store several cards, cash, and air tag. I like this form factor.&lt;/p&gt;&#xA;&lt;p&gt;Alternatives include Ridge Wallet, Ekster, Secrid, and Vaultskin wallets, which also offer slim designs and strong materials.&lt;/p&gt;&#xA;&lt;p&gt;You definitely need to try one of these wallets:&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;https://7nolikov.github.io/images/metal-wallet.jpg&#34;&#xA;    alt=&#34;Metal wallet image&#34;&gt;&#xA;&lt;/figure&gt;</description>
     </item>
   </channel>
 </rss>

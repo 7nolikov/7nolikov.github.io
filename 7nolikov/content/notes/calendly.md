@@ -1,7 +1,7 @@
 ---
 title: Calendly - Easy scheduling tool
 date: 2025-01-02
-categories: [time-management]
+categories: [tools]
 ---
 
 Calendly is an online service that helps you schedule meetings without the hassle of back-and-forth emails. You set your available time slots and share a link for others to book a slot that works for them.

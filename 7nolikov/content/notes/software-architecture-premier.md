@@ -1,7 +1,7 @@
 ---
 title: Software Architecture Premier
 date: 2025-05-08
-categories: [system-design]
+categories: [architecture]
 ---
 
 The sivaprasadreddy/software-architecture-premier GitHub repository offers reference materials for learning about Software Architecture and Design.

@@ -1,7 +1,7 @@
 ---
 title: Delta Lake vs Apache Iceberg
 date: 2024-12-20
-categories: [datalake]
+categories: [databases]
 ---
 
 The article compares two popular data lake technologies, Delta Lake and Apache Iceberg, which help manage large-scale data in a structured and efficient way. These tools ensure data reliability, versioning, and efficient querying in big data environments.

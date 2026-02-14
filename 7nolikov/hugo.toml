@@ -40,11 +40,6 @@ googleAnalytics = "G-V3HY4BP6JS"
     pageRef = '/graph'
     weight = 40
 
-#  [[menus.main]]
-#    name = 'Projects'
-#    pageRef = '/projects'
-#    weight = 50
-
 [markup]
   [markup.highlight]
     noClasses = false
@@ -56,7 +51,7 @@ googleAnalytics = "G-V3HY4BP6JS"
         block = true
 
 [params]
-  description = "The best software developer in my flat."
+  description = "Distributed Systems Engineer. Writing about Go, observability, and cloud-native architecture. Also the best software developer in my flat."
 
   # Author details for the JSON-LD structured data.
   [params.author]

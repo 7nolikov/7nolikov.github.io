@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Testing on 7nolikov | Dmitrii Novikov</title>
-    <link>http://localhost:1313/categories/testing/</link>
+    <link>https://7nolikov.github.io/categories/testing/</link>
     <description>Recent content in Testing on 7nolikov | Dmitrii Novikov</description>
     <generator>Hugo</generator>
     <language>en-us</language>
@@ -10,19 +10,19 @@
     <webMaster>7nolikov@gmail.com (Dmitrii Novikov)</webMaster>
     <copyright>Dmitrii Novikov</copyright>
     <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/testing/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://7nolikov.github.io/categories/testing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Testcontainers Docker Compose module</title>
-      <link>http://localhost:1313/posts/testcontainers-docker-compose-module/</link>
+      <link>https://7nolikov.github.io/posts/testcontainers-docker-compose-module/</link>
       <pubDate>Sun, 15 Dec 2024 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
-      <guid>http://localhost:1313/posts/testcontainers-docker-compose-module/</guid>
+      <guid>https://7nolikov.github.io/posts/testcontainers-docker-compose-module/</guid>
       <description>&lt;p&gt;Using Docker Compose module with Testcontainers you can simplify testing for applications that rely on multiple services like databases, APIs and message queues.&lt;/p&gt;&#xA;&lt;p&gt;This approach ensures that all dependencies start and work together as expected in a controlled, reproducible environment during your Java tests.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Standalone Spring tests</title>
-      <link>http://localhost:1313/posts/standalone-spring-tests/</link>
+      <link>https://7nolikov.github.io/posts/standalone-spring-tests/</link>
       <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
-      <guid>http://localhost:1313/posts/standalone-spring-tests/</guid>
+      <guid>https://7nolikov.github.io/posts/standalone-spring-tests/</guid>
       <description>&lt;p&gt;I was surprised that Spring Test library doesn&amp;rsquo;t support standalone acceptance tests format out of the box.&#xA;Here&amp;rsquo;s how I tackled this issue and why standalone tests are useful for modular Spring applications.&lt;/p&gt;</description>
     </item>
   </channel>

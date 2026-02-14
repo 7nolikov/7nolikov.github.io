@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on 7nolikov | Dmitrii Novikov</title>
-    <link>http://localhost:1313/categories/</link>
+    <link>https://7nolikov.github.io/categories/</link>
     <description>Recent content in Categories on 7nolikov | Dmitrii Novikov</description>
     <generator>Hugo</generator>
     <language>en-us</language>
@@ -10,229 +10,117 @@
     <webMaster>7nolikov@gmail.com (Dmitrii Novikov)</webMaster>
     <copyright>Dmitrii Novikov</copyright>
     <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://7nolikov.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Landing</title>
-      <link>http://localhost:1313/categories/landing/</link>
-      <pubDate>Sun, 31 Aug 2025 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
-      <guid>http://localhost:1313/categories/landing/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Test-task</title>
-      <link>http://localhost:1313/categories/test-task/</link>
-      <pubDate>Sat, 30 Aug 2025 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
-      <guid>http://localhost:1313/categories/test-task/</guid>
+      <title>Money</title>
+      <link>https://7nolikov.github.io/categories/money/</link>
+      <pubDate>Fri, 10 Oct 2025 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
+      <guid>https://7nolikov.github.io/categories/money/</guid>
       <description></description>
     </item>
     <item>
       <title>Cloud</title>
-      <link>http://localhost:1313/categories/cloud/</link>
+      <link>https://7nolikov.github.io/categories/cloud/</link>
       <pubDate>Sat, 24 May 2025 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
-      <guid>http://localhost:1313/categories/cloud/</guid>
+      <guid>https://7nolikov.github.io/categories/cloud/</guid>
       <description></description>
     </item>
     <item>
-      <title>Yaml</title>
-      <link>http://localhost:1313/categories/yaml/</link>
+      <title>Tools</title>
+      <link>https://7nolikov.github.io/categories/tools/</link>
       <pubDate>Mon, 19 May 2025 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
-      <guid>http://localhost:1313/categories/yaml/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Python</title>
-      <link>http://localhost:1313/categories/python/</link>
-      <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
-      <guid>http://localhost:1313/categories/python/</guid>
+      <guid>https://7nolikov.github.io/categories/tools/</guid>
       <description></description>
     </item>
     <item>
       <title>Golang</title>
-      <link>http://localhost:1313/categories/golang/</link>
+      <link>https://7nolikov.github.io/categories/golang/</link>
       <pubDate>Fri, 09 May 2025 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
-      <guid>http://localhost:1313/categories/golang/</guid>
+      <guid>https://7nolikov.github.io/categories/golang/</guid>
       <description></description>
     </item>
     <item>
-      <title>System-design</title>
-      <link>http://localhost:1313/categories/system-design/</link>
+      <title>Architecture</title>
+      <link>https://7nolikov.github.io/categories/architecture/</link>
       <pubDate>Thu, 08 May 2025 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
-      <guid>http://localhost:1313/categories/system-design/</guid>
+      <guid>https://7nolikov.github.io/categories/architecture/</guid>
       <description></description>
     </item>
     <item>
       <title>AI</title>
-      <link>http://localhost:1313/categories/ai/</link>
+      <link>https://7nolikov.github.io/categories/ai/</link>
       <pubDate>Sat, 12 Apr 2025 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
-      <guid>http://localhost:1313/categories/ai/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Rust</title>
-      <link>http://localhost:1313/categories/rust/</link>
-      <pubDate>Tue, 18 Feb 2025 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
-      <guid>http://localhost:1313/categories/rust/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>ML</title>
-      <link>http://localhost:1313/categories/ml/</link>
-      <pubDate>Sun, 05 Jan 2025 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
-      <guid>http://localhost:1313/categories/ml/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Rest</title>
-      <link>http://localhost:1313/categories/rest/</link>
-      <pubDate>Sat, 04 Jan 2025 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
-      <guid>http://localhost:1313/categories/rest/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Time-management</title>
-      <link>http://localhost:1313/categories/time-management/</link>
-      <pubDate>Thu, 02 Jan 2025 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
-      <guid>http://localhost:1313/categories/time-management/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Api</title>
-      <link>http://localhost:1313/categories/api/</link>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
-      <guid>http://localhost:1313/categories/api/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Resume</title>
-      <link>http://localhost:1313/categories/resume/</link>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
-      <guid>http://localhost:1313/categories/resume/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Analytics</title>
-      <link>http://localhost:1313/categories/analytics/</link>
-      <pubDate>Tue, 31 Dec 2024 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
-      <guid>http://localhost:1313/categories/analytics/</guid>
+      <guid>https://7nolikov.github.io/categories/ai/</guid>
       <description></description>
     </item>
     <item>
       <title>Books</title>
-      <link>http://localhost:1313/categories/books/</link>
+      <link>https://7nolikov.github.io/categories/books/</link>
       <pubDate>Thu, 26 Dec 2024 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
-      <guid>http://localhost:1313/categories/books/</guid>
+      <guid>https://7nolikov.github.io/categories/books/</guid>
       <description></description>
     </item>
     <item>
       <title>Build</title>
-      <link>http://localhost:1313/categories/build/</link>
+      <link>https://7nolikov.github.io/categories/build/</link>
       <pubDate>Wed, 25 Dec 2024 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
-      <guid>http://localhost:1313/categories/build/</guid>
+      <guid>https://7nolikov.github.io/categories/build/</guid>
       <description></description>
     </item>
     <item>
-      <title>Inventory</title>
-      <link>http://localhost:1313/categories/inventory/</link>
-      <pubDate>Tue, 24 Dec 2024 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
-      <guid>http://localhost:1313/categories/inventory/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Spring</title>
-      <link>http://localhost:1313/categories/spring/</link>
+      <title>Java</title>
+      <link>https://7nolikov.github.io/categories/java/</link>
       <pubDate>Mon, 23 Dec 2024 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
-      <guid>http://localhost:1313/categories/spring/</guid>
+      <guid>https://7nolikov.github.io/categories/java/</guid>
       <description></description>
     </item>
     <item>
-      <title>Games</title>
-      <link>http://localhost:1313/categories/games/</link>
+      <title>Fun</title>
+      <link>https://7nolikov.github.io/categories/fun/</link>
       <pubDate>Sun, 22 Dec 2024 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
-      <guid>http://localhost:1313/categories/games/</guid>
+      <guid>https://7nolikov.github.io/categories/fun/</guid>
       <description></description>
     </item>
     <item>
       <title>Databases</title>
-      <link>http://localhost:1313/categories/databases/</link>
+      <link>https://7nolikov.github.io/categories/databases/</link>
       <pubDate>Sat, 21 Dec 2024 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
-      <guid>http://localhost:1313/categories/databases/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Datalake</title>
-      <link>http://localhost:1313/categories/datalake/</link>
-      <pubDate>Fri, 20 Dec 2024 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
-      <guid>http://localhost:1313/categories/datalake/</guid>
+      <guid>https://7nolikov.github.io/categories/databases/</guid>
       <description></description>
     </item>
     <item>
       <title>Testing</title>
-      <link>http://localhost:1313/categories/testing/</link>
+      <link>https://7nolikov.github.io/categories/testing/</link>
       <pubDate>Sun, 15 Dec 2024 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
-      <guid>http://localhost:1313/categories/testing/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Markdown</title>
-      <link>http://localhost:1313/categories/markdown/</link>
-      <pubDate>Sat, 14 Dec 2024 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
-      <guid>http://localhost:1313/categories/markdown/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Maven</title>
-      <link>http://localhost:1313/categories/maven/</link>
-      <pubDate>Sat, 14 Dec 2024 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
-      <guid>http://localhost:1313/categories/maven/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Search</title>
-      <link>http://localhost:1313/categories/search/</link>
-      <pubDate>Fri, 13 Dec 2024 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
-      <guid>http://localhost:1313/categories/search/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Make</title>
-      <link>http://localhost:1313/categories/make/</link>
-      <pubDate>Thu, 12 Dec 2024 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
-      <guid>http://localhost:1313/categories/make/</guid>
+      <guid>https://7nolikov.github.io/categories/testing/</guid>
       <description></description>
     </item>
     <item>
       <title>Git</title>
-      <link>http://localhost:1313/categories/git/</link>
+      <link>https://7nolikov.github.io/categories/git/</link>
       <pubDate>Wed, 11 Dec 2024 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
-      <guid>http://localhost:1313/categories/git/</guid>
+      <guid>https://7nolikov.github.io/categories/git/</guid>
       <description></description>
     </item>
     <item>
-      <title>Revealjs</title>
-      <link>http://localhost:1313/categories/revealjs/</link>
-      <pubDate>Thu, 05 Dec 2024 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
-      <guid>http://localhost:1313/categories/revealjs/</guid>
+      <title>Spring</title>
+      <link>https://7nolikov.github.io/categories/spring/</link>
+      <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
+      <guid>https://7nolikov.github.io/categories/spring/</guid>
       <description></description>
     </item>
     <item>
-      <title>Money</title>
-      <link>http://localhost:1313/categories/money/</link>
-      <pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
-      <guid>http://localhost:1313/categories/money/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Postgresql</title>
-      <link>http://localhost:1313/categories/postgresql/</link>
-      <pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
-      <guid>http://localhost:1313/categories/postgresql/</guid>
+      <title>Processes</title>
+      <link>https://7nolikov.github.io/categories/processes/</link>
+      <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
+      <guid>https://7nolikov.github.io/categories/processes/</guid>
       <description></description>
     </item>
     <item>
       <title>Websites</title>
-      <link>http://localhost:1313/categories/websites/</link>
+      <link>https://7nolikov.github.io/categories/websites/</link>
       <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
-      <guid>http://localhost:1313/categories/websites/</guid>
+      <guid>https://7nolikov.github.io/categories/websites/</guid>
       <description></description>
     </item>
   </channel>

@@ -1,7 +1,7 @@
 ---
 title: PostHog
 date: 2024-12-31
-categories: [analytics]
+categories: [tools]
 ---
 
 PostHog is an open-source platform for product analytics, helping teams understand user behavior in their applications. It provides tools to track, analyze, and improve how users interact with a product—all in one place.

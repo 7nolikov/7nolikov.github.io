@@ -1,7 +1,7 @@
 ---
 title: Conventional commits
 date: 2024-12-01
-categories: [git]
+categories: [processes]
 ---
 
 ## Reasoning

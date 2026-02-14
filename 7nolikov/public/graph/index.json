@@ -46,10 +46,6 @@
       "in": [],
       "out": []
     },
-    "/notes/jpmorgan-python-training/": {
-      "in": [],
-      "out": []
-    },
     "/notes/json-api/": {
       "in": [],
       "out": []
@@ -60,11 +56,7 @@
         "/notes/conventional-commits/"
       ]
     },
-    "/notes/metal-wallet/": {
-      "in": [],
-      "out": []
-    },
-    "/notes/minitorch/": {
+    "/notes/maven-archetypes/": {
       "in": [],
       "out": []
     },
@@ -103,10 +95,6 @@
       "in": [],
       "out": []
     },
-    "/notes/rust-exercises/": {
-      "in": [],
-      "out": []
-    },
     "/notes/software-architecture-premier/": {
       "in": [],
       "out": []
@@ -119,15 +107,11 @@
       "in": [],
       "out": []
     },
-    "/posts/job-vacancies-search/": {
-      "in": [],
-      "out": []
-    },
-    "/posts/maven-achetypes/": {
-      "in": [],
-      "out": []
-    },
     "/posts/meson-vs-make/": {
+      "in": [],
+      "out": []
+    },
+    "/posts/return-to-office/": {
       "in": [],
       "out": []
     },
@@ -140,14 +124,6 @@
       "out": []
     },
     "/posts/testcontainers-docker-compose-module/": {
-      "in": [],
-      "out": []
-    },
-    "/posts/what-is-api/": {
-      "in": [],
-      "out": []
-    },
-    "/posts/where-is-all-the-money-in-the-world/": {
       "in": [],
       "out": []
     }
@@ -203,11 +179,6 @@
       "section": "notes",
       "title": "HAL - Hypertext Application Language"
     },
-    "/notes/jpmorgan-python-training/": {
-      "permalink": "/notes/jpmorgan-python-training/",
-      "section": "notes",
-      "title": "JPMorgan Chase Python Training"
-    },
     "/notes/json-api/": {
       "permalink": "/notes/json-api/",
       "section": "notes",
@@ -218,15 +189,10 @@
       "section": "notes",
       "title": "Learn git branching"
     },
-    "/notes/metal-wallet/": {
-      "permalink": "/notes/metal-wallet/",
+    "/notes/maven-archetypes/": {
+      "permalink": "/notes/maven-archetypes/",
       "section": "notes",
-      "title": "Compact metal wallet with keyholder"
-    },
-    "/notes/minitorch/": {
-      "permalink": "/notes/minitorch/",
-      "section": "notes",
-      "title": "Minitorch - A Minimal Deep Learning Library"
+      "title": "Maven archetypes"
     },
     "/notes/modern-make/": {
       "permalink": "/notes/modern-make/",
@@ -268,11 +234,6 @@
       "section": "notes",
       "title": "RevealJS - HTML Presentation Framework"
     },
-    "/notes/rust-exercises/": {
-      "permalink": "/notes/rust-exercises/",
-      "section": "notes",
-      "title": "100 Exercises to learn Rust"
-    },
     "/notes/software-architecture-premier/": {
       "permalink": "/notes/software-architecture-premier/",
       "section": "notes",
@@ -288,20 +249,15 @@
       "section": "posts",
       "title": "Free cloud hosting for developers"
     },
-    "/posts/job-vacancies-search/": {
-      "permalink": "/posts/job-vacancies-search/",
-      "section": "posts",
-      "title": "Searching LinkedIn vacancies using Google"
-    },
-    "/posts/maven-achetypes/": {
-      "permalink": "/posts/maven-achetypes/",
-      "section": "posts",
-      "title": "Maven archetypes"
-    },
     "/posts/meson-vs-make/": {
       "permalink": "/posts/meson-vs-make/",
       "section": "posts",
       "title": "Meson vs Make - A simple comparison"
+    },
+    "/posts/return-to-office/": {
+      "permalink": "/posts/return-to-office/",
+      "section": "posts",
+      "title": "Return-to-Office plan is probably math-negative"
     },
     "/posts/standalone-spring-tests/": {
       "permalink": "/posts/standalone-spring-tests/",
@@ -317,16 +273,6 @@
       "permalink": "/posts/testcontainers-docker-compose-module/",
       "section": "posts",
       "title": "Testcontainers Docker Compose module"
-    },
-    "/posts/what-is-api/": {
-      "permalink": "/posts/what-is-api/",
-      "section": "posts",
-      "title": "What is API?"
-    },
-    "/posts/where-is-all-the-money-in-the-world/": {
-      "permalink": "/posts/where-is-all-the-money-in-the-world/",
-      "section": "posts",
-      "title": "Where is all the money in the world?"
     }
   }
 }

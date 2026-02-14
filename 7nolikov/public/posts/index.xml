@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on 7nolikov | Dmitrii Novikov</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>https://7nolikov.github.io/posts/</link>
     <description>Recent content in Posts on 7nolikov | Dmitrii Novikov</description>
     <generator>Hugo</generator>
     <language>en-us</language>
@@ -10,68 +10,47 @@
     <webMaster>7nolikov@gmail.com (Dmitrii Novikov)</webMaster>
     <copyright>Dmitrii Novikov</copyright>
     <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://7nolikov.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Return-to-Office plan is probably math-negative</title>
+      <link>https://7nolikov.github.io/posts/return-to-office/</link>
+      <pubDate>Fri, 10 Oct 2025 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
+      <guid>https://7nolikov.github.io/posts/return-to-office/</guid>
+      <description>&lt;p&gt;A lot of companies are spending a fortune to drag people back into the office. They say it’s for culture or synergy. That sounds nice, but those words don&amp;rsquo;t pay the rent. So, let’s stop guessing and start calculating. We need a way to treat the return-to-office (RTO) move like what it really is: a huge financial investment.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Free cloud hosting for developers</title>
-      <link>http://localhost:1313/posts/free-cloud-hosting/</link>
+      <link>https://7nolikov.github.io/posts/free-cloud-hosting/</link>
       <pubDate>Sat, 24 May 2025 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
-      <guid>http://localhost:1313/posts/free-cloud-hosting/</guid>
+      <guid>https://7nolikov.github.io/posts/free-cloud-hosting/</guid>
       <description>&lt;p&gt;As a developer, I usually want to deploy applications with minimal or no upfront investment. The hosting free tiers options give a space for experimentation, learning, and the deployment of low-traffic personal projects or proofs-of-concept without immediate financial commitment.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>What is API?</title>
-      <link>http://localhost:1313/posts/what-is-api/</link>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
-      <guid>http://localhost:1313/posts/what-is-api/</guid>
-      <description>&lt;p&gt;Application Programming Interface is a tool that allows different software applications to communicate with each other. Think of it as a bridge that connects systems, enabling them to share data and perform tasks without knowing the details of how the other system works.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Meson vs Make - A simple comparison</title>
-      <link>http://localhost:1313/posts/meson-vs-make/</link>
+      <link>https://7nolikov.github.io/posts/meson-vs-make/</link>
       <pubDate>Wed, 25 Dec 2024 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
-      <guid>http://localhost:1313/posts/meson-vs-make/</guid>
+      <guid>https://7nolikov.github.io/posts/meson-vs-make/</guid>
       <description>&lt;p&gt;Meson is a modern build system designed to be fast and easy to use. It focuses on simplicity, better configuration management, and improved speed compared to older tools. Meson uses Ninja as its backend to speed up the actual building process, and its configuration files are written in a simple, human-readable language.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Testcontainers Docker Compose module</title>
-      <link>http://localhost:1313/posts/testcontainers-docker-compose-module/</link>
+      <link>https://7nolikov.github.io/posts/testcontainers-docker-compose-module/</link>
       <pubDate>Sun, 15 Dec 2024 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
-      <guid>http://localhost:1313/posts/testcontainers-docker-compose-module/</guid>
+      <guid>https://7nolikov.github.io/posts/testcontainers-docker-compose-module/</guid>
       <description>&lt;p&gt;Using Docker Compose module with Testcontainers you can simplify testing for applications that rely on multiple services like databases, APIs and message queues.&lt;/p&gt;&#xA;&lt;p&gt;This approach ensures that all dependencies start and work together as expected in a controlled, reproducible environment during your Java tests.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Maven archetypes</title>
-      <link>http://localhost:1313/posts/maven-achetypes/</link>
-      <pubDate>Sat, 14 Dec 2024 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
-      <guid>http://localhost:1313/posts/maven-achetypes/</guid>
-      <description>&lt;p&gt;Maven archetypes are templates that help developers quickly set up a new project with a predefined structure, files, and code for a specific type of application.&#xA;It&amp;rsquo;s extremely useful for livecoding interviews when you need to quickly create a project skeleton.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Searching LinkedIn vacancies using Google</title>
-      <link>http://localhost:1313/posts/job-vacancies-search/</link>
-      <pubDate>Fri, 13 Dec 2024 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
-      <guid>http://localhost:1313/posts/job-vacancies-search/</guid>
-      <description>&lt;p&gt;You can use advanced Google search queries to find job vacancies that match specific roles and include details about visa sponsorship or relocation support.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Standalone Spring tests</title>
-      <link>http://localhost:1313/posts/standalone-spring-tests/</link>
+      <link>https://7nolikov.github.io/posts/standalone-spring-tests/</link>
       <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
-      <guid>http://localhost:1313/posts/standalone-spring-tests/</guid>
+      <guid>https://7nolikov.github.io/posts/standalone-spring-tests/</guid>
       <description>&lt;p&gt;I was surprised that Spring Test library doesn&amp;rsquo;t support standalone acceptance tests format out of the box.&#xA;Here&amp;rsquo;s how I tackled this issue and why standalone tests are useful for modular Spring applications.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Where is all the money in the world?</title>
-      <link>http://localhost:1313/posts/where-is-all-the-money-in-the-world/</link>
-      <pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
-      <guid>http://localhost:1313/posts/where-is-all-the-money-in-the-world/</guid>
-      <description>&lt;p&gt;TLDR: Financial sector holds more than 30% of the world&amp;rsquo;s money.&lt;/p&gt;&#xA;&lt;p&gt;Money is the lifeblood of the global economy. Understanding where money is located provides valuable insights into the structure of the global economy, wealth distribution, and financial trends.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Static site generators</title>
-      <link>http://localhost:1313/posts/static-site-generators/</link>
+      <link>https://7nolikov.github.io/posts/static-site-generators/</link>
       <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
-      <guid>http://localhost:1313/posts/static-site-generators/</guid>
+      <guid>https://7nolikov.github.io/posts/static-site-generators/</guid>
       <description>&lt;p&gt;Static site generators are tools that create websites by converting templates and content into static HTML files.&#xA;This approach makes websites faster, more secure, and easier to host.&lt;/p&gt;</description>
     </item>
   </channel>

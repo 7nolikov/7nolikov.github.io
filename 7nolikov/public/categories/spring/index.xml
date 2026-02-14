@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Spring on 7nolikov | Dmitrii Novikov</title>
-    <link>http://localhost:1313/categories/spring/</link>
+    <link>https://7nolikov.github.io/categories/spring/</link>
     <description>Recent content in Spring on 7nolikov | Dmitrii Novikov</description>
     <generator>Hugo</generator>
     <language>en-us</language>
@@ -10,19 +10,12 @@
     <webMaster>7nolikov@gmail.com (Dmitrii Novikov)</webMaster>
     <copyright>Dmitrii Novikov</copyright>
     <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/spring/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Spring Modulith 1.3</title>
-      <link>http://localhost:1313/notes/spring-modulith/</link>
-      <pubDate>Mon, 23 Dec 2024 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
-      <guid>http://localhost:1313/notes/spring-modulith/</guid>
-      <description>&lt;p&gt;Microservices -&amp;gt; Modulith trend became real.&lt;/p&gt;&#xA;&lt;p&gt;Spring Modulith 1.3 is released. It is a framework that helps to build modular monoliths. It is a great alternative to microservices architecture. It allows developers to create modular applications with clear boundaries between modules, while still running them in a single process.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://spring.io/blog/2024/11/22/whats-new-in-spring-modulith-1-3&#34;&gt;What&amp;rsquo;s new in Spring Modulith 1.3?&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
+    <atom:link href="https://7nolikov.github.io/categories/spring/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Standalone Spring tests</title>
-      <link>http://localhost:1313/posts/standalone-spring-tests/</link>
+      <link>https://7nolikov.github.io/posts/standalone-spring-tests/</link>
       <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
-      <guid>http://localhost:1313/posts/standalone-spring-tests/</guid>
+      <guid>https://7nolikov.github.io/posts/standalone-spring-tests/</guid>
       <description>&lt;p&gt;I was surprised that Spring Test library doesn&amp;rsquo;t support standalone acceptance tests format out of the box.&#xA;Here&amp;rsquo;s how I tackled this issue and why standalone tests are useful for modular Spring applications.&lt;/p&gt;</description>
     </item>
   </channel>

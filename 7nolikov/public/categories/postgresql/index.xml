@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Postgresql on 7nolikov | Dmitrii Novikov</title>
-    <link>http://localhost:1313/categories/postgresql/</link>
+    <link>https://7nolikov.github.io/categories/postgresql/</link>
     <description>Recent content in Postgresql on 7nolikov | Dmitrii Novikov</description>
     <generator>Hugo</generator>
     <language>en-us</language>
@@ -10,12 +10,12 @@
     <webMaster>7nolikov@gmail.com (Dmitrii Novikov)</webMaster>
     <copyright>Dmitrii Novikov</copyright>
     <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/postgresql/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://7nolikov.github.io/categories/postgresql/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PostgreSQL Exercises</title>
-      <link>http://localhost:1313/notes/postgresql-exercises/</link>
+      <link>https://7nolikov.github.io/notes/postgresql-exercises/</link>
       <pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
-      <guid>http://localhost:1313/notes/postgresql-exercises/</guid>
+      <guid>https://7nolikov.github.io/notes/postgresql-exercises/</guid>
       <description>&lt;p&gt;PostgreSQL Exercises is a free online resource that helps you practice SQL queries on a sample database. It covers a wide range of topics, from basic SELECT statements to complex JOIN operations and subqueries.&lt;/p&gt;&#xA;&lt;p&gt;It&amp;rsquo;s free, no registration required, and you can start practicing right away. The exercises are extremely helpful for interview preparation, learning SQL, or refreshing your database skills.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://pgexercises.com/&#34;&gt;https://pgexercises.com/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Big thanks to &lt;a href=&#34;https://alisdairowens.net/&#34;&gt;Alisdair Owens&lt;/a&gt; for creating and maintaining this fantastic resource!&lt;/p&gt;</description>
     </item>
   </channel>

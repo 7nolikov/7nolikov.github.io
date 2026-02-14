@@ -2,158 +2,108 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://7nolikov.github.io/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://7nolikov.github.io/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/landing/</loc>
+    <loc>https://7nolikov.github.io/categories/money/</loc>
   </url><url>
-    <loc>http://localhost:1313/projects/</loc>
+    <loc>https://7nolikov.github.io/posts/</loc>
   </url><url>
-    <loc>http://localhost:1313/projects/waitlist/</loc>
+    <loc>https://7nolikov.github.io/posts/return-to-office/</loc>
   </url><url>
-    <loc>http://localhost:1313/projects/recommendation-service/</loc>
+    <loc>https://7nolikov.github.io/categories/cloud/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/test-task/</loc>
+    <loc>https://7nolikov.github.io/posts/free-cloud-hosting/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/cloud/</loc>
+    <loc>https://7nolikov.github.io/notes/no-yaml/</loc>
   </url><url>
-    <loc>http://localhost:1313/posts/free-cloud-hosting/</loc>
+    <loc>https://7nolikov.github.io/notes/</loc>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://7nolikov.github.io/categories/tools/</loc>
   </url><url>
-    <loc>http://localhost:1313/notes/no-yaml/</loc>
+    <loc>https://7nolikov.github.io/notes/go-templates-injection/</loc>
   </url><url>
-    <loc>http://localhost:1313/notes/</loc>
+    <loc>https://7nolikov.github.io/categories/golang/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/yaml/</loc>
+    <loc>https://7nolikov.github.io/categories/architecture/</loc>
   </url><url>
-    <loc>http://localhost:1313/notes/jpmorgan-python-training/</loc>
+    <loc>https://7nolikov.github.io/notes/software-architecture-premier/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/python/</loc>
+    <loc>https://7nolikov.github.io/categories/ai/</loc>
   </url><url>
-    <loc>http://localhost:1313/notes/go-templates-injection/</loc>
+    <loc>https://7nolikov.github.io/notes/google-adk/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/golang/</loc>
+    <loc>https://7nolikov.github.io/notes/json-api/</loc>
   </url><url>
-    <loc>http://localhost:1313/notes/software-architecture-premier/</loc>
+    <loc>https://7nolikov.github.io/notes/hal/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/system-design/</loc>
+    <loc>https://7nolikov.github.io/notes/calendly/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/ai/</loc>
+    <loc>https://7nolikov.github.io/notes/open-resume-parser/</loc>
   </url><url>
-    <loc>http://localhost:1313/notes/google-adk/</loc>
+    <loc>https://7nolikov.github.io/notes/posthog/</loc>
   </url><url>
-    <loc>http://localhost:1313/notes/rust-exercises/</loc>
+    <loc>https://7nolikov.github.io/notes/going-offline-book/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/rust/</loc>
+    <loc>https://7nolikov.github.io/categories/books/</loc>
   </url><url>
-    <loc>http://localhost:1313/notes/minitorch/</loc>
+    <loc>https://7nolikov.github.io/categories/build/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/ml/</loc>
+    <loc>https://7nolikov.github.io/posts/meson-vs-make/</loc>
   </url><url>
-    <loc>http://localhost:1313/notes/json-api/</loc>
+    <loc>https://7nolikov.github.io/categories/java/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/rest/</loc>
+    <loc>https://7nolikov.github.io/notes/spring-modulith/</loc>
   </url><url>
-    <loc>http://localhost:1313/notes/hal/</loc>
+    <loc>https://7nolikov.github.io/categories/fun/</loc>
   </url><url>
-    <loc>http://localhost:1313/notes/calendly/</loc>
+    <loc>https://7nolikov.github.io/notes/password-game/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/time-management/</loc>
+    <loc>https://7nolikov.github.io/notes/b-trees-and-database-indexes/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/api/</loc>
+    <loc>https://7nolikov.github.io/categories/databases/</loc>
   </url><url>
-    <loc>http://localhost:1313/notes/open-resume-parser/</loc>
+    <loc>https://7nolikov.github.io/notes/delta-lake-vs-apache-iceberg/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/resume/</loc>
+    <loc>https://7nolikov.github.io/posts/testcontainers-docker-compose-module/</loc>
   </url><url>
-    <loc>http://localhost:1313/posts/what-is-api/</loc>
+    <loc>https://7nolikov.github.io/categories/testing/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/analytics/</loc>
+    <loc>https://7nolikov.github.io/notes/maven-archetypes/</loc>
   </url><url>
-    <loc>http://localhost:1313/notes/posthog/</loc>
+    <loc>https://7nolikov.github.io/notes/doc-markdown-converter/</loc>
   </url><url>
-    <loc>http://localhost:1313/notes/going-offline-book/</loc>
+    <loc>https://7nolikov.github.io/notes/modern-make/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/books/</loc>
+    <loc>https://7nolikov.github.io/categories/git/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/build/</loc>
+    <loc>https://7nolikov.github.io/notes/learn-git-branching/</loc>
   </url><url>
-    <loc>http://localhost:1313/posts/meson-vs-make/</loc>
+    <loc>https://7nolikov.github.io/notes/rest-api-tutorial/</loc>
   </url><url>
-    <loc>http://localhost:1313/notes/metal-wallet/</loc>
+    <loc>https://7nolikov.github.io/notes/edge-db/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/inventory/</loc>
+    <loc>https://7nolikov.github.io/notes/revealjs/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/spring/</loc>
+    <loc>https://7nolikov.github.io/categories/spring/</loc>
   </url><url>
-    <loc>http://localhost:1313/notes/spring-modulith/</loc>
+    <loc>https://7nolikov.github.io/posts/standalone-spring-tests/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/games/</loc>
+    <loc>https://7nolikov.github.io/notes/postgresql-exercises/</loc>
   </url><url>
-    <loc>http://localhost:1313/notes/password-game/</loc>
+    <loc>https://7nolikov.github.io/notes/conventional-commits/</loc>
   </url><url>
-    <loc>http://localhost:1313/notes/b-trees-and-database-indexes/</loc>
+    <loc>https://7nolikov.github.io/categories/processes/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/databases/</loc>
+    <loc>https://7nolikov.github.io/posts/static-site-generators/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/datalake/</loc>
+    <loc>https://7nolikov.github.io/categories/websites/</loc>
   </url><url>
-    <loc>http://localhost:1313/notes/delta-lake-vs-apache-iceberg/</loc>
+    <loc>https://7nolikov.github.io/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/posts/testcontainers-docker-compose-module/</loc>
+    <loc>https://7nolikov.github.io/graph/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/testing/</loc>
-  </url><url>
-    <loc>http://localhost:1313/categories/markdown/</loc>
-  </url><url>
-    <loc>http://localhost:1313/categories/maven/</loc>
-  </url><url>
-    <loc>http://localhost:1313/posts/maven-achetypes/</loc>
-  </url><url>
-    <loc>http://localhost:1313/notes/doc-markdown-converter/</loc>
-  </url><url>
-    <loc>http://localhost:1313/categories/search/</loc>
-  </url><url>
-    <loc>http://localhost:1313/posts/job-vacancies-search/</loc>
-  </url><url>
-    <loc>http://localhost:1313/categories/make/</loc>
-  </url><url>
-    <loc>http://localhost:1313/notes/modern-make/</loc>
-  </url><url>
-    <loc>http://localhost:1313/categories/git/</loc>
-  </url><url>
-    <loc>http://localhost:1313/notes/learn-git-branching/</loc>
-  </url><url>
-    <loc>http://localhost:1313/notes/rest-api-tutorial/</loc>
-  </url><url>
-    <loc>http://localhost:1313/notes/edge-db/</loc>
-  </url><url>
-    <loc>http://localhost:1313/categories/revealjs/</loc>
-  </url><url>
-    <loc>http://localhost:1313/notes/revealjs/</loc>
-  </url><url>
-    <loc>http://localhost:1313/posts/standalone-spring-tests/</loc>
-  </url><url>
-    <loc>http://localhost:1313/categories/money/</loc>
-  </url><url>
-    <loc>http://localhost:1313/categories/postgresql/</loc>
-  </url><url>
-    <loc>http://localhost:1313/notes/postgresql-exercises/</loc>
-  </url><url>
-    <loc>http://localhost:1313/posts/where-is-all-the-money-in-the-world/</loc>
-  </url><url>
-    <loc>http://localhost:1313/notes/conventional-commits/</loc>
-  </url><url>
-    <loc>http://localhost:1313/posts/static-site-generators/</loc>
-  </url><url>
-    <loc>http://localhost:1313/categories/websites/</loc>
-  </url><url>
-    <loc>http://localhost:1313/about/</loc>
-  </url><url>
-    <loc>http://localhost:1313/graph/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://7nolikov.github.io/tags/</loc>
   </url>
 </urlset>

@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Build on 7nolikov | Dmitrii Novikov</title>
-    <link>http://localhost:1313/categories/build/</link>
+    <link>https://7nolikov.github.io/categories/build/</link>
     <description>Recent content in Build on 7nolikov | Dmitrii Novikov</description>
     <generator>Hugo</generator>
     <language>en-us</language>
@@ -10,12 +10,12 @@
     <webMaster>7nolikov@gmail.com (Dmitrii Novikov)</webMaster>
     <copyright>Dmitrii Novikov</copyright>
     <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/build/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://7nolikov.github.io/categories/build/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Meson vs Make - A simple comparison</title>
-      <link>http://localhost:1313/posts/meson-vs-make/</link>
+      <link>https://7nolikov.github.io/posts/meson-vs-make/</link>
       <pubDate>Wed, 25 Dec 2024 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
-      <guid>http://localhost:1313/posts/meson-vs-make/</guid>
+      <guid>https://7nolikov.github.io/posts/meson-vs-make/</guid>
       <description>&lt;p&gt;Meson is a modern build system designed to be fast and easy to use. It focuses on simplicity, better configuration management, and improved speed compared to older tools. Meson uses Ninja as its backend to speed up the actual building process, and its configuration files are written in a simple, human-readable language.&lt;/p&gt;</description>
     </item>
   </channel>

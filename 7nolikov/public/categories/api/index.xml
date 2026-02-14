@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Api on 7nolikov | Dmitrii Novikov</title>
-    <link>http://localhost:1313/categories/api/</link>
+    <link>https://7nolikov.github.io/categories/api/</link>
     <description>Recent content in Api on 7nolikov | Dmitrii Novikov</description>
     <generator>Hugo</generator>
     <language>en-us</language>
@@ -10,12 +10,12 @@
     <webMaster>7nolikov@gmail.com (Dmitrii Novikov)</webMaster>
     <copyright>Dmitrii Novikov</copyright>
     <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/api/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://7nolikov.github.io/categories/api/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What is API?</title>
-      <link>http://localhost:1313/posts/what-is-api/</link>
+      <link>https://7nolikov.github.io/posts/what-is-api/</link>
       <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
-      <guid>http://localhost:1313/posts/what-is-api/</guid>
+      <guid>https://7nolikov.github.io/posts/what-is-api/</guid>
       <description>&lt;p&gt;Application Programming Interface is a tool that allows different software applications to communicate with each other. Think of it as a bridge that connects systems, enabling them to share data and perform tasks without knowing the details of how the other system works.&lt;/p&gt;</description>
     </item>
   </channel>

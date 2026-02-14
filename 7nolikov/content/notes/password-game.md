@@ -1,7 +1,7 @@
 ---
 title: The Password Game
 date: 2024-12-22
-categories: [games]
+categories: [fun]
 ---
 
 The password game has rules that ensure I will never see the congratulations screen. Good luck!

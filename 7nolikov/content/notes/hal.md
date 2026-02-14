@@ -1,7 +1,7 @@
 ---
 title: HAL - Hypertext Application Language
 date: 2025-01-03
-categories: [rest]
+categories: [architecture]
 ---
 
 HAL (Hypertext Application Language) is a simple format for representing linked resources in REST APIs. It helps APIs provide structured responses with links, making navigation between resources easier.

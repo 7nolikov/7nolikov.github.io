@@ -1,7 +1,7 @@
 ---
 title: JSON API - RESTful API Specification
 date: 2025-01-04
-categories: [rest]
+categories: [architecture]
 ---
 
 JSON API is a specification that standardizes how clients and servers exchange data using JSON. It defines a consistent structure for API responses, helping reduce redundant requests and making APIs easier to develop and maintain.

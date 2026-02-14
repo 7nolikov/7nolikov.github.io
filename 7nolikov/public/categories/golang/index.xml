@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Golang on 7nolikov | Dmitrii Novikov</title>
-    <link>http://localhost:1313/categories/golang/</link>
+    <link>https://7nolikov.github.io/categories/golang/</link>
     <description>Recent content in Golang on 7nolikov | Dmitrii Novikov</description>
     <generator>Hugo</generator>
     <language>en-us</language>
@@ -10,12 +10,12 @@
     <webMaster>7nolikov@gmail.com (Dmitrii Novikov)</webMaster>
     <copyright>Dmitrii Novikov</copyright>
     <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/golang/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://7nolikov.github.io/categories/golang/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Go Templates injection solved</title>
-      <link>http://localhost:1313/notes/go-templates-injection/</link>
+      <link>https://7nolikov.github.io/notes/go-templates-injection/</link>
       <pubDate>Fri, 09 May 2025 00:00:00 +0000</pubDate><author>7nolikov@gmail.com (Dmitrii Novikov)</author>
-      <guid>http://localhost:1313/notes/go-templates-injection/</guid>
+      <guid>https://7nolikov.github.io/notes/go-templates-injection/</guid>
       <description>&lt;p&gt;I personally encountered a Go templates injection problem in a project I was working on.&lt;/p&gt;&#xA;&lt;p&gt;The blog post below guides users through the basics of using Go templates for generating HTML. The guide covers:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;setting up templates&lt;/li&gt;&#xA;&lt;li&gt;using actions to inject dynamic data&lt;/li&gt;&#xA;&lt;li&gt;creating reusable layouts&lt;/li&gt;&#xA;&lt;li&gt;addressing common rendering challenges with practical code examples.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Link to the code example: &lt;a href=&#34;https://github.com/nilotpaul/tutorials/blob/main/golang/mastering-golang-templates-a-practical-guide-to-layouts-data-binding-and-rendering/main.go&#34;&gt;https://github.com/nilotpaul&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Link to the blog post: &lt;a href=&#34;https://blog.logrocket.com/learn-go-templates-a-practical-guide-to-layouts-data-binding-and-rendering/&#34;&gt;Learn Go Templates&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>

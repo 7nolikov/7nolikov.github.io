@@ -1,7 +1,7 @@
 ---
 title: Spring Modulith 1.3
 date: 2024-12-23
-categories: [spring]
+categories: [java]
 ---
 
 Microservices -> Modulith trend became real.
