@@ -1,5 +1,5 @@
 baseURL = 'https://7nolikov.dev/'
-languageCode = 'en-us'
+languageCode = 'en-US'
 title = '7nolikov | Dmitrii Novikov'
 copyright = 'Dmitrii Novikov'
 enableRobotsTXT = true
