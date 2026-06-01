@@ -1,0 +1,29 @@
+# robots.txt for 7nolikov.dev
+# OVERRIDE of hugo-theme-til v0.6.0 default: explicitly welcome AI and search
+# crawlers (the goal here is discoverability, not blocking).
+
+# Explicitly named AI assistants / answer engines and search bots.
+# Listing them by name makes intent unambiguous and covers bots that only
+# honor their own named group.
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: anthropic-ai
+User-agent: Claude-Web
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Googlebot
+User-agent: Google-Extended
+User-agent: Bingbot
+Allow: /
+
+# Everyone else.
+User-agent: *
+Allow: /
+
+# Blog sitemap.
+Sitemap: {{ "sitemap.xml" | absURL }}
+# ohmoveagain project sitemap (served as project pages under /ohmoveagain/).
+# MIGRATION NOTE: update this line if ohmoveagain moves to its own domain.
+Sitemap: https://7nolikov.dev/ohmoveagain/sitemap.xml

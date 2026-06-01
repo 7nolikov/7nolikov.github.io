@@ -1,0 +1,32 @@
+{{- /*
+  OVERRIDE of hugo-theme-til v0.6.0 partials/head/jsonld/author.html.
+  Returns a rich schema.org Person built from [params.author] in hugo.toml:
+  adds @id, jobTitle, knowsAbout, sameAs and (optionally) worksFor on top of
+  the theme's name/email/url. Used as the author of WebPage / BlogPosting and
+  as the standalone Person node on the home and about pages.
+*/ -}}
+{{- $author := site.Params.author -}}
+{{- $data := dict -}}
+{{- with $author -}}
+  {{- $aboutURL := "" -}}
+  {{- with site.GetPage "/about" -}}{{- $aboutURL = .Permalink -}}{{- end -}}
+  {{- $data = dict
+    "@type" "Person"
+  -}}
+  {{- with $aboutURL -}}
+    {{- $data = merge $data ( dict "@id" ( printf "%s#person" . ) "url" . ) -}}
+  {{- end -}}
+  {{- with .name -}}{{- $data = merge $data ( dict "name" . ) -}}{{- end -}}
+  {{- with .email -}}{{- $data = merge $data ( dict "email" . ) -}}{{- end -}}
+  {{- with .jobTitle -}}{{- $data = merge $data ( dict "jobTitle" . ) -}}{{- end -}}
+  {{- with .knowsAbout -}}{{- $data = merge $data ( dict "knowsAbout" . ) -}}{{- end -}}
+  {{- with .sameAs -}}{{- $data = merge $data ( dict "sameAs" . ) -}}{{- end -}}
+  {{- with .worksFor -}}
+    {{- with .name -}}
+      {{- $org := dict "@type" "Organization" "name" . -}}
+      {{- with $author.worksFor.url -}}{{- $org = merge $org ( dict "url" . ) -}}{{- end -}}
+      {{- $data = merge $data ( dict "worksFor" $org ) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return $data -}}

@@ -1,4 +1,4 @@
-baseURL = 'https://7nolikov.github.io/'
+baseURL = 'https://7nolikov.dev/'
 languageCode = 'en-us'
 title = '7nolikov | Dmitrii Novikov'
 copyright = 'Dmitrii Novikov'
@@ -40,6 +40,14 @@ googleAnalytics = "G-V3HY4BP6JS"
     pageRef = '/graph'
     weight = 40
 
+  # External link to the ohmoveagain project (served as GitHub project pages
+  # under /ohmoveagain/). MIGRATION NOTE: update this URL if ohmoveagain
+  # moves to its own domain.
+  [[menus.main]]
+    name = 'ohmoveagain'
+    url = 'https://7nolikov.dev/ohmoveagain/'
+    weight = 50
+
 [markup]
   [markup.highlight]
     noClasses = false
@@ -57,6 +65,30 @@ googleAnalytics = "G-V3HY4BP6JS"
   [params.author]
     name = 'Dmitrii Novikov'
     email = '7nolikov@gmail.com'
+    jobTitle = 'Distributed Systems Engineer'
+    # Topics this person is an authority on (schema.org knowsAbout).
+    knowsAbout = [
+      'Distributed systems',
+      'Cloud-native infrastructure',
+      'Observability',
+      'Kubernetes',
+      'Go',
+      'Java',
+      'Microservices',
+      'HTMX',
+      'Site reliability engineering',
+    ]
+    sameAs = [
+      'https://github.com/7nolikov',
+      'https://www.linkedin.com/in/7nolikov/',
+      'https://bsky.app/profile/7nolikov.dev',
+      'https://x.com/7nolikov',
+      'https://www.reddit.com/user/7nolikov/',
+    ]
+    # Employer (schema.org worksFor).
+    # [params.author.worksFor]
+    #   name = 'EPAM Systems'
+    #   url = 'https://www.epam.com'
 
   # Homepage setup
   [params.home]
