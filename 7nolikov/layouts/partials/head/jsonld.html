@@ -1,0 +1,33 @@
+{{- /*
+  OVERRIDE of hugo-theme-til v0.6.0 partials/head/jsonld.html.
+  Keeps the theme's WebPage (+ BlogPosting on posts/notes) emit, now with the
+  enriched author Person, and additionally emits a standalone Person node on
+  the home and about pages so the site declares a real, disambiguated person.
+*/ -}}
+{{- $title := cond .IsHome site.Title .Title | plainify | htmlUnescape | chomp | title -}}
+{{- $description := or .Description .Summary site.Params.description | plainify | htmlUnescape | chomp -}}
+{{- $author := partial "head/jsonld/author" . -}}
+{{- $license := partial "head/jsonld/license" . -}}
+{{- $data := dict
+  "@context" "https://schema.org"
+  "@type" "WebPage"
+  "headline" ( $title | plainify | htmlUnescape | title )
+  "description" ( $description | plainify | htmlUnescape )
+-}}
+{{- if and .IsPage ( or ( eq .Section "posts" ) ( eq .Section "notes" ) ) -}}
+  {{- $data = merge $data ( partial "head/jsonld/blogPosting" . ) -}}
+{{- end -}}
+{{- with $author -}}{{ $data = merge $data ( dict "author" . ) }}{{- end -}}
+{{- with $license -}}{{ $data = merge $data . }}{{- end -}}
+<script type="application/ld+json">
+{{ jsonify (dict "indent" "  ") $data | safeJS }}
+</script>
+{{- /* Standalone Person on the identity pages (home + about). */ -}}
+{{- if or .IsHome ( eq .RelPermalink "/about/" ) -}}
+  {{- with $author -}}
+    {{- $person := merge ( dict "@context" "https://schema.org" ) . -}}
+<script type="application/ld+json">
+{{ jsonify (dict "indent" "  ") $person | safeJS }}
+</script>
+  {{- end -}}
+{{- end -}}
