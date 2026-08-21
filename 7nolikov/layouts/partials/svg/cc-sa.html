@@ -3,7 +3,7 @@
   xmlns="http://www.w3.org/2000/svg"
   viewBox="5.5 -3.5 64 64"
   xml:space="preserve"
-  class="{{ (and (reflect.IsMap .) .class) | default "w-5 h-5 block" }}"
+  class="{{ if and (reflect.IsMap .) .class }}{{ .class }}{{ else }}w-5 h-5 block{{ end }}"
 >
   <title>Adaptations must be shared under the same terms</title>
   <circle fill="transparent" cx="36.944" cy="28.631" r="29.105" />

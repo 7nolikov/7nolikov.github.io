@@ -7,7 +7,7 @@
   stroke-linecap="round"
   stroke-linejoin="round"
   stroke-width="2"
-  class="lucide lucide-circle-alert {{ (and (reflect.IsMap .) .class) | default "block" }}"
+  class="lucide lucide-circle-alert {{ if and (reflect.IsMap .) .class }}{{ .class }}{{ else }}block{{ end }}"
 >
   <circle cx="12" cy="12" r="10" />
   <path d="M12 8v4M12 16h.01" />

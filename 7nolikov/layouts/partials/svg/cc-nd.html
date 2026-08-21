@@ -3,7 +3,7 @@
   xmlns="http://www.w3.org/2000/svg"
   viewBox="5.5 -3.5 64 64"
   xml:space="preserve"
-  class="{{ (and (reflect.IsMap .) .class) | default "w-5 h-5 block" }}"
+  class="{{ if and (reflect.IsMap .) .class }}{{ .class }}{{ else }}w-5 h-5 block{{ end }}"
 >
   <title>Only noncommercial uses of the work are permitted</title>
   <circle fill="transparent" cx="37.47" cy="28.736" r="29.471" />

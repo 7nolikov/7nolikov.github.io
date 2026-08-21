@@ -1,7 +1,7 @@
 <svg
   xmlns="http://www.w3.org/2000/svg"
   viewBox="0 0 256 256"
-  class="{{ (and (reflect.IsMap .) .class) | default "h-4 w-4" }}"
+  class="{{ if and (reflect.IsMap .) .class }}{{ .class }}{{ else }}h-4 w-4{{ end }}"
   aria-hidden="true"
 >
   <path

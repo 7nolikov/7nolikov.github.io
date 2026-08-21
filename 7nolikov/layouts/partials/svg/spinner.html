@@ -1,6 +1,6 @@
 <svg
   xmlns="http://www.w3.org/2000/svg"
-  class="{{ (and (reflect.IsMap .) .class) | default "h-4 w-4" }}"
+  class="{{ if and (reflect.IsMap .) .class }}{{ .class }}{{ else }}h-4 w-4{{ end }}"
   viewBox="0 0 24 24"
   aria-hidden="true"
 >
