@@ -1,49 +1,114 @@
 ---
-title: Return-to-Office plan is probably math-negative
-date: 2025-10-10
+title: Return to office would cost me a country
+date: 2026-08-05
 categories: [money]
 ---
 
-A lot of companies are spending a fortune to drag people back into the office. They say it’s for culture or synergy. That sounds nice, but those words don't pay the rent. So, let’s stop guessing and start calculating. We need a way to treat the return-to-office (RTO) move like what it really is: a huge financial investment.
+I have worked remotely from two countries. Last summer I moved between them.
+
+The work did not change. Everything else did - the tax system, the language, the price of
+groceries. My wife's paperwork is still in progress. But the job came with me, and that is
+the only reason the move was possible at all.
 
 <!--more-->
 
-This is where the Differential Resource Analysis (DRA) framework comes in. It's a simple, honest way to check if going back to the office is actually a good deal. It asks one core question: Does the move make money or cost money for everyone involved? The plan only works if the answer is "more money" for all three groups: the Company, the Manager, and the Employee. If even one group loses out, the whole thing fails.
+## The commute is the cheapest thing you lose
 
-## 1. The Company's Ledger: Guaranteed Costs vs. Vague Promises
+Every return-to-office thread counts the same list. Two hours a day in traffic. Fuel or a
+ticket. Bought lunches. Clothes you don't otherwise need. Then someone says the two hours
+are unpaid labour, and over a year it turns into real money.
 
-When a business moves from remote work to an office model, it swaps a low-cost structure for an expensive one. This is a crucial point. Remote is cheap; an office building is not.
+True. Also small. Annoying, not decisive. A raise covers it.
 
-First, you have the Real Estate Trap. The company takes on enormous, guaranteed costs: rent, utilities, insurance, security. These are huge, fixed liabilities. Remote work mostly skips these.
+The commute is not what remote work gives you.
 
-Second, the Talent Pool Shrinks. You can't hire the best person in the world anymore. You can only hire the best person who lives nearby. This local competition drives up salaries. So, the company immediately accepts massive, certain costs (rent, higher pay) for benefits that are only hoped for ("better brainstorming").
+## It gives you a variable
 
-**The Verdict for the Company:** The financial delta is negative. The expense is massive and certain; the return is small and speculative. That's a bad investment.
+Remote does not delete geography. I found that out by moving - changing countries is heavy,
+and anyone calling it "work from anywhere" has not done the paperwork.
 
-## 2. The Manager's Ledger: Less Talent, More Hassle
+What it does is turn your location into something you decide.
 
-The manager’s job is simple: deliver results with a given budget. RTO makes this much harder, not easier.
+That sounds abstract. Price it and it stops being abstract. Where you live sets your cost of
+living, your taxes, your healthcare, your kid's school, what you can eventually buy, and
+which country your family lives in. For most people that decision belongs to whoever employs
+them. The desk is somewhere. You have to be near it.
 
-Think about Hiring Power. Your budget used to reach for talent all over the globe, getting you the best value. Now, it only reaches locally, where salaries are often much higher. Your budget suddenly buys less talent.
+Remote hands the decision back. Using it cost me a hard year. It was still the best financial
+move I have made - not because I earn much more, but because I picked where the money gets
+spent.
 
-Then there is Operational Overhead. Managers' time now gets wasted on tracking who is in the office, managing complicated hybrid schedules, and forcing tool adoption. This time is lost from focusing on the actual projects. The team’s performance gets burdened by daily commutes and friction.
+## The permit decides how real that freedom is
 
-**The Verdict for the Manager:** The financial delta is negative. You lose talent flexibility, pay more, and gain administrative headaches. Your ability to hit your performance targets just dropped.
+Here is the part almost nobody writes about.
 
-## 3. The Employee's Ledger: The Most Critical Loss
+Remote work gives you the ability to live somewhere else. What you can actually do with it
+depends on a document, and the documents are not equal.
 
-For you, the employee, this isn't a strategy meeting—it's a direct attack on your bank account and your free time. This is the part that kills most RTO plans.
+**A permit tied to one employer.** You can live there while you work there. Lose the job and
+the clock starts. The location is real but conditional.
 
-Look at the Direct Costs. Commuting costs (gas, tickets), professional clothes, buying lunch every day. These costs are significant and immediate. And if you have to move, the relocation cost is huge.
+**An EU Blue Card.** Higher salary and education bar to get one. In exchange: after about 18
+months you can move to another EU country and apply there, and years accumulated in different
+EU countries count toward EU long-term residence. Family members can work without a separate
+permit - which matters more than it sounds, because a partner who can't legally work is a
+household income cut in half.
 
-Then there is Time-as-Money. That two hours you spend commuting every day? It’s unpaid labor. If you’re a high-level employee, you are losing thousands of dollars in personal value every year just sitting in traffic. You trade that time for nothing. Remote work gave you that time back.
+**Long-term or permanent residence.** The location stops depending on a job at all. This is
+the one worth optimising for.
 
-Any small salary bump you might get is quickly erased by higher living costs and those new daily expenses. It’s an objectively irrational financial decision for the employee to accept.
+**Citizenship.** Done. No renewals, no conditions.
 
-**The Verdict for the Employee:** The financial delta is catastrophically negative. You are being asked to subsidize the company's office costs with your own money and your own time.
+Two engineers can hold identical remote jobs and have completely different amounts of
+freedom, depending on which of those they have. The job is the income. The permit is whether
+the income can move.
 
-## The Final Scorecard
+I read a lot more immigration law than I expected to over the last few years. It is boring
+and it matters more than the salary negotiation.
 
-The analysis is clear: moving from remote to an office-based model creates severe, guaranteed financial losses for everyone. The fixed cost of the building and the loss of flexibility are simply too great to overcome.
+## The lever behind all of this
 
-The truth is, your shiny new collaboration tool is irrelevant. It can't possibly generate enough value to pay for the cost of the office and compensate the employee for their lost wealth and time. The return-to-office plan is, financially speaking, a non-starter.
+Outside the United States, the biggest financial lever an engineer has is not a raise. It is
+definitely not spending less.
+
+It is the gap between where pay is set and where it gets spent. Cost of living where I am is
+about 40% of San Francisco. The code is the same code. An engineer with a US or UK remote
+role living in this part of Europe ends up with roughly one and a half to two times the
+purchasing power of someone doing identical work for a local employer.
+
+I don't have that yet. I'm paid local rates. Closing that gap is what I am working toward,
+and it exists only while companies will employ people who don't live near them.
+
+So an industry going back to the office is not a story about traffic. It is a ladder getting
+pulled up.
+
+## Arguing against myself
+
+The office is worth something real. Pretending otherwise would be dishonest.
+
+I learned a lot sitting near people better than me, hearing how they thought through a
+problem. I have not found a remote version that works as well. Onboarding is faster in a
+room. Some arguments take five minutes in person and three days in writing. Juniors are
+worse off remote and I don't think that is seriously arguable.
+
+But each of those is a specific problem. None of them has "five days a week in a building"
+as the cheapest fix. If juniors need proximity, fund proximity. If a team needs
+high-bandwidth time, fly it in a few times a year - far cheaper than a permanent lease in a
+capital city.
+
+A blanket mandate fixes none of them precisely. What it does reliably is move a big cost off
+a budget line and onto the people least able to refuse.
+
+## Say what you're asking
+
+Wanting people in one city is legitimate. It is just not a small ask, and it should be named
+as what it is - a location requirement, priced like one. The move, the paperwork, the
+disruption to a partner who didn't take the job, the year it takes to become a person
+somewhere new.
+
+Ask it directly and some people say yes. I did, for my own reasons.
+
+"We miss the energy in the office" is the same request with the invoice removed.
+
+If your work required you to live in one specific place, what would you need in return - and
+has anyone ever actually asked you?
