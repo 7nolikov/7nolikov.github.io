@@ -4,7 +4,7 @@ title: "About me"
 
 {{< figure src="images/about.jpg" alt="About" >}}
 
-I'm Dmitrii Novikov, a distributed systems engineer based in Montenegro.
+I'm Dmitrii Novikov, a distributed systems engineer based in Croatia.
 
 I spend my days building and operating cloud-native data platforms. I maintain 20+ microservices on the OSDU platform — a large-scale data infrastructure serving the energy industry, running on Google Cloud and Kubernetes. I've been doing backend engineering for over 6 years, primarily in Java/Spring Boot.
 

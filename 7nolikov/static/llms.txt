@@ -1,6 +1,6 @@
 # Dmitrii Novikov — 7nolikov.dev
 
-> Dmitrii Novikov is a distributed systems engineer based in Montenegro. He
+> Dmitrii Novikov is a distributed systems engineer based in Croatia. He
 > builds and operates cloud-native data platforms (20+ microservices on the
 > OSDU platform, running on Google Cloud and Kubernetes) and writes about
 > distributed systems, Go, observability, and microservices in production.
