@@ -1,0 +1,29 @@
+{{/* OVERRIDE of hugo-theme-til v0.6.0: the theme's version emits duplicate permalinks in
+     "in"/"out" because Scratch accumulates across repeated .Content renders. Duplicates
+     become duplicate edges, and node size is scaled by in-degree, so sizes came out wrong.
+     Only change from upstream: uniq on both slices. */}}
+{{- $pages := partialCached "functions/linkable-pages" . -}}
+{{- $pageDict := dict -}}
+{{- $graphDict := dict -}}
+{{- range $pages -}}
+  {{- $noop := .Content -}}
+  {{- $pageDict = merge $pageDict ( dict .RelPermalink ( dict
+    "permalink" .RelPermalink
+    "title" ( .Title | plainify | htmlUnescape | chomp | title )
+    "section" .Section
+    )
+    )
+    -}}
+{{- end -}}
+{{- range $pages -}}
+  {{- $incoming := slice -}}
+  {{- $outgoing := slice -}}
+  {{- range .Scratch.Get "incoming" -}}
+    {{- $incoming = $incoming | append .RelPermalink -}}
+  {{- end -}}
+  {{- range .Scratch.Get "outgoing" -}}
+    {{- $outgoing = $outgoing | append .RelPermalink -}}
+  {{- end -}}
+  {{- $graphDict = merge $graphDict ( dict .RelPermalink ( dict "in" ( $incoming | uniq ) "out" ( $outgoing | uniq ) ) ) -}}
+{{- end -}}
+{{ jsonify (dict "indent" "  ") ( dict "pages" $pageDict "graph" $graphDict ) }}

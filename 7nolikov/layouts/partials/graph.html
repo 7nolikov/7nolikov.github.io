@@ -1,0 +1,9 @@
+{{/* OVERRIDE of hugo-theme-til v0.6.0: the graph JSON is served from a fixed URL with
+     cache-control max-age=600 and no fingerprint, so a browser keeps a stale copy after
+     a deploy and the graph draws the previous set of edges. The version below is computed
+     once per build (partialCached), so the URL changes on every deploy and never within one. */}}
+<content-network-graph
+  class="{{ .class | default "h-96" }}"
+  data-endpoint="{{ relURL "graph/index.json" }}?v={{ partialCached "graph-version" "v" }}"
+  {{ with .page }}page="{{ .RelPermalink }}"{{ end }}
+></content-network-graph>
