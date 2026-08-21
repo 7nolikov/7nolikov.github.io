@@ -1,117 +1,115 @@
 ---
-title: Testcontainers Docker Compose module
-date: 2024-12-15
+title: My plan said Testcontainers. The code never imported it.
+date: 2026-07-30
 categories: [testing]
 ---
 
-Using Docker Compose module with Testcontainers you can simplify testing for applications that rely on multiple services like databases, APIs and message queues.
+The build plan for my last project allocated 90 minutes to a task called "Integration tests
+with testcontainers". It sketched the directory layout. It named the file.
 
-This approach ensures that all dependencies start and work together as expected in a controlled, reproducible environment during your Java tests.
+The library was never installed. Not once, in the whole repository.
 
 <!--more-->
 
-## Key features of the Docker Compose module
+## What actually got built
 
-1. It allows you to define complex service dependencies in a single docker-compose.yml file.
-2. During tests, Testcontainers can automatically start all services defined in the Compose file.
-3. It ensures your test environment is isolated and reproducible.
-4. The module also provides Java APIs to control the containers and check their status during tests.
+Integration tests exist. They run against a real Postgres, a real object store and a real
+Kafka broker. They just don't use Testcontainers to get them.
 
-## How to use the Docker Compose module
+They use a build tag:
 
-### 1. Add Testcontainers Dependency
+```go
+//go:build integration
 
-Include the Testcontainers library in your pom.xml (for Maven) or build.gradle (for Gradle):
-
-```xml
-<dependency>
-    <groupId>org.testcontainers</groupId>
-    <artifactId>testcontainers</artifactId>
-    <version>YOUR_VERSION</version>
-    <scope>test</scope>
-</dependency>
+// Integration tests for the job repository against a real PostgreSQL instance.
+// They exercise the SQL that unit tests with fakes cannot reach: partition scoping,
+// the dedup status filter, and the reconciler's staleness query.
+//
+// Run with:
+//
+//	TEST_DB_DSN="postgres://..." go test -tags integration ./internal/job/...
 ```
 
-### 2. Create a Docker Compose File
-  
-Define the services your application needs in a docker-compose.yml file:
+The infrastructure comes from the Docker Compose stack that was already there for local
+development. `make up` starts it. The tests connect over environment variables. Without the
+tag they don't compile, so a normal `go test ./...` stays fast and needs nothing running.
 
-```yaml
-version: '3.8'
-services:
-  db:
-    image: postgres:15
-    environment:
-      POSTGRES_USER: test
-      POSTGRES_PASSWORD: test
-      POSTGRES_DB: testdb
-    ports:
-      - "5432:5432"
+The runner has tiers, which is the part I'd keep in any project:
 
-  redis:
-    image: redis:latest
-    ports:
-      - "6379:6379"
+```
+fast    unit + lint                 no infrastructure needed   [default]
+infra   fast + integration + e2e    needs `make up`
+full    infra + demo                needs `make up`
 ```
 
-### 3. Write the Test Class
-  
-Use the DockerComposeContainer class in your test to manage services:
+## Why not the library
 
-```java
-import org.junit.jupiter.api.Test;
-import org.testcontainers.containers.DockerComposeContainer;
-import org.testcontainers.junit.jupiter.Container;
-import org.testcontainers.junit.jupiter.Testcontainers;
+Honestly? Because the Compose stack already existed.
 
-import java.io.File;
+I had written it for local development before any test needed it. Testcontainers would have
+started a second set of containers, per package, with a lifecycle I'd have to manage,
+duplicating infrastructure that was already running on my machine. The tests would have been
+more isolated and slower, and I'd have maintained two definitions of the same environment.
 
-@Testcontainers
-public class MyAppIntegrationTest {
+So the choice made itself. What I never did was go back and update the plan.
 
-    @Container
-    public static DockerComposeContainer<?> environment =
-            new DockerComposeContainer<>(new File("src/test/resources/docker-compose.yml"))
-                .withExposedService("db", 5432)  // Expose PostgreSQL
-                .withExposedService("redis", 6379); // Expose Redis
+## The part that's actually embarrassing
 
-    @Test
-    public void testAppServices() {
-        String dbHost = environment.getServiceHost("db", 5432);
-        Integer dbPort = environment.getServicePort("db", 5432);
+Five separate documents said the project used `testcontainers-go`. The execution guide, a
+directory listing, a testing section, a task estimate, an architecture note.
 
-        String redisHost = environment.getServiceHost("redis", 6379);
-        Integer redisPort = environment.getServicePort("redis", 6379);
+None of it was true. It had never been true.
 
-        // Use these values to connect to the services and run assertions
-        System.out.println("DB is running at " + dbHost + ":" + dbPort);
-        System.out.println("Redis is running at " + redisHost + ":" + redisPort);
+I found it by grepping for the import, months later, during an audit where I was checking
+documented claims against the code. Nothing failed. Nothing warned. The docs described a
+plausible project that was not the one in the repository.
 
-        // Add assertions or actual app testing here
-    }
-}
-```
+That is the normal way this happens, by the way. Nobody writes a false claim on purpose. You
+write a plan, the plan is reasonable, the implementation diverges for a good reason, and the
+plan quietly becomes fiction because updating it isn't anybody's task.
 
-### 4. Run the Test
+## Both approaches, honestly
 
-The test automatically starts the services defined in docker-compose.yml before execution.
-Testcontainers ensures that the services shut down after the tests complete.
+**Testcontainers** owns the container lifecycle from inside the test. Containers start and
+stop with the test run, get random ports, and leave nothing behind. Nobody has to remember to
+start anything. CI is trivial - if Docker is available, the test works. The cost is startup
+time on every run and a second description of your environment living in test code.
 
-## Example Application for Testing
+**Compose plus a build tag** reuses the environment you already run by hand. Iteration is
+fast, because the stack is already warm. The definition lives in one place. The cost is
+shared state between tests, a dependency on somebody having run `make up`, and a real risk
+that CI is configured differently from your laptop.
 
-Imagine a shopping cart microservice that depends on:
+If you have no local stack, use Testcontainers. If you already have one and it's the same
+stack you deploy, the build tag is less machinery.
 
-1. A PostgreSQL database for storing user and cart data.
-2. A Redis cache for storing temporary session data.
-3. An external payment API mock service.
-4. Kafka for handling order events.
-5. Keycloak for user authentication.
+Neither of these is the interesting decision.
 
-With the Docker Compose module it's not a problem anymore.
+## What mattered was neither
 
-## Conclusion
+Here is the actual finding from that audit, and it has nothing to do with which library I
+picked.
 
-This approach simplifies the setup for complex applications by managing dependencies, eliminating manual configuration, and ensuring consistency across test runs.
+CI had no database at all. So the repository layer - partition scoping, deduplication, record
+versioning, the unique index that drives a retry path - had **zero** test coverage. Not thin.
+None. There was nowhere to run such a test even if I'd written one.
 
-Read more about Docker Compose module:
-[https://java.testcontainers.org/modules/docker_compose/](https://java.testcontainers.org/modules/docker_compose/)
+I added Postgres to CI and wrote the tests. The first run, every single one failed before
+reaching an assertion. Not because the tests were wrong - because a migration could not
+upgrade a database that already had rows in it. The service would not have started on any
+existing deployment.
+
+That bug was reachable only by running real code against a real database. Testcontainers
+would have found it. Compose plus a build tag found it. A mock would not have found it, and
+neither would any amount of arguing about which of the two to use.
+
+The tooling debate is a rounding error. The question is whether your tests ever touch real
+infrastructure at all.
+
+## The rule I took away
+
+Pick whichever gets a real database in front of your code with the least friction, then spend
+the saved time making sure it runs in CI. An integration test that only runs on your laptop
+is a personal hobby.
+
+And go grep your own docs for a library name. See if you actually import it.
