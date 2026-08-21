@@ -11,3 +11,8 @@ This is the in-memory, multi-core, storage-engine end of the subject: MVCC, lock
 If you have ever wondered why an OLAP engine and an OLTP engine make opposite choices about literally everything, this is the course that answers it.
 
 [15721.courses.cs.cmu.edu](https://15721.courses.cs.cmu.edu/spring2024/)
+
+See also:
+
+- {{< backlink "b-trees-and-database-indexes" >}}
+- {{< backlink "delta-lake-vs-apache-iceberg" >}}

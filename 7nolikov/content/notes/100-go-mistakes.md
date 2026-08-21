@@ -11,3 +11,8 @@ The value is not the individual gotchas. It's that most of them cluster around a
 Read it once early and you will recognise the shapes later, which is the whole point.
 
 [100go.co](https://100go.co/)
+
+See also:
+
+- {{< backlink "learn-go-with-tests" >}}
+- {{< backlink "go-synctest" >}}

@@ -13,3 +13,7 @@ You declare a schema with types and links between them, then query with EdgeQL, 
 Type-safe queries and generated client code are the selling point. The cost is a query language nobody on your team knows yet.
 
 [geldata.com](https://www.geldata.com/)
+
+See also:
+
+- {{< backlink "postgresql-exercises" >}}

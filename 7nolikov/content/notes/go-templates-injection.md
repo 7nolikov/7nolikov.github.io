@@ -11,3 +11,7 @@ Short version of the fix: use `html/template`, never `text/template`, for anythi
 The guide below covers the rest of the basics - layouts, data binding, reusable blocks - with working code.
 
 [Learn Go Templates](https://blog.logrocket.com/learn-go-templates-a-practical-guide-to-layouts-data-binding-and-rendering/) · [code example](https://github.com/nilotpaul/tutorials/blob/main/golang/mastering-golang-templates-a-practical-guide-to-layouts-data-binding-and-rendering/main.go)
+
+See also:
+
+- {{< backlink "100-go-mistakes" >}}

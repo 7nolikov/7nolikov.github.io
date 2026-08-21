@@ -18,3 +18,8 @@ Because it is text, the tests diff and review like code, and they run identicall
 The gap it fills: too much for `curl` in a shell script, far less machinery than a full API client.
 
 [hurl.dev](https://hurl.dev/)
+
+See also:
+
+- {{< backlink "rest-api-tutorial" >}}
+- {{< backlink "go-synctest" >}}

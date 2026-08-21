@@ -113,3 +113,9 @@ the saved time making sure it runs in CI. An integration test that only runs on 
 is a personal hobby.
 
 And go grep your own docs for a library name. See if you actually import it.
+
+See also:
+
+- {{< backlink "hurl" >}}
+- {{< backlink "go-synctest" >}}
+- {{< backlink "learn-go-with-tests" >}}

@@ -11,3 +11,7 @@ Slides live in a text file, which means they diff, review and version like code.
 If you keep your slides in a repo next to the thing you are presenting, this is the tool. Host it on GitHub Pages for free.
 
 [Demo](https://revealjs.com/demo/?view=scroll) · [revealjs.com](https://revealjs.com/)
+
+See also:
+
+- {{< backlink "going-offline-book" >}}

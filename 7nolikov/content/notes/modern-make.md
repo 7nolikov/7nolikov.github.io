@@ -9,3 +9,7 @@ A short, clean reference for Makefile syntax - targets, dependencies, rules, and
 Good for a refresher when you have not touched Make in a while and cannot remember whether it is `$@` or `$<`.
 
 [makefile.site](https://makefile.site/)
+
+See also:
+
+- {{< backlink "cli-guidelines" >}}

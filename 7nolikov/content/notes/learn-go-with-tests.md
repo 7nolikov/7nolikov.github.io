@@ -11,3 +11,8 @@ It works because the test comes before the explanation. You feel the problem, th
 Best free Go resource I know for someone who can already program.
 
 [github.com/quii/learn-go-with-tests](https://github.com/quii/learn-go-with-tests)
+
+See also:
+
+- {{< backlink "100-go-mistakes" >}}
+- {{< backlink "go-synctest" >}}

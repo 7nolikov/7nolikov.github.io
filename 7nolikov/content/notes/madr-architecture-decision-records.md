@@ -11,3 +11,7 @@ One file per decision, numbered, living in the repo next to the code. The value 
 Cheap to start. One file, whenever you make a call you would have to defend later.
 
 [adr.github.io/madr](https://adr.github.io/madr/)
+
+See also:
+
+- {{< backlink "architecture-antipatterns" >}}

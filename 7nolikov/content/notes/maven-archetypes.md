@@ -139,3 +139,7 @@ spring init --dependencies=web,data-jpa,actuator,devtools,h2,lombok
 ```
 
 I've just added this command to my hotkey list, so I can start a new Spring project in seconds!
+
+See also:
+
+- {{< backlink "spring-modulith" >}}

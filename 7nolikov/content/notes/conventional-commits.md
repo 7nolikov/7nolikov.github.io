@@ -21,3 +21,8 @@ The convention pays off twice. A human scanning `git log` sees what kind of chan
 It costs nothing to start. You just write commits differently from tomorrow.
 
 [conventionalcommits.org](https://www.conventionalcommits.org) · [tooling](https://www.conventionalcommits.org/en/about/#tooling-for-conventional-commits)
+
+See also:
+
+- {{< backlink "learn-git-branching" >}}
+- {{< backlink "madr-architecture-decision-records" >}}

@@ -11,3 +11,8 @@ Things in it I keep coming back to: assert everything, at every layer, in produc
 You will not adopt all of it - most of us don't write databases. But the underlying idea transfers to anything: decide what must never happen, then make the system say so out loud instead of hoping.
 
 [TIGER_STYLE.md](https://github.com/tigerbeetle/tigerbeetle/blob/main/docs/TIGER_STYLE.md)
+
+See also:
+
+- {{< backlink "saga-pattern" >}}
+- {{< backlink "reproducible-builds" >}}

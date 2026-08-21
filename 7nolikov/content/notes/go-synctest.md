@@ -11,3 +11,8 @@ This kills the worst pattern in Go testing: `time.Sleep(100 * time.Millisecond)`
 With synctest a one-hour timeout test runs instantly and deterministically, because the clock only moves when nothing is left to do.
 
 [Go's synctest is amazing](https://oblique.security/blog/go-synctest/)
+
+See also:
+
+- {{< backlink "learn-go-with-tests" >}}
+- {{< backlink "hurl" >}}

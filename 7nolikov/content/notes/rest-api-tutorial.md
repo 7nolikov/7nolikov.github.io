@@ -11,3 +11,9 @@ Useful as the thing you send someone who is about to design an API, or to check 
 Its section on Richardson's maturity model is the part most people have never read, and it explains why almost nothing anyone calls REST is actually REST.
 
 [restfulapi.net](https://restfulapi.net/)
+
+See also:
+
+- {{< backlink "hal" >}}
+- {{< backlink "json-api" >}}
+- {{< backlink "hurl" >}}

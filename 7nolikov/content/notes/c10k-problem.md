@@ -11,3 +11,8 @@ It is a historical document now - ten thousand connections is unremarkable - but
 Read it and a lot of "why is it like this" questions about Node, Go and Netty answer themselves.
 
 [The C10K problem](https://www.kegel.com/c10k.html)
+
+See also:
+
+- {{< backlink "nats" >}}
+- {{< backlink "system-design-primer" >}}

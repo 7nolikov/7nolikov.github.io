@@ -11,3 +11,8 @@ It is the best argument I know against learning a platform only from its documen
 Recurring theme worth noticing: very few of these are exotic. Most are a default nobody changed, a limit nobody set, or a config that silently meant something other than what the author assumed.
 
 [k8s.af](https://k8s.af/)
+
+See also:
+
+- {{< backlink "architecture-antipatterns" >}}
+- {{< backlink "distroless" >}}

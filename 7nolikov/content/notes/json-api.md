@@ -11,3 +11,8 @@ It settles the boring arguments - where errors go, how pagination and filtering 
 Heavier than most APIs need. But if you are about to invent your own envelope format, read this first.
 
 [jsonapi.org](https://jsonapi.org/)
+
+See also:
+
+- {{< backlink "hal" >}}
+- {{< backlink "rest-api-tutorial" >}}

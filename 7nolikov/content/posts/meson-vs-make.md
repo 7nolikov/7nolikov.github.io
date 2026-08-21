@@ -92,3 +92,8 @@ and everyone knows what `make test` means.
 Meson versus Make is a real question. It's just not the one most of us are asking.
 
 What does `make test` do in your repo - and does it still work?
+
+See also:
+
+- {{< backlink "modern-make" >}}
+- {{< backlink "cli-guidelines" >}}

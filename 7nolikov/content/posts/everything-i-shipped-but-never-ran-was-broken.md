@@ -137,3 +137,9 @@ So a feature isn't done when the code is written and some tests pass. It must be
 The irony I can't dodge: this is a project about observability, and none of the tools I made caught any of this. Traces, metrics, dashboards, SLOs tell you about records flowing through a system that is running. They are silent about the capability you shipped that was never plugged in, or the migration that will fail on somebody else's database next sprint.
 
 How do you plan and test the upgrade path in your own projects? I still don't have a good answer beyond "keep an old database backup around."
+
+See also:
+
+- {{< backlink "tiger-style" >}}
+- {{< backlink "kubernetes-failure-stories" >}}
+- {{< backlink "saga-pattern" >}}

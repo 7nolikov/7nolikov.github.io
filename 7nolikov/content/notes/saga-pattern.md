@@ -11,3 +11,9 @@ The idea: break the operation into local transactions, and give each one a compe
 The part people underestimate is that compensation can fail too. Deleting the object you just wrote can return an error, and then you have an orphan and need to notice it. Any real implementation needs a metric on that path and something that reconciles what got stranded.
 
 [microservices.io - Saga](https://microservices.io/patterns/data/saga.html)
+
+See also:
+
+- {{< backlink "tiger-style" >}}
+- {{< backlink "nats" >}}
+- {{< backlink "architecture-antipatterns" >}}

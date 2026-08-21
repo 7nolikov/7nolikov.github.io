@@ -15,3 +15,7 @@ Rough rule: heavy Databricks or Spark shop, Delta Lake. Multiple engines, Iceber
 Both have moved a lot since this was written - check the current state before betting on it.
 
 [Delta Lake vs Apache Iceberg. The Lake House Squabble](https://dataengineeringcentral.substack.com/p/delta-lake-vs-apache-iceberg-the)
+
+See also:
+
+- {{< backlink "cmu-advanced-database-systems" >}}

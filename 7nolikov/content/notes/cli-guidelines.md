@@ -11,3 +11,7 @@ Concrete and immediately applicable: respect `--help`, exit non-zero on failure,
 The section on output is the one I'd hand to anybody writing an internal tool. Most CLI pain is a program that prints a friendly progress animation into a log file.
 
 [clig.dev](https://clig.dev/)
+
+See also:
+
+- {{< backlink "grep-by-example" >}}

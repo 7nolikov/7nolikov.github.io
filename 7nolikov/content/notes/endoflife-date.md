@@ -11,3 +11,7 @@ Answers the question you always need before an upgrade argument: is this version
 Unglamorous and I use it more than most tools I could name.
 
 [endoflife.date](https://endoflife.date/)
+
+See also:
+
+- {{< backlink "reproducible-builds" >}}

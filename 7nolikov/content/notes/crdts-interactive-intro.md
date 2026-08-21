@@ -11,3 +11,8 @@ The core idea: design your data type so that merges are commutative, associative
 You build up from a counter to a set to collaborative text, and each step shows why the naive version breaks first.
 
 [An Interactive Intro to CRDTs](https://jakelazaroff.com/words/an-interactive-intro-to-crdts/)
+
+See also:
+
+- {{< backlink "uncloud" >}}
+- {{< backlink "saga-pattern" >}}

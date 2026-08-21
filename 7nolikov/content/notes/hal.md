@@ -22,3 +22,8 @@ That's essentially the whole spec. The client follows `_links.customer` instead 
 In practice most APIs skip this and hardcode URL patterns on the client. Worth knowing what the alternative looks like before deciding that.
 
 [HAL specification](https://stateless.co/hal_specification.html)
+
+See also:
+
+- {{< backlink "json-api" >}}
+- {{< backlink "rest-api-tutorial" >}}
