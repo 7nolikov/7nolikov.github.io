@@ -3,7 +3,7 @@
 {{- $author := or .Params.author site.Params.author.name -}}
 <meta charset="utf-8" />
 <meta name="language" content="{{ site.Language.LanguageName | default "en" }}" />
-<meta name="viewport" content="width=device-width" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>
   {{- if .IsHome }}
     {{ site.Title }}
@@ -34,6 +34,15 @@
   <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}" />
 {{- end }}
 {{ partialCached "head/css" . }}
+{{/* OVERRIDE of hugo-theme-til v0.6.0: the theme ships a PREBUILT Tailwind bundle,
+     so utility classes used only in local overrides (gap-x-3, gap-y-1 in footer.html)
+     were never compiled and silently do nothing. Plain CSS instead. */}}
+<style>
+  body > div > header { flex-wrap: wrap; row-gap: 0.5rem; }
+  body > div > header nav ul { flex-wrap: wrap; column-gap: 1rem; row-gap: 0.25rem; }
+  body > div > header nav ul > li { margin-left: 0 !important; }
+  footer nav[aria-label="Profiles"] { column-gap: 0.75rem; row-gap: 0.25rem; }
+</style>
 {{ partialCached "head/js" . }}
 {{- if or .Params.math site.Params.math }}
   {{ partial "head/math" . }}
