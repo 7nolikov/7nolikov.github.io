@@ -1,105 +1,122 @@
 ---
-title: Static site generators
-date: 2024-12-01
+title: Choosing a static site generator is the easy part
+date: 2026-08-12
 categories: [websites]
 ---
 
-Static site generators are tools that create websites by converting templates and content into static HTML files.
-This approach makes websites faster, more secure, and easier to host.
+I run three static sites - this blog, a relocation guide, and a sandbox. All Hugo. A few
+smaller things sit on Next.js and SolidJS.
+
+The generator turned out to be the least important decision in all of it.
 
 <!--more-->
 
-## The easiest way to create a website
+## They all do the same job
 
-Just use a static site generator! You don't have to worry about Javascript, HTML or CSS, server-side code or databases. It's very easy to manage and deploy your website.
+Text files in, templates applied, HTML out. Jekyll, Hugo, 11ty, Astro - the core is
+identical. None of them will be the reason your site is good or bad.
 
-1. Install SSG and configure the theme
-2. Write content in Markdown or other simple formats
-3. Deploy the generated static files to a free GitHub Pages, free domain .github.io included 🚀
+They differ on build speed, language and plugin count. That matters at the margin. Hugo is
+fast and it's one binary. That's why I use it. I personally don't like Jekyll - Ruby is not a
+dependency I want for a blog. That is about as deep as this decision needs to go.
 
-## Choosing the right SSG
+The theme is where the work actually is. It's also where things break quietly.
 
-### 1. Jekyll
+## The CSS that was correct and did nothing
 
-I personally don't like Jekyll. Jekyll is one of the oldest and most widely used SSGs. It is written in Ruby and works seamlessly with **GitHub Pages**, making it an excellent choice for blogs and simple documentation websites.
-Jekyll uses Markdown and Liquid templates, offering a straightforward way to write and organize content.
+My theme ships a prebuilt CSS bundle. Tailwind, compiled once by the theme author, shipped as
+a finished file. Tailwind is not installed in my project at all.
 
-However, Jekyll can be very slow when generating large sites, and its reliance on Ruby might not appeal to everyone, especially if you’re not familiar with the language (Ha-Ha).
+I didn't think about what that means for months.
 
-**Strengths**: Easy integration with GitHub, rich plugin ecosystem.
+Here is what it means. Tailwind only emits the classes it finds in the templates it scans.
+The author scanned the theme's templates. Not mine. So a class I use in my own override, that
+the theme itself never uses, is simply not in the bundle.
 
-**Weaknesses**: Slower build times and dependency on Ruby.
+My footer had this:
 
-[More about Jekyll](https://jekyllrb.com/)
+```
+<nav class="flex flex-row flex-wrap items-center gap-x-3 gap-y-1">
+```
 
-### 2. 11ty (Eleventy)
+`gap-x-3` and `gap-y-1` are not in the compiled CSS. Zero occurrences. The markup is fine.
+The names are spelled right. The browser applies them and they resolve to nothing.
 
-11ty is a modern, lightweight SSG built on JavaScript. It offers developers full control over their projects and supports multiple templating languages like HTML, Markdown, and JavaScript.
-Unlike Jekyll, it does not have strict dependencies, making it highly flexible.
+My social links rendered as `GitHubLinkedInBlueskyXReddit`. One word, no spaces. Live, for as
+long as that footer existed.
 
-Its simplicity and speed make it a great choice for projects of any size, especially for developers already working in a Node.js environment.
+## The fallback that never fired
 
-**Strengths**: Flexible, and beginner-friendly.
+I found a second one the same day. I like this one more.
 
-**Weaknesses**: JavaScript.
+Every icon in the theme sizes itself like this:
 
-[More about 11ty](https://www.11ty.dev/)
+```
+class="lucide lucide-shapes {{ (and (reflect.IsMap .) .class) | default "h-4 w-4" }}"
+```
 
-### 3. Gatsby
+Read it the way it is obviously meant. If a class was passed in, use it. Otherwise fall back
+to `h-4 w-4`.
 
-Gatsby is a React-based SSG that focuses on creating highly dynamic and interactive websites. It uses GraphQL to fetch data, which makes it powerful but also adds complexity.
-Gatsby is great for integrating data from multiple sources, like CMSs, APIs, or Markdown files.
+That is not what happens. Call the partial with no argument and `reflect.IsMap` returns false.
+`and` short-circuits to the boolean `false`. And Hugo's `default` does not treat `false` as
+empty - it's a value. So the fallback never fires and you get:
 
-While Gatsby creates visually impressive websites, it can be slow to build large projects due to its reliance on GraphQL.
+```
+class="lucide lucide-shapes false"
+```
 
-**Strengths**: React ecosystem, powerful data handling, possibility to build dynamic websites and apps.
+`false` is not a CSS class. Icons without a fallback width attribute rendered at their natural
+SVG size, which is enormous. Three shapes the size of a paragraph, sitting in the middle of a
+post.
 
-**Weaknesses**: React, steeper learning curve and slower build times.
+I found it by opening my own site on a phone.
 
-[More about Gatsby](https://www.gatsbyjs.com/)
+## Both of these are the same bug
 
-### 4. Hugo
+This is the part worth keeping.
 
-This is interesting one, Hugo is one of the fastest SSGs, written in Go. It is perfect for building large websites quickly, thanks to its incredible speed and scalability.
-Hugo uses simple configuration and supports many content formats, making it an efficient choice for developers who want quick results without compromising quality.
+Neither was a typo. Both were written by someone who knew what they wanted. Both look correct
+on review. Both produce silence instead of an error.
 
-Although Hugo’s plugin system is more limited compared to Gatsby or Jekyll, its performance and simplicity make it a favorite for many.
+A class name missing from the stylesheet is not a failure. A fallback that never fires is not
+a failure. Nothing logs. The build is green.
 
-**Best for**: Large static sites and sites with a lot of content.
+A static site has no runtime, so nothing catches it later either. The build succeeds and the
+wrong thing ships.
 
-**Strengths**: Lightning-fast builds, simplicity.
+The only thing that finds this is looking at the output. Not the template - the rendered page,
+on a real device.
 
-**Weaknesses**: Limited plugin ecosystem.
+## The 2026 part the guides don't mention
 
-[More about Hugo](https://gohugo.io/)
+There is a new job that didn't exist when most SSG tutorials were written. Make the site
+readable by language models, not just Google.
 
-### 5. Next.js
+Three files:
 
-v0 choice, Next.js is not a traditional SSG but a hybrid framework that supports both server-side rendering (SSR) and static site generation. Built on React, it allows developers to create modern, high-performing websites with dynamic functionality.
+- `robots.txt` naming AI crawlers explicitly - GPTBot, ClaudeBot, PerplexityBot and the rest.
+  Named groups matter, some bots only honour their own name.
+- `llms.txt` - a plain text summary of who you are and which pages matter. Cheap to write.
+- JSON-LD in the head, so the structured facts are machine readable.
 
-Next.js is perfect for projects that need a mix of static and dynamic content, but its flexibility can lead to slightly more complex workflows.
-Anyway, who cares, you can throw it out and generate new version of your site in seconds.
+I added all three. Then left them alone for two months. Which brings the punchline: my
+`llms.txt` said I was based in a country I moved out of in June.
 
-**Best for**: Hybrid sites with dynamic content.
+A file that exists to tell machines accurate things about me, quietly wrong, being read by
+every crawler that asked. Same shape as the CSS. Written once, correct at the time, never
+checked again.
 
-**Strengths**: Flexibility, React ecosystem.
+I fixed it while writing this post.
 
-**Weaknesses**: Not purely static; may feel overkill for simple projects.
+## So which one
 
-[More about Next.js](https://nextjs.org/)
+Hugo, if you want my answer. One binary, no runtime dependency, builds a hundred pages faster
+than you can switch windows. 11ty if you already live in Node. Astro if some pages need
+interactive components and the rest don't.
 
-### 6. Nuxt.js
+But this choice is not where your site succeeds or fails. Pick one. Learn its template
+language properly - that is the part that will bite you. Then open the result on a device you
+didn't build it on.
 
-For true fans of Vue - Nuxt.js is the Vue.js counterpart to Next.js. It provides a similarly flexible setup, supporting both SSR and SSG. It’s an excellent choice for developers who prefer Vue.js over React and want the same level of flexibility.
-
-Nuxt.js also includes features like automatic routing and optimized builds, making it an efficient tool for dynamic and content-driven sites.
-
-**Strengths**: Vue ecosystem, ease of use.
-
-**Weaknesses**: Like Next.js, not purely static.
-
-[More about Nuxt.js](https://nuxtjs.org/)
-
-## Final Thoughts
-
-Each of these static site generators has its strengths and weaknesses. The best choice depends on your project’s requirements, your familiarity with the underlying technologies, and the complexity of your site. For blogs and simple pages, Jekyll or 11ty may be the easiest start. For dynamic, React-based projects, Gatsby or Next.js shine. If speed is a priority, Hugo is unbeatable!
+When did you last do that?
