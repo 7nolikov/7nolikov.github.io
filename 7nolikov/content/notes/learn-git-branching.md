@@ -4,37 +4,15 @@ date: 2024-12-11
 categories: [tools]
 ---
 
-## Why it's important?
+Understanding Git branching has mattered a lot in my career, and it is genuinely hard to picture what a rebase does to a commit graph from the command line alone.
 
-During my career, understanding Git branching and commands has been very important for teamwork. However, it can sometimes be hard to see how branches, commits, and merges work together. Learn Git Branching solves this problem by making it easy to practice Git commands and see how they work in a clear and visual way.
+This solves that. Interactive exercises with a live diagram of the commit tree - you run a real command, you watch the branches move.
 
-## What it is?
+It covers rebasing, cherry-picking, detached HEAD and remote tracking, which are exactly the parts people fake their way through. And you can undo anything, so there is nothing to be afraid of breaking.
 
-Learn Git Branching is an online tool that helps people learn Git through **interactive exercises** and diagrams. It’s a fun and practical way to get better at using Git.
+Best thing I know for making Git stop being a set of memorised incantations.
 
-## Main features include
-
-**Visual Diagrams**: You can see branches, commits, and merges in a clear picture as you work.
-
-**Step-by-Step Exercises**: The tool teaches basic and advanced Git concepts, like creating branches, merging, rebasing, and fixing conflicts.
-
-**Custom Practice**: You can create your own exercises to practice specific scenarios or help your team learn.
-
-**Undo Mistakes**: If you mess up, you can easily undo and redo actions, which makes learning stress-free.
-
-## Why You Should Try It
-
-This tool is great for anyone who wants to:
-
-- Improve their Git skills.
-- Understand complex workflows.
-- Teach Git to others.
-
-## Where to Find It
-
-You can try Learn Git Branching here: [Learn Git Branching](https://learngitbranching.js.org/)
-
-It's a simple and effective way to learn Git and become more confident in managing your code.
+[learngitbranching.js.org](https://learngitbranching.js.org/)
 
 See also:
 

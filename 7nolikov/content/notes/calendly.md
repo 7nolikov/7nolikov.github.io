@@ -4,21 +4,10 @@ date: 2025-01-02
 categories: [tools]
 ---
 
-Calendly is an online service that helps you schedule meetings without the hassle of back-and-forth emails. You set your available time slots and share a link for others to book a slot that works for them.
+Share a link, people book a slot from your free time, both sides get a calendar invite.
 
-## How It Works
+It syncs with Google and Outlook so you don't get double-booked, and it handles time zones - which is the actual reason to use it if the people you talk to live somewhere else.
 
-- Set Availability: Choose the days and times you’re free.
-- Share Your Link: Send your Calendly link via email or add it to your website.
-- Book a Time: Others pick a suitable time from your available slots.
-- Receive Confirmation: Both parties get confirmation emails with meeting details.
+Kills the "does Tuesday work for you?" email thread, which is worth more than it sounds.
 
-## Key Features
-
-- Calendar Integration: Syncs with Google, Outlook, and other calendars to avoid double-booking.
-- Custom Meeting Types: Create different meeting options with specific durations.
-- Time Zone Detection: Automatically adjusts for different time zones.
-- Reminders: Sends reminders to reduce missed appointments.
-- Team Scheduling: Coordinate meetings with multiple team members.
-
-Visit [calendly.com](https://calendly.com/) to sign up for a free account.
+[calendly.com](https://calendly.com/)

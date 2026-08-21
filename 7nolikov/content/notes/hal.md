@@ -4,15 +4,7 @@ date: 2025-01-03
 categories: [architecture]
 ---
 
-HAL (Hypertext Application Language) is a simple format for representing linked resources in REST APIs. It helps APIs provide structured responses with links, making navigation between resources easier.
-
-## Key Features
-
-- Uses JSON or XML to format API responses.
-- Includes hyperlinks (_links) to connect related resources.
-- Helps clients discover API functionality without hardcoding URLs.
-
-## Example HAL Response
+A tiny convention for putting links inside JSON API responses, so clients navigate instead of building URLs by hand.
 
 ```json
 {
@@ -25,12 +17,8 @@ HAL (Hypertext Application Language) is a simple format for representing linked 
 }
 ```
 
-This response provides details about an order while linking to the related customer.
+That's essentially the whole spec. The client follows `_links.customer` instead of knowing that customers live at `/customers/{id}` - so the server can move things without breaking anyone.
 
-## Why Use HAL?
+In practice most APIs skip this and hardcode URL patterns on the client. Worth knowing what the alternative looks like before deciding that.
 
-1. Standardized structure for APIs.
-2. Easier navigation between resources.
-3. Reduces hardcoded URLs, making APIs more maintainable.
-
-Read the full HAL specification: : [https://stateless.co/hal_specification.html](https://stateless.co/hal_specification.html)
+[HAL specification](https://stateless.co/hal_specification.html)

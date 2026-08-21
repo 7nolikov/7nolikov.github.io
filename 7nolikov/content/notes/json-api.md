@@ -4,13 +4,10 @@ date: 2025-01-04
 categories: [architecture]
 ---
 
-JSON API is a specification that standardizes how clients and servers exchange data using JSON. It defines a consistent structure for API responses, helping reduce redundant requests and making APIs easier to develop and maintain.
+A specification for what a JSON API response should look like, so you stop re-deciding it on every project.
 
-## Key Features
+It settles the boring arguments - where errors go, how pagination and filtering are expressed, how related resources are included. Sparse fieldsets and compound documents are the two features that earn it: the client asks for exactly the fields it needs, and pulls related objects in one round trip instead of five.
 
-- Consistent Format: All responses follow the same structure.
-- Efficient Data Loading: Fetch related resources in one request.
-- Sparse Fieldsets: Request only the fields you need.
-- Built-in Pagination, Filtering, and Sorting: Makes handling large datasets simpler.
+Heavier than most APIs need. But if you are about to invent your own envelope format, read this first.
 
-Learn more at [https://jsonapi.org/](https://jsonapi.org/).
+[jsonapi.org](https://jsonapi.org/)

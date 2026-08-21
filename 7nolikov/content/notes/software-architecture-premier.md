@@ -4,16 +4,8 @@ date: 2025-05-08
 categories: [architecture]
 ---
 
-The sivaprasadreddy/software-architecture-premier GitHub repository offers reference materials for learning about Software Architecture and Design.
+A reference collection on software architecture: patterns, microservices, DDD, how to document architecture, and how to enforce architectural rules in a build.
 
-It covers topics like:
+The last one is the part I find most useful - most architecture material stops at describing patterns, this one gets to keeping them true after the diagram is drawn. Reference implementations are Spring Boot.
 
-- Software Architecture Patterns
-- Microservices
-- Domain-Driven Design
-- documenting architecture
-- enforcing coding and architectural guidelines.
-
-It also includes reference implementations using Spring Boot.
-
-Link here: [Software Architecture Premier](https://github.com/sivaprasadreddy/software-architecture-premier)
+[github.com/sivaprasadreddy/software-architecture-premier](https://github.com/sivaprasadreddy/software-architecture-premier)

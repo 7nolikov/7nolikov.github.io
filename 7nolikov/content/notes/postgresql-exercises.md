@@ -4,13 +4,13 @@ date: 2024-12-02
 categories: [databases]
 ---
 
-PostgreSQL Exercises is a free online resource that helps you practice SQL queries on a sample database. It covers a wide range of topics, from basic SELECT statements to complex JOIN operations and subqueries.
+Practice SQL against a real sample database in the browser. Free, no registration, and it checks your answer.
 
-It's free, no registration required, and you can start practicing right away. The exercises are extremely helpful for interview preparation, learning SQL, or refreshing your database skills.
-
-[https://pgexercises.com/](https://pgexercises.com/)
+It goes from basic `SELECT` all the way to window functions and recursive CTEs, which is the part most people skip and then meet in an interview. Extremely helpful for interview prep, or for getting SQL back after a year of writing application code.
 
 Big thanks to [Alisdair Owens](https://alisdairowens.net/) for creating and maintaining this fantastic resource!
+
+[pgexercises.com](https://pgexercises.com/)
 
 See also:
 

@@ -4,8 +4,10 @@ date: 2024-12-23
 categories: [java]
 ---
 
-Microservices -> Modulith trend became real.
+Microservices -> modulith: the trend became real.
 
-Spring Modulith 1.3 is released. It is a framework that helps to build modular monoliths. It is a great alternative to microservices architecture. It allows developers to create modular applications with clear boundaries between modules, while still running them in a single process.
+Spring Modulith supports modular monoliths - clear boundaries between modules, verified at build time, all running in one process. You get the enforced separation that pushed people to microservices, without the network between the parts.
 
-[What's new in Spring Modulith 1.3?](https://spring.io/blog/2024/11/22/whats-new-in-spring-modulith-1-3)
+Module boundaries are checked by tests, so a violation fails the build instead of being noticed a year later. If you ever need to split a module into a service, the seam is already there.
+
+[What's new in Spring Modulith 1.3](https://spring.io/blog/2024/11/22/whats-new-in-spring-modulith-1-3) (2024 - later releases have shipped since)

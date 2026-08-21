@@ -4,19 +4,9 @@ date: 2024-12-01
 categories: [processes]
 ---
 
-## Reasoning
+Thousands of times in my professional career I have figured out the reason for changes in the history of the Git. And here is the solution to the problem!
 
-Thousands of times in my professional career I have figured out the reason for changes in the history of the Git.
-And here is the solution to the problem!
-
-## Standardizing Commit Messages
-
-The concept behind Conventional Commits is to provide a rich commit history  
-that can be read and understood by both humans and automated tools.
-
-Conventional Commits have the following format:
-
-```code
+```
 <type>[(optional <scope>)]: <description>
 
 [optional <body>]
@@ -24,12 +14,10 @@ Conventional Commits have the following format:
 [optional <footer(s)>]
 ```
 
-**Type**: fix, feat or BREAKING CHANGE, etc.
+`feat`, `fix`, `docs`, `refactor`, `chore`, and `BREAKING CHANGE` in the footer.
 
-Here you can find more information about Conventional Commits:
+The convention pays off twice. A human scanning `git log` sees what kind of change each commit was without opening it. And tooling can read the same thing - changelogs generate themselves, and the version bump falls out of the types: a `fix` is a patch, a `feat` is a minor, a breaking change is a major.
 
-[conventionalcommits.org](https://www.conventionalcommits.org)
+It costs nothing to start. You just write commits differently from tomorrow.
 
-Also, tooling available for enforcing this specification, like vscode extensions:
-
-[conventionalcommits.org/en/about/#tooling-for-conventional-commits](https://www.conventionalcommits.org/en/about/#tooling-for-conventional-commits)
+[conventionalcommits.org](https://www.conventionalcommits.org) · [tooling](https://www.conventionalcommits.org/en/about/#tooling-for-conventional-commits)

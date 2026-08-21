@@ -4,15 +4,10 @@ date: 2024-12-10
 categories: [architecture]
 ---
 
-The website **RestfulAPI.net** is a helpful resource for learning about RESTful APIs (Representational State Transfer Application Programming Interfaces). A RESTful API allows different software systems to communicate with each other over the internet using simple HTTP methods like GET, POST, PUT, and DELETE.
+A reference site for REST - resources, HTTP methods, status codes, and what statelessness actually requires of you.
 
-## Key features of the site
+Useful as the thing you send someone who is about to design an API, or to check yourself on which status code is correct before you invent one.
 
-- It explains the basic concepts of REST, including resources, endpoints, and HTTP methods.
-- It covers key principles of RESTful design, like statelessness, resource identification, and uniform interfaces.
-- The site includes examples to show how REST APIs work in real-world applications.
-- It also provides tips for designing and securing RESTful APIs effectively.
+Its section on Richardson's maturity model is the part most people have never read, and it explains why almost nothing anyone calls REST is actually REST.
 
-In summary, **RestfulAPI.net** is a great starting point for anyone who wants to understand how REST APIs work and how to build or use them in a clear and simple way.
-
-Learn more about REST: [RestfulAPI.net](https://restfulapi.net/)
+[restfulapi.net](https://restfulapi.net/)

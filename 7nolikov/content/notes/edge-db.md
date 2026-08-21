@@ -4,15 +4,12 @@ date: 2024-12-09
 categories: [databases]
 ---
 
-**EdgeDB**, a modern SQL database with user-friendly syntax based on PostgreSQL, designed to make working with data easier and more efficient. It combines the best features of relational databases and NoSQL, with a focus on developer productivity and flexibility.
+> Updated: EdgeDB was renamed to **Gel** in February 2025, and it now also speaks plain Postgres SQL. This note predates that - the link goes to the new site.
 
-## Key features of EdgeDB
+Postgres underneath, a different data model and query language on top.
 
-- **Built-in GraphQL-like queries**: Makes it easy to work with data relationships and fetch exactly what you need in fewer steps.
-- **Schema-based design**: Helps you define clear structures for your data, ensuring consistency and reliability.
-- **Type-safe queries**: Reduces errors by allowing the database to understand and check your data types automatically.
-- **Advanced features**: Includes support for complex relationships, nested queries, and simplified migrations.
+You declare a schema with types and links between them, then query with EdgeQL, which returns nested objects instead of joined rows. Fetching an order with its customer and line items is one query and one shaped result, not a join you reassemble in application code.
 
-In short, **EdgeDB** is a powerful, developer-friendly database that combines the strengths of traditional and modern databases, making it ideal for building scalable and maintainable applications.
+Type-safe queries and generated client code are the selling point. The cost is a query language nobody on your team knows yet.
 
-Link: [EdgeDB](https://edgedb.com/)
+[geldata.com](https://www.geldata.com/)

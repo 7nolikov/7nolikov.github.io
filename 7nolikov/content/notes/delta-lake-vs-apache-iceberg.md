@@ -4,39 +4,14 @@ date: 2024-12-20
 categories: [databases]
 ---
 
-The article compares two popular data lake technologies, Delta Lake and Apache Iceberg, which help manage large-scale data in a structured and efficient way. These tools ensure data reliability, versioning, and efficient querying in big data environments.
+Two table formats that sit on top of files in object storage and give you ACID transactions, schema evolution and time travel - the things a pile of Parquet files does not have on its own.
 
-## Key Points
+**Delta Lake** came out of Databricks and is deepest there and in Spark.
 
-### Delta Lake
+**Iceberg** is engine-agnostic by design and runs under Spark, Flink, Trino and more. Its hidden partitioning is the feature to know: you partition by a column, and readers don't have to know the partition scheme to hit it. With traditional partitioning, a query that doesn't mention the partition column scans everything.
 
-Created by Databricks, Delta Lake enhances data lakes by adding features like ACID transactions (ensuring reliable data updates), schema enforcement, and version control. It integrates well with Apache Spark and is widely used for machine learning and data pipelines.
+Rough rule: heavy Databricks or Spark shop, Delta Lake. Multiple engines, Iceberg.
 
-### Apache Iceberg
-
-An open-source project designed for large-scale data lakes. It focuses on better handling of large datasets by providing features like hidden partitioning, time travel, and schema evolution. Iceberg is format-agnostic and works with multiple engines like Spark, Flink, and Trino.
-
-## Key Differences
-
-### Partitioning
-
-Iceberg uses hidden partitioning, reducing the need for manual partition maintenance. Delta Lake relies on traditional partitioning methods.
-
-### Ecosystem Support
-
-Delta Lake integrates deeply with Databricks and Apache Spark, while Iceberg supports a broader range of engines.
-
-### Community
-
-Delta Lake has a strong Databricks-driven community, while Iceberg is backed by a growing open-source community.
-
-## Use Cases
-
-- Choose Delta Lake if you are heavily using Databricks or Apache Spark.
-- Choose Apache Iceberg for multi-engine compatibility and advanced features like hidden partitioning.
-
-Both are excellent tools for managing big data, and the choice often depends on your specific use case and tech stack.
-
-Read the full article here:
+Both have moved a lot since this was written - check the current state before betting on it.
 
 [Delta Lake vs Apache Iceberg. The Lake House Squabble](https://dataengineeringcentral.substack.com/p/delta-lake-vs-apache-iceberg-the)
