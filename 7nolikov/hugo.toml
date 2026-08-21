@@ -45,7 +45,7 @@ googleAnalytics = "G-V3HY4BP6JS"
   # moves to its own domain.
   [[menus.main]]
     name = 'ohmoveagain'
-    url = 'https://7nolikov.dev/ohmoveagain/'
+    url = 'https://ohmoveagain.com/'
     weight = 50
 
 [markup]

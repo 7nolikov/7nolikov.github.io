@@ -1,9 +1,9 @@
 # Dmitrii Novikov — 7nolikov.dev
 
-> Dmitrii Novikov is a distributed systems engineer based in Croatia. He
-> builds and operates cloud-native data platforms (20+ microservices on the
-> OSDU platform, running on Google Cloud and Kubernetes) and writes about
-> distributed systems, Go, observability, and microservices in production.
+> Dmitrii Novikov is a distributed systems engineer based in Croatia. He has
+> contributed to the OSDU Data Platform since 2021, working on cloud-native data
+> infrastructure across Google Cloud and Kubernetes, and writes about distributed
+> systems, Go, observability, and operating services in production.
 > He also maintains ohmoveagain, an open-source pipeline and guide for IT
 > professionals relocating to Croatia and across Eastern Europe.
 
@@ -11,12 +11,12 @@
 
 - [Home](https://7nolikov.dev/): overview and recent writing.
 - [About](https://7nolikov.dev/about/): who Dmitrii is, background, and contact/profile links.
-- [Posts](https://7nolikov.dev/posts/): long-form articles on distributed systems, Go, and infrastructure.
+- [Posts](https://7nolikov.dev/posts/): long-form articles on distributed systems, Go, observability, and post-mortems of his own bugs.
 - [Notes](https://7nolikov.dev/notes/): shorter notes and links on engineering topics.
 
 ## Projects
 
-- [ohmoveagain](https://7nolikov.dev/ohmoveagain/): open-source, community-maintained relocation pipeline for IT professionals moving to Croatia — five stages, sourced checklists, required documents (EU Blue Card, Visa D, MUP registration), and a runway calculator. See its own llms.txt at https://7nolikov.dev/ohmoveagain/llms.txt.
+- [ohmoveagain](https://ohmoveagain.com/): open-source, community-maintained relocation pipeline for IT professionals moving to Croatia — five stages, sourced checklists, required documents (EU Blue Card, Visa D, MUP registration), and a runway calculator. See its own llms.txt at https://ohmoveagain.com/llms.txt.
 
 ## Profiles
 

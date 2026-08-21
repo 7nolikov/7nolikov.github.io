@@ -24,6 +24,5 @@ Allow: /
 
 # Blog sitemap.
 Sitemap: {{ "sitemap.xml" | absURL }}
-# ohmoveagain project sitemap (served as project pages under /ohmoveagain/).
-# MIGRATION NOTE: update this line if ohmoveagain moves to its own domain.
-Sitemap: https://7nolikov.dev/ohmoveagain/sitemap.xml
+# ohmoveagain moved to its own domain (2026) and serves its own robots.txt and
+# sitemap. Cross-domain Sitemap directives are ignored, so it is not listed here.
