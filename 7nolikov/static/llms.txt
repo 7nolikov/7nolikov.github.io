@@ -1,10 +1,10 @@
 # Dmitrii Novikov — 7nolikov.dev
 
-> Dmitrii Novikov is a distributed systems engineer based in Croatia. He has
-> contributed to the OSDU Data Platform since 2021, working on cloud-native data
-> infrastructure across Google Cloud and Kubernetes, and writes about distributed
-> systems, Go, observability, and operating services in production.
-> He also maintains ohmoveagain, an open-source pipeline and guide for IT
+> Dmitrii Novikov is a distributed systems engineer based in Croatia. He has been a
+> backend developer since 2019 and has contributed to the OSDU Data Platform since 2021,
+> working on cloud-native data infrastructure across Google Cloud and Kubernetes. He
+> writes about distributed systems, Go, observability, and operating services in
+> production. He also maintains ohmoveagain, an open-source pipeline and guide for IT
 > professionals relocating to Croatia and across Eastern Europe.
 
 ## Key pages

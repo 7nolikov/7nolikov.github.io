@@ -71,12 +71,14 @@ googleAnalytics = "G-V3HY4BP6JS"
       'Distributed systems',
       'Cloud-native infrastructure',
       'Observability',
+      'OpenTelemetry',
       'Kubernetes',
       'Go',
       'Java',
       'Microservices',
+      'Apache Kafka',
+      'PostgreSQL',
       'HTMX',
-      'Site reliability engineering',
     ]
     sameAs = [
       'https://github.com/7nolikov',

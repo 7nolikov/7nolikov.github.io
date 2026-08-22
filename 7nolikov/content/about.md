@@ -6,11 +6,11 @@ title: "About me"
 
 I'm Dmitrii Novikov, a distributed systems engineer based in Croatia.
 
-I spend my days building and operating cloud-native data platforms. I maintain 20+ microservices on the OSDU platform — a large-scale data infrastructure serving the energy industry, running on Google Cloud and Kubernetes. I've been doing backend engineering for over 6 years, primarily in Java/Spring Boot.
+I've been a backend developer since 2019, and have contributed to the OSDU Data Platform since 2021 - cloud-native data infrastructure for the energy industry, running on Google Cloud and Kubernetes. Mostly Java and Spring Boot, with a background in QA before that which still shapes how I think about testing.
 
-I care most about the intersection of distributed systems and observability — making complex multi-service architectures transparent enough that you can actually understand what's happening inside them.
+What I care about is the intersection of distributed systems and observability - making a multi-service architecture transparent enough that you can tell what it is actually doing, rather than what you assumed it was doing.
 
-Outside of work, I build things in Go. One of them is [ohmoveagain](https://ohmoveagain.com/), an open-source, community-maintained pipeline and guide for IT professionals relocating to Croatia — covering the EU Blue Card, Visa D, MUP registration, required documents, and a runway calculator.
+Outside of work I build things in Go. One of them is [ohmoveagain](https://ohmoveagain.com/), an open-source, community-maintained guide and pipeline for IT professionals relocating to Croatia - covering the EU Blue Card, Visa D, MUP registration, required documents, and a runway calculator.
 
-I write here about distributed systems, Go, observability patterns, and lessons from operating microservices in production.
+I write here about distributed systems, Go, observability, and post-mortems of my own bugs.
 Find me on [LinkedIn](https://www.linkedin.com/in/7nolikov/) and [GitHub](https://github.com/7nolikov).
