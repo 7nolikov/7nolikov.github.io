@@ -48,3 +48,10 @@
   {{ partial "head/math" . }}
 {{- end }}
 {{ partial "head/jsonld" . }}
+{{/* OVERRIDE of hugo-theme-til v0.6.0: Cloudflare Web Analytics replaces GA4. No cookies
+     and no fingerprinting, so no consent banner is required under GDPR/ePrivacy. */}}
+<script
+  type="module"
+  src="https://static.cloudflareinsights.com/beacon.min.js"
+  data-cf-beacon='{"token": "0813f8e9b0fe443ea2b3fb64f64f9893"}'
+></script>
