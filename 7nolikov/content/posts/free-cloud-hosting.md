@@ -2,6 +2,8 @@
 title: Free hosting cost me a kernel panic
 date: 2026-07-15
 categories: [cloud]
+aliases:
+  - /posts/truly-free-cloud-hosting/
 ---
 
 I run a blog, a relocation guide and four sandbox sites. All of them are free, and they stay

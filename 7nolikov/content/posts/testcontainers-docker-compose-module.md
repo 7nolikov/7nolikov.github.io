@@ -2,6 +2,8 @@
 title: My plan said Testcontainers. The code never imported it.
 date: 2026-07-30
 categories: [testing]
+aliases:
+  - /notes/testcontainers-docker-compose-module/
 ---
 
 The build plan for my last project allocated 90 minutes to a task called "Integration tests

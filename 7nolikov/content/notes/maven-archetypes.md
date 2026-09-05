@@ -2,6 +2,8 @@
 title: Maven archetypes
 date: 2024-12-14
 categories: [java]
+aliases:
+  - /posts/maven-archetypes/
 ---
 
 Maven archetypes are templates that help developers quickly set up a new project with a predefined structure, files, and code for a specific type of application.
